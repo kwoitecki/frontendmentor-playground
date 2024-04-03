@@ -20,8 +20,8 @@ main {
 }
 main .card {
   background: hsl(0, 0%, 100%);
-  width: 384px;
-  height: 522px;
+  width: 327px;
+  height: 501px;
   display: flex;
   flex-direction: column;
   border-radius: 5%;

@@ -22,17 +22,11 @@ main {
 
   .card {
     background: $bg-color_card;
-    // sm
-    // width: 327px;
-    // height: 501px;
-
-    // md
-    width: 384px;
-    height: 522px;
+    width: 327px;
+    height: 501px;
 
     display: flex;
     flex-direction: column;
-    // border-radius: 20px;
     border-radius: 5%;
     border-left: 1px solid black;
     border-top: 1px solid black;
