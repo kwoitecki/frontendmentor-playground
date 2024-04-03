@@ -2,12 +2,30 @@ $font-family: 'Figtree', sans-serif;
 $default-font-size: 16px;
 $default-font-weight: 500;
 $bold-font-weight: 800;
-$bg-color: hsl(47, 88%, 63%);
+$primary-color: hsl(47, 88%, 63%);
 $article-bg: hsl(0, 0%, 100%);
+$black-color: hsl(0, 0%, 7%);
 $border-radius: 4%;
 
+%base-font-small {
+  font-size: 0.8rem;
+}
+
+%base-font-bold {
+  font-weight: $bold-font-weight;
+}
+
+.font-bold {
+  @extend %base-font-bold;
+}
+
+.font-small {
+  @extend %base-font-small;
+}
+
 .tag {
-  background: $bg-color;
+  @extend %base-font-small;
+  background: $primary-color;
   font-weight: $bold-font-weight;
   border-radius: $border-radius;
   padding: 0.2rem;
@@ -15,15 +33,33 @@ $border-radius: 4%;
   text-align: center;
 }
 
-.font-small {
-  font-size: 0.8rem;
-}
-
-.font-bold {
-  font-weight: $bold-font-weight;
-}
-
 .description {
+  @extend %base-font-small;
   color: hsl(0, 0%, 50%);
-  line-height: 1.5rem;
+  line-height: 1.2rem;
+}
+
+.author {
+  @extend %base-font-bold;
+  @extend %base-font-small;
+}
+
+.rounded-corners {
+  border-radius: $border-radius;
+}
+
+.black-border {
+  border-left: 1px solid $black-color;
+  border-top: 1px solid $black-color;
+  border-right: 8px solid $black-color;
+  border-bottom: 8px solid $black-color;
+}
+
+a {
+  text-decoration: none;
+  color: $black-color;
+
+  &:hover {
+    color: $primary-color;
+  }
 }

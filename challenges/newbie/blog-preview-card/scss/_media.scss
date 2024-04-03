@@ -1,0 +1,16 @@
+$mobile-breakpoint: 500px;
+
+/* mobile */
+@media only screen and (min-width: $mobile-breakpoint) {
+  article {
+    max-width: 350px;
+    height: 500px;
+  }
+}
+
+/*
+card:
+w: 384
+h: 522
+
+*/
