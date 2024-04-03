@@ -1,8 +1,0 @@
-= frontendmentor-playground
-This is a playground for frontendmentor.io challenges.
-
-== Content
-* link:./docs/devcontainer.adoc[Development Container, Vscode Settings]
-
-== Challenges
-* link:./challenges/newbie/qr-code-component/dist/index.html[QR Code Component]
