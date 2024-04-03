@@ -43,15 +43,9 @@ a:hover {
 @media only screen and (min-width: 500px) {
   article {
     max-width: 350px;
-    height: 500px;
+    height: 520px;
   }
 }
-/*
-card:
-w: 384
-h: 522
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -81,16 +75,15 @@ body main article header img {
   height: 100%;
 }
 body main article section div,
-body main article section h1 {
+body main article section h2 {
   margin-top: 1.5rem;
 }
 body main article section p {
   margin-top: 1rem;
 }
 body main article footer {
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   display: flex;
-  align-items: center;
   gap: 0.5rem;
 }
 body main article footer img {
