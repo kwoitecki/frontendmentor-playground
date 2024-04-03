@@ -1,0 +1,133 @@
+[[top]]
+= Environment Setup
+:toc: preamble
+
+link:../README.adoc[Back]
+
+== Adjust Node Version
+<<top,start of the page>>
+
+[source, bash]
+----
+$ cat Dockerfile.dev
+FROM node:20
+# ...
+----
+
+== Configure eslint
+<<top,start of the page>>
+
+[source, bash]
+----
+# create a project
+$ npm init -y
+
+# install eslint
+$ npm i -d eslint
+$ npm init @eslint/config
+$ cat package.json
+// ..
+ "scripts": {
+    "lint": "eslint ."
+  },
+// ..
+
+# example eslint configuration
+$ cat .eslintrc.json
+// ..
+    "rules": {
+        "no-unused-vars": "warn"
+    }
+
+----
+
+== Opening the devcontainer
+<<top,start of the page>>
+
+* CTR+SHIFT+P - "Dev Containers: Reopen in Container"
+* or (e.g. if new extensions where added)
+* CTR+SHIFT+P - "Dev Containers: Rebuild Container"
+
+== Closing the devcontainer
+<<top,start of the page>>
+
+CTR+SHIFT+P "Remote: Close Remote Connection"
+
+== Clean Up
+<<top,start of the page>>
+
+[source, bash]
+----
+$ docker rm -f $(docker ps -aq)
+$ docker image prune -af
+$ docker volume prune -af
+$ docker network prune -f
+----
+
+== VSCode 
+
+== Emmit abbreviations
+<<top,start of the page>>
+
+|===
+|Abbreviation |Description
+
+|h1 <ENTER>
+|Insert a level 1 heading
+
+|!
+|Create a basic HTML5 structure
+
+|lorem
+|create dummy text
+
+|lorem10
+|create 10 words of dummy text
+
+|li*5
+|create 5 list items
+
+|input:$TYPE
+|create an input field with type $TYPE (e.g. text, email, number, date, radio, checkbox, submit)
+
+|button:$TYPE
+|create a button of $TYPE (e.g. submit, reset, button)
+
+|div#$ID
+|create a div with an id of $ID. Alternatively, you can write #$ID
+
+| ul>li*3>a
+| <ul><li><a href=""></a></li><li><a href=""></a></li><li><a href=""></a></li></ul>
+
+| ul>li*3>a[href="#"]>{Item $}
+| <ul><li><a href="#">Item 1</a></li><li><a href="#">Item 2</a></li><li><a href="#">Item 3</a></li></ul>
+
+| ul>li{item $}*4
+| <ul><li>item 1</li><li>item 2</li><li>item 3</li><li>item 4</li></ul>
+
+|===
+
+== vscode shortcuts
+<<top,start of the page>>
+
+|===
+|Shortcut |Description
+
+|ALT+L ALT+O
+|Open current file with live server
+
+|Ctr+K Ctr+C
+|Comment/Uncomment line
+
+|Ctr+ENTER
+|Insert a new line below (without moving the cursor). Remove copilot shortcuts!!
+
+|Ctr+Shift+D
+|Duplicate line
+
+|Ctr+D
+|Select next occurrence of the current selection
+
+
+|===
+

@@ -1,0 +1,28 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    // https://code.visualstudio.com/docs/nodejs/debugging-recipes
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Server debug ts",
+      "program": "${workspaceFolder}/src/back/Server.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js", "!**/node_modules/**"]
+    },
+
+    // npm i -D ts-node
+    {
+      "type": "node",
+      "name": "Server debug with ts-node",
+      "request": "launch",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceFolder}",
+      "args": ["${workspaceFolder}/src/back/Server.ts"]
+    }
+  ]
+}
