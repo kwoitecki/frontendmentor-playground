@@ -1,0 +1,16 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  },
+  "scripts": {
+    "sass:watch": "sass -w scss/:dist/css/ --no-source-map",
+    "sass": "sass scss/:dist/css/ --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
