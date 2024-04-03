@@ -28,6 +28,10 @@ body {
     @include centerFlexContent();
     height: 96vh;
 
+    h1 {
+      display: none;
+    }
+
     article {
       background: $article-bg;
       padding: 1.5rem;
@@ -42,8 +46,9 @@ body {
       }
 
       section {
-        div,
-        h2 {
+        h3,
+        h2,
+        h4 {
           margin-top: 1.5rem;
         }
         p {
