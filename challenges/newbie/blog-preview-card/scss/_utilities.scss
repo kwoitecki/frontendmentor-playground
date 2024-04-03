@@ -1,0 +1,29 @@
+$font-family: 'Figtree', sans-serif;
+$default-font-size: 16px;
+$default-font-weight: 500;
+$bold-font-weight: 800;
+$bg-color: hsl(47, 88%, 63%);
+$article-bg: hsl(0, 0%, 100%);
+$border-radius: 4%;
+
+.tag {
+  background: $bg-color;
+  font-weight: $bold-font-weight;
+  border-radius: $border-radius;
+  padding: 0.2rem;
+  width: 4.5rem;
+  text-align: center;
+}
+
+.font-small {
+  font-size: 0.8rem;
+}
+
+.font-bold {
+  font-weight: $bold-font-weight;
+}
+
+.description {
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5rem;
+}

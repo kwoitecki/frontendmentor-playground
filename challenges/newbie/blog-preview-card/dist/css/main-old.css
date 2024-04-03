@@ -70,7 +70,6 @@ main .card .card-content h1 a:hover {
 }
 main .card .card-content p {
   margin-top: 1.5rem;
-  line-height: 1.3rem;
   color: hsl(0, 0%, 50%);
   font-size: small;
 }
