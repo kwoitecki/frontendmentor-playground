@@ -12,30 +12,10 @@ services:
     tty: true
     volumes:
       - .:/workspace:cached
-      -  frontendmentor-playground-service-node-modules:/workspace/node_modules/
+      - fm-qr-code-node-modules:/workspace/challenges/newbie/qr-code-component/node_modules
 
     ports:
       - 5555:5555
 
-  # mongo service example configuration
-  #
-  # mongo-playground:
-  #   container_name: mongo-workspace
-  #   image: mongo:4.4.6
-  #   ports:
-  #     - 27017:27017
-
-  # postgres service example configuration
-  # db:
-  #   image: postgres:latest
-  #   restart: unless-stopped
-  #   volumes:
-  #     - postgres-data:/var/lib/postgresql/data
-  #   environment:
-  #     POSTGRES_USER: postgres
-  #     POSTGRES_DB: postgres
-  #     POSTGRES_PASSWORD: postgres
-  #
-
 volumes:
-  frontendmentor-playground-service-node-modules:
+  fm-qr-code-node-modules:

@@ -1,0 +1,16 @@
+{
+  "name": "qr-code-component",
+  "version": "1.0.0",
+  "description": "practise component",
+  "main": "index.js",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  },
+  "scripts": {
+    "sass:watch": "sass -w scss/:dist/css/ --no-source-map",
+    "sass": "sass scss/:dist/css/ --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
