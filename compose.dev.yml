@@ -14,6 +14,7 @@ services:
       - .:/workspace:cached
       - fm-qr-code-node-modules:/workspace/challenges/newbie/qr-code-component/node_modules
       - fm-blog-preview-card-node-modules:/workspace/challenges/newbie/blog-preview-card/node_modules
+      - fm-social-links-node-modules:/workspace/challenges/newbie/social-links-profile/node_modules
 
     ports:
       - 5555:5555
@@ -21,3 +22,4 @@ services:
 volumes:
   fm-qr-code-node-modules:
   fm-blog-preview-card-node-modules:
+  fm-social-links-node-modules:
