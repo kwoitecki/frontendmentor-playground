@@ -5,5 +5,6 @@ This is a playground for frontendmentor.io challenges.
 - [Challenges](#challenges)
 
 ## Challenges
-- [QR Code Component](./challenges/newbie/qr-code-component/dist/index.html)
-- [Blog Preview-card](./challenges/newbie/blog-preview-card/dist/index.html)
+- [QR Code Component](./challenges/newbie/qr-code-component/dist/)
+- [Blog Preview-card](./challenges/newbie/blog-preview-card/dist)
+- [Social-links-profile](./challenges/newbie/social-links-profile)
