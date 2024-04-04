@@ -15,6 +15,7 @@ services:
       - fm-qr-code-node-modules:/workspace/challenges/newbie/qr-code-component/node_modules
       - fm-blog-preview-card-node-modules:/workspace/challenges/newbie/blog-preview-card/node_modules
       - fm-social-links-node-modules:/workspace/challenges/newbie/social-links-profile/node_modules
+      - fm-recepe-page-node-modules:/workspace/challenges/newbie/recipe-page/node_modules
 
     ports:
       - 5555:5555
@@ -23,3 +24,4 @@ volumes:
   fm-qr-code-node-modules:
   fm-blog-preview-card-node-modules:
   fm-social-links-node-modules:
+  fm-recepe-page-node-modules:
