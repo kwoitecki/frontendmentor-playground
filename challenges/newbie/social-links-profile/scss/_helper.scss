@@ -1,0 +1,15 @@
+@mixin debugBorders() {
+  border: 1px solid black;
+}
+
+@mixin debugSpacing() {
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+@mixin set-content-stacked() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

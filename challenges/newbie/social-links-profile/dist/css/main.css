@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  display: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: hsl(0, 0%, 8%);
+  font-size: 14px;
+  font-weight: 600;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+body main article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  border-radius: 5px;
+  min-width: 327px;
+  min-height: 580px;
+}
+body main article .image {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+body main article .image img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+body main article h2 {
+  width: 100%;
+  margin-top: 1rem;
+}
+body main article h3 {
+  width: 100%;
+  margin-top: 0.8rem;
+  font-size: small;
+  font-weight: 700;
+  color: hsl(75, 94%, 57%);
+}
+body main article h4 {
+  width: 100%;
+  margin-top: 1.75rem;
+}
+body main article h4 {
+  font-size: small;
+  font-weight: 400;
+}
+body main article nav {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+body main article nav ul {
+  margin: 0 2rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+body main article nav ul li {
+  border-radius: 5px;
+  margin-top: 1em;
+}
+body main article nav ul li a {
+  display: block;
+  background: hsl(0, 0%, 20%);
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  padding: 1em;
+  border-radius: 5px;
+}
+body main article nav ul li a:hover {
+  background: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}

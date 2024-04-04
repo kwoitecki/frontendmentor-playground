@@ -1,0 +1,117 @@
+@import 'variables';
+@import 'helper';
+
+$border-radius: 5px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  display: none;
+}
+
+body {
+  font-family: $font-family-default;
+  background: $color-black;
+  font-size: $text-size-default;
+  font-weight: $font-weight-regular;
+
+  main {
+    @include set-content-stacked();
+    height: 100vh;
+
+    article {
+      @include set-content-stacked();
+      background: $color-dark-gray;
+      color: $color-white;
+      text-align: center;
+
+      border-radius: $border-radius;
+      min-width: 327px;
+      min-height: 580px;
+
+      .image {
+        width: 100%;
+        margin-top: 1.5rem;
+        img {
+          width: 90px;
+          height: 90px;
+          border-radius: 50%;
+        }
+      }
+
+      h2 {
+        width: 100%;
+        margin-top: 1rem;
+      }
+
+      h3 {
+        width: 100%;
+        margin-top: 0.8rem;
+        font-size: small;
+        font-weight: $font-weight-bold;
+        color: $color-green;
+      }
+
+      h4 {
+        width: 100%;
+        margin-top: 1.75rem;
+      }
+
+      h4 {
+        font-size: small;
+        font-weight: $font-weight-light;
+      }
+
+      nav {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        ul {
+          margin: 0 2rem;
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+
+          li {
+            border-radius: $border-radius;
+            margin-top: 1em;
+
+            a {
+              display: block;
+              background: $color-gray;
+              text-decoration: none;
+              color: $color-white;
+              font-weight: $font-weight-bold;
+
+              padding: 1em;
+              border-radius: 5px;
+
+              &:hover {
+                background: $color-green;
+                color: $color-black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // debuggin stuff
+  // main,
+  // article,
+  // img,
+  // h2,
+  // h3,
+  // h4,
+  // ul,
+  // li,
+  // div {
+  //   @include debugBorders();
+  //   // @include debugSpacing();
+  // }
+}
