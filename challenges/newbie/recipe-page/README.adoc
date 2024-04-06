@@ -26,6 +26,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 * [x] einfärben der Nummern
 * [x] Runded corners
 * [x] Nutrition Teil anpassen
-* [ ] Umstellen auf ADoc
+* [x] Umstellen auf ADoc
 * [ ] Responsive design erstellen
+** [x] Inhalt zentrieren fex-layout
+** [ ] Abstände anpassen
+** [ ] min-width für Mobil Design setzen
+** [ ] Schrift anpassen
+
+
+
 

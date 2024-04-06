@@ -125,3 +125,4 @@ chatgpt https://chat.openai.com/
 - [x] Nutrition Teil anpassen
 - [ ] Umstellen auf ADoc
 - [ ] Responsive design erstellen
+- [ ]

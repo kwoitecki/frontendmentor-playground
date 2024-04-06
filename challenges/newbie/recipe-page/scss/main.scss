@@ -4,7 +4,6 @@ $white-color: hsl(0, 0%, 100%);
 $rose-white-color: hsl(330, 100%, 98%);
 $eggshell-color: hsl(30, 54%, 90%);
 
-// ???
 $light-grey: hsl(30, 18%, 87%);
 $wenge-brown: hsl(30, 10%, 34%);
 
@@ -42,10 +41,10 @@ $border-radius: 15px;
 
 @mixin adjust-lists-position {
   ul {
-    margin: 1rem 2rem;
+    margin: 0.5rem 2rem;
 
     li {
-      padding: 0.1rem 1.5rem;
+      padding: 0rem 1.5rem;
     }
   }
 }
@@ -77,108 +76,110 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  margin: 3rem;
-  padding: 2rem;
-  background: $white-color;
-  border-radius: $border-radius;
+  margin: 7.5rem 0 2rem 0;
 
-  header {
-    .header-image {
-      img {
-        width: 100%;
-        height: auto;
+  .centered-content {
+    padding: 2rem;
+    max-width: 735px;
+    background: $white-color;
+    border-radius: $border-radius;
+
+    header {
+      .header-image {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: $border-radius;
+        }
+      }
+
+      h1 {
+        color: $dark-charcoal;
+        font-family: 'Young Serif', serif;
+        font-weight: $font-weight-bold;
+        font-style: normal;
+        margin-top: 1.7rem;
+        font-size: 2.5rem;
+      }
+    }
+
+    main {
+      .description {
+        margin-top: 0.75rem;
+      }
+
+      .preparation-time {
+        margin-top: 2rem;
         border-radius: $border-radius;
-      }
-    }
+        background: $rose-white-color;
+        padding: 1.2rem;
 
-    h1 {
-      color: $dark-charcoal;
-      font-family: 'Young Serif', serif;
-      font-weight: $font-weight-bold;
-      font-style: normal;
-      margin-top: 2rem;
-      font-size: 2.5rem;
-    }
-  }
+        h2 {
+          color: $dark-raspberry;
+        }
 
-  main {
-    .description {
-      @include spacing-top();
-    }
-
-    .preparation-time {
-      @include spacing-top();
-      border-radius: $border-radius;
-      background: $rose-white-color;
-      padding: 1.5rem;
-
-      h2 {
-        color: $dark-raspberry;
+        @include adjust-lists-position;
       }
 
-      @include adjust-lists-position;
-    }
+      .ingredients {
+        @include nutmeg-h2-heading;
+        @include horizontal-line;
+        @include spacing-top;
+        @include adjust-lists-position;
+      }
 
-    .ingredients {
-      @include nutmeg-h2-heading;
-      @include horizontal-line;
-      @include spacing-top;
-      @include adjust-lists-position;
-    }
+      .instructions {
+        @include nutmeg-h2-heading;
+        @include horizontal-line;
+        @include spacing-top();
 
-    .instructions {
-      @include nutmeg-h2-heading;
-      @include horizontal-line;
-      @include spacing-top();
+        ol {
+          list-style: none;
+          counter-reset: list-counter;
+          padding-left: 0.5rem;
 
-      ol {
-        list-style: none;
-        counter-reset: list-counter;
-        padding-left: 0.5rem;
+          li {
+            counter-increment: list-counter;
+            position: relative;
+            padding-left: 2rem;
 
-        li {
-          counter-increment: list-counter;
-          position: relative;
-          padding-left: 2rem;
-
-          &::before {
-            content: counter(list-counter) '.';
-            position: absolute;
-            left: 0;
-            @include nutmeg-x2-bold;
+            &::before {
+              content: counter(list-counter) '.';
+              position: absolute;
+              left: 0;
+              @include nutmeg-x2-bold;
+            }
           }
         }
       }
-    }
 
-    .nutrition {
-      @include nutmeg-h2-heading;
-      @include spacing-top();
+      .nutrition {
+        @include nutmeg-h2-heading;
+        @include spacing-top();
 
-      .grid {
-        // margin-top: 1rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 1em;
+        .grid {
+          // margin-top: 1rem;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 1em;
 
-        .item {
-          border-bottom: 1px solid $light-grey;
-          padding: 0.5rem;
-        }
+          .item {
+            border-bottom: 1px solid $light-grey;
+            padding: 0.5rem;
+          }
 
-        .item:nth-last-child(-n + 2) {
-          border-bottom: none;
-        }
+          .item:nth-last-child(-n + 2) {
+            border-bottom: none;
+          }
 
-        .bold {
-          @include nutmeg-x2-bold;
+          .bold {
+            @include nutmeg-x2-bold;
+          }
         }
       }
     }

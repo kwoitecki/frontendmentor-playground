@@ -31,110 +31,112 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  margin: 3rem;
+  margin: 7.5rem 0 2rem 0;
+}
+.container .centered-content {
   padding: 2rem;
+  max-width: 735px;
   background: hsl(0, 0%, 100%);
   border-radius: 15px;
 }
-.container header .header-image img {
+.container .centered-content header .header-image img {
   width: 100%;
   height: auto;
   border-radius: 15px;
 }
-.container header h1 {
+.container .centered-content header h1 {
   color: hsl(24, 5%, 18%);
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-style: normal;
-  margin-top: 2rem;
+  margin-top: 1.7rem;
   font-size: 2.5rem;
 }
-.container main .description {
-  margin-top: 1.5rem;
+.container .centered-content main .description {
+  margin-top: 0.75rem;
 }
-.container main .preparation-time {
-  margin-top: 1.5rem;
+.container .centered-content main .preparation-time {
+  margin-top: 2rem;
   border-radius: 15px;
   background: hsl(330, 100%, 98%);
-  padding: 1.5rem;
+  padding: 1.2rem;
 }
-.container main .preparation-time h2 {
+.container .centered-content main .preparation-time h2 {
   color: hsl(332, 51%, 32%);
 }
-.container main .preparation-time ul {
-  margin: 1rem 2rem;
+.container .centered-content main .preparation-time ul {
+  margin: 0.5rem 2rem;
 }
-.container main .preparation-time ul li {
-  padding: 0.1rem 1.5rem;
+.container .centered-content main .preparation-time ul li {
+  padding: 0rem 1.5rem;
 }
-.container main .ingredients {
+.container .centered-content main .ingredients {
   border-bottom: 1px solid hsl(30, 18%, 87%);
   padding-bottom: 2rem;
   margin-top: 1.5rem;
 }
-.container main .ingredients h2 {
+.container .centered-content main .ingredients h2 {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-size: 1.7rem;
 }
-.container main .ingredients ul {
-  margin: 1rem 2rem;
+.container .centered-content main .ingredients ul {
+  margin: 0.5rem 2rem;
 }
-.container main .ingredients ul li {
-  padding: 0.1rem 1.5rem;
+.container .centered-content main .ingredients ul li {
+  padding: 0rem 1.5rem;
 }
-.container main .instructions {
+.container .centered-content main .instructions {
   border-bottom: 1px solid hsl(30, 18%, 87%);
   padding-bottom: 2rem;
   margin-top: 1.5rem;
 }
-.container main .instructions h2 {
+.container .centered-content main .instructions h2 {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-size: 1.7rem;
 }
-.container main .instructions ol {
+.container .centered-content main .instructions ol {
   list-style: none;
   counter-reset: list-counter;
   padding-left: 0.5rem;
 }
-.container main .instructions ol li {
+.container .centered-content main .instructions ol li {
   counter-increment: list-counter;
   position: relative;
   padding-left: 2rem;
 }
-.container main .instructions ol li::before {
+.container .centered-content main .instructions ol li::before {
   content: counter(list-counter) ".";
   position: absolute;
   left: 0;
   font-weight: 700;
   color: hsl(14, 45%, 36%);
 }
-.container main .nutrition {
+.container .centered-content main .nutrition {
   margin-top: 1.5rem;
 }
-.container main .nutrition h2 {
+.container .centered-content main .nutrition h2 {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", serif;
   font-weight: 400;
   font-size: 1.7rem;
 }
-.container main .nutrition .grid {
+.container .centered-content main .nutrition .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 1em;
 }
-.container main .nutrition .grid .item {
+.container .centered-content main .nutrition .grid .item {
   border-bottom: 1px solid hsl(30, 18%, 87%);
   padding: 0.5rem;
 }
-.container main .nutrition .grid .item:nth-last-child(-n+2) {
+.container .centered-content main .nutrition .grid .item:nth-last-child(-n+2) {
   border-bottom: none;
 }
-.container main .nutrition .grid .bold {
+.container .centered-content main .nutrition .grid .bold {
   font-weight: 700;
   color: hsl(14, 45%, 36%);
 }
