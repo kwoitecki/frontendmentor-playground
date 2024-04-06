@@ -1,0 +1,140 @@
+/* Utility classes */
+.bold {
+  font-weight: 400;
+}
+
+.bold-x {
+  font-weight: 600;
+}
+
+.bold-x2 {
+  font-weight: 700;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  background: hsl(30, 54%, 90%);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 3rem;
+  padding: 2rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+.container header .header-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.container header h1 {
+  color: hsl(24, 5%, 18%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2rem;
+  font-size: 2.5rem;
+}
+.container main .description {
+  margin-top: 1.5rem;
+}
+.container main .preparation-time {
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  background: hsl(330, 100%, 98%);
+  padding: 1.5rem;
+}
+.container main .preparation-time h2 {
+  color: hsl(332, 51%, 32%);
+}
+.container main .preparation-time ul {
+  margin: 1rem 2rem;
+}
+.container main .preparation-time ul li {
+  padding: 0.1rem 1.5rem;
+}
+.container main .ingredients {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.container main .ingredients h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.container main .ingredients ul {
+  margin: 1rem 2rem;
+}
+.container main .ingredients ul li {
+  padding: 0.1rem 1.5rem;
+}
+.container main .instructions {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding-bottom: 2rem;
+  margin-top: 1.5rem;
+}
+.container main .instructions h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.container main .instructions ol {
+  list-style: none;
+  counter-reset: list-counter;
+  padding-left: 0.5rem;
+}
+.container main .instructions ol li {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 2rem;
+}
+.container main .instructions ol li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+.container main .nutrition {
+  margin-top: 1.5rem;
+}
+.container main .nutrition h2 {
+  color: hsl(14, 45%, 36%);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.container main .nutrition .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1em;
+}
+.container main .nutrition .grid .item {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  padding: 0.5rem;
+}
+.container main .nutrition .grid .item:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+.container main .nutrition .grid .bold {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}

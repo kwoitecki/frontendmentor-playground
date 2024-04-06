@@ -1,0 +1,186 @@
+$nutmeg-color: hsl(14, 45%, 36%);
+$dark-raspberry: hsl(332, 51%, 32%);
+$white-color: hsl(0, 0%, 100%);
+$rose-white-color: hsl(330, 100%, 98%);
+$eggshell-color: hsl(30, 54%, 90%);
+
+// ???
+$light-grey: hsl(30, 18%, 87%);
+$wenge-brown: hsl(30, 10%, 34%);
+
+$dark-charcoal: hsl(24, 5%, 18%);
+
+$font-weight-bold: 400;
+$font-weight-bold-x: 600;
+$font-weight-bold-x2: 700;
+$default-font-size: 16px;
+
+$border-radius: 15px;
+
+@mixin nutmeg-h2-heading {
+  h2 {
+    color: $nutmeg-color;
+    font-family: 'Young Serif', serif;
+    font-weight: $font-weight-bold;
+    font-size: 1.7rem;
+  }
+}
+
+@mixin nutmeg-x2-bold {
+  font-weight: $font-weight-bold-x2;
+  color: $nutmeg-color;
+}
+
+@mixin horizontal-line {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 2rem;
+}
+
+@mixin spacing-top {
+  margin-top: 1.5rem;
+}
+
+@mixin adjust-lists-position {
+  ul {
+    margin: 1rem 2rem;
+
+    li {
+      padding: 0.1rem 1.5rem;
+    }
+  }
+}
+
+/* Utility classes */
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+.bold-x {
+  font-weight: $font-weight-bold-x;
+}
+
+.bold-x2 {
+  font-weight: $font-weight-bold-x2;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  background: $eggshell-color;
+  font-family: 'Outfit', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 3rem;
+  padding: 2rem;
+  background: $white-color;
+  border-radius: $border-radius;
+
+  header {
+    .header-image {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+      }
+    }
+
+    h1 {
+      color: $dark-charcoal;
+      font-family: 'Young Serif', serif;
+      font-weight: $font-weight-bold;
+      font-style: normal;
+      margin-top: 2rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  main {
+    .description {
+      @include spacing-top();
+    }
+
+    .preparation-time {
+      @include spacing-top();
+      border-radius: $border-radius;
+      background: $rose-white-color;
+      padding: 1.5rem;
+
+      h2 {
+        color: $dark-raspberry;
+      }
+
+      @include adjust-lists-position;
+    }
+
+    .ingredients {
+      @include nutmeg-h2-heading;
+      @include horizontal-line;
+      @include spacing-top;
+      @include adjust-lists-position;
+    }
+
+    .instructions {
+      @include nutmeg-h2-heading;
+      @include horizontal-line;
+      @include spacing-top();
+
+      ol {
+        list-style: none;
+        counter-reset: list-counter;
+        padding-left: 0.5rem;
+
+        li {
+          counter-increment: list-counter;
+          position: relative;
+          padding-left: 2rem;
+
+          &::before {
+            content: counter(list-counter) '.';
+            position: absolute;
+            left: 0;
+            @include nutmeg-x2-bold;
+          }
+        }
+      }
+    }
+
+    .nutrition {
+      @include nutmeg-h2-heading;
+      @include spacing-top();
+
+      .grid {
+        // margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1em;
+
+        .item {
+          border-bottom: 1px solid $light-grey;
+          padding: 0.5rem;
+        }
+
+        .item:nth-last-child(-n + 2) {
+          border-bottom: none;
+        }
+
+        .bold {
+          @include nutmeg-x2-bold;
+        }
+      }
+    }
+  }
+}
