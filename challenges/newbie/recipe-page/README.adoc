@@ -13,8 +13,8 @@ image:./design/final.png[Screenshot]
 
 === Links
 
-* Solution URL: [GitHub Repository](https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/recipe-page)
-* Live Site URL: [GitHub Pages](https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/recipe-page/dist/)
+* Solution URL: link:https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/recipe-page[GitHub Repository]
+* Live Site URL: link:https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/recipe-page/dist/[GitHub Pages]
 
 == My process
 
