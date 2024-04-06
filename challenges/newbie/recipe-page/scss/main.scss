@@ -1,66 +1,5 @@
-$nutmeg-color: hsl(14, 45%, 36%);
-$dark-raspberry: hsl(332, 51%, 32%);
-$white-color: hsl(0, 0%, 100%);
-$rose-white-color: hsl(330, 100%, 98%);
-$eggshell-color: hsl(30, 54%, 90%);
-
-$light-grey: hsl(30, 18%, 87%);
-$wenge-brown: hsl(30, 10%, 34%);
-
-$dark-charcoal: hsl(24, 5%, 18%);
-
-$font-weight-bold: 400;
-$font-weight-bold-x: 600;
-$font-weight-bold-x2: 700;
-$default-font-size: 16px;
-
-$border-radius: 15px;
-
-@mixin nutmeg-h2-heading {
-  h2 {
-    color: $nutmeg-color;
-    font-family: 'Young Serif', serif;
-    font-weight: $font-weight-bold;
-    font-size: 1.7rem;
-  }
-}
-
-@mixin nutmeg-x2-bold {
-  font-weight: $font-weight-bold-x2;
-  color: $nutmeg-color;
-}
-
-@mixin horizontal-line {
-  border-bottom: 1px solid $light-grey;
-  padding-bottom: 2rem;
-}
-
-@mixin spacing-top {
-  margin-top: 1.5rem;
-}
-
-@mixin adjust-lists-position {
-  ul {
-    margin: 0.5rem 2rem;
-
-    li {
-      padding: 0rem 1.5rem;
-    }
-  }
-}
-
-/* Utility classes */
-.bold {
-  font-weight: $font-weight-bold;
-}
-
-.bold-x {
-  font-weight: $font-weight-bold-x;
-}
-
-.bold-x2 {
-  font-weight: $font-weight-bold-x2;
-}
+@import 'variables';
+@import 'utilities';
 
 * {
   margin: 0px;
@@ -185,3 +124,5 @@ body {
     }
   }
 }
+
+@import 'media';

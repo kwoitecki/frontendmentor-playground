@@ -140,3 +140,27 @@ body {
   font-weight: 700;
   color: hsl(14, 45%, 36%);
 }
+
+@media (max-width: 500px) {
+  .container {
+    margin: 0 0;
+  }
+  .container .centered-content {
+    padding: 1.5rem;
+    border-radius: 0;
+  }
+  .container .centered-content header .header-image img {
+    border-radius: 0;
+  }
+  .container .centered-content header h1 {
+    margin-top: 1ren;
+    line-height: 2.5rem;
+  }
+  .container .centered-content main .description {
+    margin-top: 0.75rem;
+  }
+  .container .centered-content main .preparation-time {
+    margin-top: 1rem;
+    padding: 1.2rem;
+  }
+}

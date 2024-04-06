@@ -7,32 +7,25 @@ link:../README.md[Back]
 == Overview
 This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-### Screenshot
+=== Screenshot
 
-![](./screenshot.jpg)
+image:./design/final.png[Screenshot]
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+=== Links
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
+* Solution URL: [GitHub Repository](https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/recipe-page)
+* Live Site URL: [GitHub Pages](https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/recipe-page/dist/)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+== My process
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+=== Built with
 
+* Semantic HTML5 markup
+* Flexbox
+* link:https://sass-lang.com/[Sass (Syntactically Awesome Stylesheets)]
 
+=== Useful resources
 
-== TODOs
-
-* [x] einfärben der Nummern
-* [x] Runded corners
-* [x] Nutrition Teil anpassen
-* [x] Umstellen auf ADoc
-* [ ] Responsive design erstellen
-** [x] Inhalt zentrieren fex-layout
-** [ ] Abstände anpassen
-** [ ] min-width für Mobil Design setzen
-** [ ] Schrift anpassen
-
-
-
-
+* link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]
+* link:https://www.w3schools.com/css/css3_flexbox.asp[Flexbox]
+* link:https://apps.kde.org/de/kruler/[KRuler]

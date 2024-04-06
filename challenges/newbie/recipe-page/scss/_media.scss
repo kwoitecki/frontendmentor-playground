@@ -1,0 +1,34 @@
+@media (max-width: 500px) {
+  .container {
+    margin: 0 0;
+
+    .centered-content {
+      padding: 1.5rem;
+      border-radius: 0;
+
+      header {
+        .header-image {
+          img {
+            border-radius: 0;
+          }
+        }
+
+        h1 {
+          margin-top: 1ren;
+          line-height: 2.5rem;
+        }
+      }
+
+      main {
+        .description {
+          margin-top: 0.75rem;
+        }
+
+        .preparation-time {
+          margin-top: 1rem;
+          padding: 1.2rem;
+        }
+      }
+    }
+  }
+}
