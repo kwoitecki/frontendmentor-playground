@@ -1,0 +1,14 @@
+= Frontend Mentor Challenges
+:toc: preamble
+
+== Description
+This is a playground for frontendmentor.io challenges.
+
+== Challenges
+
+=== Newbie
+* link:./challenges/newbie/qr-code-component[QR Code Component]
+* link:./challenges/newbie/blog-preview-card[Blog Preview Card]
+* link:./challenges/newbie/social-links-profile[Social Links Profile]
+* link:/challenges/newbie/recipe-page[Recipe page]
+* link:./challenges/newbie/3-column-preview-card-component[3 Column Preview Card Component]
