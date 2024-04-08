@@ -64,6 +64,36 @@ $ docker volume prune -af
 $ docker network prune -f
 ----
 
+== Setup vite with tailwindcss
+
+link:https://tailwindcss.com/docs/guides/vite[Install Tailwind CSS with Vite]
+
+[source, bash]
+----
+$ cd ${FOLDER}
+$ npm create vite@latest ${PROJECT_NAME}
+$ cd ${PROJECT_NAME}
+
+$ npm install -D tailwindcss postcss autoprefixer
+$ npx tailwindcss init -p
+
+$ cat tailwind.config.js
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    './pages/**/*.{html,js}',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+$ npm run dev
+----
+
+
 == VSCode 
 
 == Emmit abbreviations

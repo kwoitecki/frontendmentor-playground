@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply shadow-md rounded-lg p-2 m-3 text-custom-transparent-white;
+  }
+}
