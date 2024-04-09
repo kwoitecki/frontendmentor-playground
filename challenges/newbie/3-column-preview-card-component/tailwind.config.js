@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./pages/**/*.{html,js,ts}', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html'],
   theme: {
     extend: {
       fontSize: {
