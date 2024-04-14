@@ -22,7 +22,6 @@ image:./public/final.png[Screenshot]
 
 * Semantic HTML5 markup
 * Flexbox
-* link:https://tailwindcss.com/docs/guides/vite[Install Tailwind CSS with Vite]
 * link:https://tailwindcss.com/docs/installation[Tailwind CSS Documentation]
 * link:https://sass-lang.com/[Sass (Syntactically Awesome Stylesheets)]
 
@@ -30,5 +29,6 @@ image:./public/final.png[Screenshot]
 * link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]
 * link:https://www.youtube.com/watch?v=9oqu9134U8Q[Vite - Modern JavaScript Bundler | Full Course]
 * link:https://github.com/igorbabko/builds-with-vite/commit/63a930e6473c8238da411ac9b9dd2a44ce0d87e8[Simple Setup PostCSS with Tailwind CSS]
+* link:https://tailwindcss.com/docs/guides/vite[Install Tailwind CSS with Vite]
 * link:https://apps.kde.org/de/kruler/[KRuler]
 
