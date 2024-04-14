@@ -3,6 +3,11 @@ export default {
   content: ['./index.html'],
   theme: {
     extend: {
+      spacing: {
+        'special-large': '88px',
+        'special-medium': '35px',
+        'special-small': '25px',
+      },
       colors: {
         'custom-orange': 'hsl(31, 77%, 52%)',
         'custom-cyan': 'hsl(184, 100%, 22%)',
@@ -16,7 +21,26 @@ export default {
       },
       fontSize: {
         base: '15px',
-        h2: '2.25rem',
+        h2: '40px',
+      },
+      borderRadius: {
+        'custom-large': '25px',
+        'custom-small': '8px',
+      },
+      width: {
+        btn: '146px',
+      },
+      height: {
+        btn: '48px',
+      },
+      lineHeight: {
+        custom: '25px',
+      },
+      maxWidth: {
+        custom: '307px',
+      },
+      maxHeight: {
+        custom: '500px',
       },
     },
   },

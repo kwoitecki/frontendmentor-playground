@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -22,54 +20,55 @@
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
   <body class="bg-custom-light-gray">
-    <div class="container">
-      <div class="card bg-custom-orange mt-36">
-        <img src="/icon-sedans.svg" />
+    <div
+      class="mt-special-large mb-special-large ml-6 mr-6 flex flex-col md:justify-center lg:flex-row lg:items-center lg:min-h-screen lg:mt-0 lg:mb-0 lg:ml-0 lg:mr-0"
+    >
+      <div
+        class="card bg-custom-orange rounded-tl-custom-small rounded-tr-custom-small md:rounded-tr-none md:rounded-bl-custom-small"
+      >
+        <img src="/icon-sedans.svg" width="64" height="40" />
         <h2 class="card-title">Sedans</h2>
         <p class="card-content">
           Choose a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip.
         </p>
 
-        <div class="card-btn">
-          <a
-            href="#"
-            class="border-2 bg-custom-transparent-white text-custom-orange py-2 px-4 rounded-xl hover:bg-custom-orange hover:text-custom-transparent-white hover:border-custom-transparent-white transition-colors duration-150"
-            >Learn More</a
-          >
-        </div>
+        <button
+          class="card-button bg-custom-transparent-white text-custom-orange hover:bg-custom-orange hover:text-custom-transparent-white hover:border-custom-transparent-white"
+        >
+          Learn More
+        </button>
       </div>
 
       <div class="card bg-custom-cyan">
-        <img src="/icon-suvs.svg" />
+        <img src="/icon-suvs.svg" width="64" height="40" />
         <h2 class="card-title">SUVs</h2>
         <p class="card-content">
           Take an SUV for its spacious interior, power, and versatility. Perfect
           for your next family vacation and off-road adventures.
         </p>
-        <div class="card-btn">
-          <a
-            href="#"
-            class="border-2 bg-custom-transparent-white text-custom-cyan py-2 px-4 rounded-xl hover:bg-custom-cyan hover:text-custom-transparent-white hover:border-custom-transparent-white transition-colors duration-150"
-            >Learn More</a
-          >
-        </div>
+
+        <button
+          class="card-button bg-custom-transparent-white text-custom-cyan hover:bg-custom-cyan hover:text-custom-transparent-white hover:border-custom-transparent-white"
+        >
+          Learn More
+        </button>
       </div>
 
-      <div class="card bg-custom-dark-cyan">
-        <img src="/icon-luxury.svg" />
+      <div
+        class="card bg-custom-dark-cyan rounded-bl-custom-small rounded-br-custom-small md:rounded-bl-none md:rounded-tr-custom-small"
+      >
+        <img src="/icon-luxury.svg" width="64" height="40" />
         <h2 class="card-title">Luxury</h2>
         <p class="card-content">
           Cruise in the best car brands without the bloated prices. Enjoy the
           enhanced comfort of a luxury rental and arrive in style.
         </p>
-        <div class="card-btn">
-          <a
-            href="#"
-            class="border-2 bg-custom-transparent-white text-custom-dark-cyan py-2 px-4 rounded-xl hover:bg-custom-dark-cyan hover:text-custom-transparent-white hover:border-custom-transparent-white transition-colors duration-150"
-            >Learn More</a
-          >
-        </div>
+        <button
+          class="card-button bg-custom-transparent-white text-custom-dark-cyan hover:bg-custom-dark-cyan hover:text-custom-transparent-white hover:border-custom-transparent-white"
+        >
+          Learn More
+        </button>
       </div>
     </div>
 

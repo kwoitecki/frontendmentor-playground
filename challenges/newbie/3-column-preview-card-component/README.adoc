@@ -5,11 +5,11 @@
 link:../../../[Back]
 
 == Overview
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the link:https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-[3-column preview card component challenge on Frontend Mentor]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 === Screenshot
 
-// image:./design/final.png[Screenshot]
+image:./public/final.png[Screenshot]
 
 === Links
 
@@ -32,34 +32,3 @@ This is a solution to the [3-column preview card component challenge on Frontend
 * link:https://github.com/igorbabko/builds-with-vite/commit/63a930e6473c8238da411ac9b9dd2a44ce0d87e8[Simple Setup PostCSS with Tailwind CSS]
 * link:https://apps.kde.org/de/kruler/[KRuler]
 
-=== TODOs
-
-* [x] Add Images 
-
-* [x] Style Links as buttons
-
-* [x] text Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
-** [x] Weights: 400
-
-* [x] heading - Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
-** [x] Weights: 700
-
-* [x] Font size: 15px
-
-* [ ] Abstände hinzufügen
-** [ ] Card:
-*** [x] Left: 50px 51px 52px = 14
-*** [x] Right: 50px 51px  52px = 14
-*** [x] Top: 45px - 3rem = 12
-*** Padding: 
-**** [x] Left:
-**** [x] Right: 
-
-** [ ] Container:
-*** [ ] Top: 90px
-*** [ ] Bottom: 90px
-*** [ ] Rechts: 25px
-*** [ ] Links: 25px
-*** [ ] Minimale Breite: 325 | 326px 
-
-* [ ] Deploy and watch with Liveserver

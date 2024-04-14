@@ -4,18 +4,18 @@
 
 @layer components {
   .card {
-    @apply p-14 ml-14 mr-14 text-custom-transparent-white;
+    @apply pt-12 pb-12 pl-12 pr-12 text-custom-transparent-white lg:max-w-custom;
   }
 
   .card-title {
-    @apply font-custom-heading text-h2 font-bold uppercase mt-10;
+    @apply font-custom-heading text-h2 font-bold  uppercase mt-special-medium;
   }
 
   .card-content {
-    @apply font-custom-paragraph font-normal mt-5;
+    @apply font-custom-paragraph font-normal mt-special-small text-base leading-custom;
   }
 
-  .card-btn {
-    @apply mt-14;
+  .card-button {
+    @apply mt-special-small w-btn h-btn border-2 rounded-custom-large transition-colors duration-150;
   }
 }
