@@ -17,6 +17,7 @@ services:
       - fm-social-links-node-modules:/workspace/challenges/newbie/social-links-profile/node_modules
       - fm-recepe-page-node-modules:/workspace/challenges/newbie/recipe-page/node_modules
       - fm-3-column-preview-card-component:/workspace/challenges/newbie/3-column-preview-card-component/node_modules
+      - fm-faq-accordion:/workspace/challenges/newbie/faq-accordion/node_modules
 
     ports:
       - 5555:5555
@@ -27,3 +28,4 @@ volumes:
   fm-social-links-node-modules:
   fm-recepe-page-node-modules:
   fm-3-column-preview-card-component:
+  fm-faq-accordion:

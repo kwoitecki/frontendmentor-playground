@@ -64,8 +64,30 @@ $ docker volume prune -af
 $ docker network prune -f
 ----
 
-== Setup vite with tailwindcss
+== Vite
 
+=== Setup react/typescript
+<<top,start of the page>>
+
+[source, bash]
+----
+$ cd ${FOLDER}
+$ npm create vite@latest ${PROJECT_NAME} 
+> react
+> typescript
+
+# 1. Add volume in compose.dev.yml
+# 2. Change owner for volume in postCreateCommand.sh
+
+$ code ${PROJECT_NAME}
+$ npm install
+
+$ npm run dev
+----
+
+
+=== Setup vite with tailwindcss
+<<top,start of the page>>
 link:https://tailwindcss.com/docs/guides/vite[Install Tailwind CSS with Vite]
 
 [source, bash]
@@ -92,7 +114,6 @@ export default {
 
 $ npm run dev
 ----
-
 
 == VSCode 
 
