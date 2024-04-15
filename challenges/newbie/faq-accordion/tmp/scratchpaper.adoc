@@ -1,0 +1,7 @@
+= Scratchpaper
+
+.skeleton
+* [x] read data.json
+* [x] create a Header Component
+* [x] Create FAQList
+* [x] Create FAQItem

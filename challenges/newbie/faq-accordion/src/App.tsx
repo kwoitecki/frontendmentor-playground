@@ -1,9 +1,14 @@
 import './App.css';
+import FAQList from './components/FAQList';
+import Header from './components/Header';
+
+import data from './data.json';
 
 function App() {
   return (
     <>
-      <div className='bg-yellow-500'>Content</div>
+      <Header />
+      <FAQList questions={data.questions} />
     </>
   );
 }
