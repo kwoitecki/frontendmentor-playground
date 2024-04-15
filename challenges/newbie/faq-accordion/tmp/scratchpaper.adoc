@@ -5,3 +5,31 @@
 * [x] create a Header Component
 * [x] Create FAQList
 * [x] Create FAQItem
+
+.Styling
+* [x] Farben
+** [x] c-white: hsl(0, 0%, 100%)
+** [x] c-light-pink: hsl(275, 100%, 97%)
+** [x] c-grayish-purple: hsl(292, 16%, 49%)
+** [x] c-dark-purple: hsl(292, 42%, 14%)
+
+* [x] Schriftgrößen - 16px
+
+* [x] Schriftarten
+** [x] Family: [Work Sans](https://fonts.google.com/specimen/Work+Sans)
+** [x] Weights: 400, 600, 700
+
+.Größen
+* Mobile: 375px
+* Desktop: 1440px 
+
+.Icons
+* [ ] FAQItem Icon ggf. mit flex - grid
+* [ ] State einbauen für ein und Ausblenden bei click
+
+* [ ] Header Icon ggf. mit span in H2
+* [ ] Header Titel neben dem Icon positionieren
+
+.Hintergrund Design
+* [ ] Bild oben anzeigen no repeate
+

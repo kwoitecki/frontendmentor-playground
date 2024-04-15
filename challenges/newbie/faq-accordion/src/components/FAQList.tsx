@@ -4,9 +4,9 @@ import FAQItem from './FAQItem';
 
 const FAQList: FC<FAQListProps> = ({ questions }) => {
   return (
-    <div>
+    <div className='mt-6'>
       {questions.map((q) => (
-        <FAQItem key={q.question} question={q.question} answer={q.answer} />
+        <FAQItem id={q.id} key={q.id} question={q.question} answer={q.answer} />
       ))}
     </div>
   );
