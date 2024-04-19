@@ -20,9 +20,11 @@ const FAQItem: FC<FAQItemProps> = ({ question, answer }) => {
         </div>
       </div>
 
-      <p className='font-c-light text-c-grayish-purple mt-6 mb-5 text-c-p'>
-        {answerIsVisible ? answer : ''}
-      </p>
+      {answerIsVisible && (
+        <p className='font-c-light text-c-grayish-purple mt-6 mb-5 text-c-p'>
+          {answer}
+        </p>
+      )}
     </div>
   );
 };

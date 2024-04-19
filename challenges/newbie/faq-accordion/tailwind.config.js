@@ -21,6 +21,9 @@ export default {
         'c-h1': '2rem',
         'c-p': '0.875rem',
       },
+      borderRadius: {
+        'custom-small': '8px',
+      },
     },
   },
   plugins: [],

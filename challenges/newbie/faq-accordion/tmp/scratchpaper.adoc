@@ -37,10 +37,13 @@
 
 
 .Hintergrund Design
-* [ ] Bild oben anzeigen no repeate
+* [x] Bild oben anzeigen no repeate
 
 
 .Fine-Tuning
-* [ ] Rounded corners bei der FAQList
+* [x] Rounded corners bei der FAQList
+* [x] Wenn ein FAQ aufgeklappt wird wird es nach oben verschoben
 
 .Desktop Desgin
+* [ ] Der FAQ Bereich (Weißer Bereich) ist viel zu groß.
+* [ ] Desktop Design einfügen
