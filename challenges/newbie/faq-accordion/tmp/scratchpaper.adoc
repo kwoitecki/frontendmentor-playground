@@ -24,12 +24,23 @@
 * Desktop: 1440px 
 
 .Icons
-* [ ] FAQItem Icon ggf. mit flex - grid
-* [ ] State einbauen für ein und Ausblenden bei click
+* [x] State einbauen für ein und Ausblenden bei click
+* [x] FAQItem Icon ggf. mit flex - grid
 
-* [ ] Header Icon ggf. mit span in H2
-* [ ] Header Titel neben dem Icon positionieren
+* [x] Warum werden die Icons kleiner wenn ich sie in ein flex grid packe?
+** min-w-[30px] min-h-[30px]
+* [x] Icons vertikal zentrieren
+* [x] border bottom 
+
+* [x] Header Icon ggf. mit span in H2
+* [x] Header Titel neben dem Icon positionieren
+
 
 .Hintergrund Design
 * [ ] Bild oben anzeigen no repeate
 
+
+.Fine-Tuning
+* [ ] Rounded corners bei der FAQList
+
+.Desktop Desgin
