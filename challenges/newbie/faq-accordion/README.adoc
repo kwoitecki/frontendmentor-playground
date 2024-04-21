@@ -11,6 +11,7 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/faq-acco
 === Screenshot
 
 // image:./public/final.png[Screenshot]
+image:./public/final.png[Screenshot]
 
 === Links
 
