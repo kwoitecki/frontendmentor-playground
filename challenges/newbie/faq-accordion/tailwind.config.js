@@ -19,10 +19,13 @@ export default {
       },
       fontSize: {
         'c-h1': '2rem',
+        'c-h1-lg': '3rem',
         'c-p': '0.875rem',
+        'c-p-desktop': '1rem',
       },
       borderRadius: {
         'custom-small': '8px',
+        'custom-large': '16px',
       },
     },
   },

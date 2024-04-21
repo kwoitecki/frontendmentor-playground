@@ -2,19 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-/* bg-[url("/background-pattern-mobile.svg")] bg-stretch-x bg-top-x */
+@layer components {
+  .faq {
+    @apply flex items-start justify-center font-c-font-family custom-bg;
+  }
+
+  .faq__container {
+    @apply bg-c-white mt-36 ml-6 mr-6 pt-6 pr-6 pb-6 pl-6 rounded-custom-small content;
+  }
+
+  .header {
+    @apply flex items-center gap-6;
+  }
+
+  .header__img {
+    @apply inline-block w-[24px] h-[24px];
+  }
+  .header__text {
+    @apply font-c-bold text-c-h1 text-c-dark-purple;
+  }
+
+  .faqlist {
+    @apply mt-6;
+  }
+
+  .faqlist--border {
+    @apply border-b border-gray-300 pb-4;
+  }
+
+  .faqitem {
+    @apply flex items-center gap-6 mt-6;
+  }
+  .faqitem__header {
+    @apply text-c-dark-purple font-c-normal hover:text-purple-800;
+  }
+
+  .faqitem__headericonarea {
+    @apply ml-auto;
+  }
+  .faqitem__headericon {
+    @apply min-w-[30px] min-h-[30px] cursor-pointer;
+  }
+
+  .faqitem__answer {
+    @apply font-c-light text-c-grayish-purple mt-6 mb-5 text-c-p;
+  }
+}
+
 .custom-bg {
   background-image: url('/background-pattern-mobile.svg');
   background-repeat: repeat-x;
-  background-size: 100% auto;
+  background-size: auto 30vh;
   background-position: top;
+}
+
+.content {
+  width: 100%;
 }
 
 @media (min-width: 640px) {
   .custom-bg {
     background-image: url('/background-pattern-desktop.svg');
-    background-repeat: repeat-x;
-    background-size: 100% auto;
-    background-position: top;
+  }
+
+  .content {
+    max-width: 600px;
+  }
+
+  .faq__container {
+    @apply mt-40 rounded-custom-large;
+  }
+
+  .header__img {
+    @apply w-[40px] h-[40px];
+  }
+
+  .header__text {
+    @apply text-c-h1-lg;
+  }
+
+  .faqitem__answer {
+    @apply text-c-p-desktop;
   }
 }

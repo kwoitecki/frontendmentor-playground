@@ -4,13 +4,11 @@ import FAQItem from './FAQItem';
 
 const FAQList: FC<FAQListProps> = ({ questions }) => {
   return (
-    <div className='mt-6'>
+    <div className='faqlist'>
       {questions.map((q, index) => (
         <div
           key={q.id}
-          className={
-            questions.length - 1 !== index ? 'border-b border-gray-300' : ''
-          }
+          className={questions.length - 1 !== index ? 'faqlist--border' : ''}
         >
           <FAQItem
             id={q.id}
