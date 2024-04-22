@@ -19,3 +19,4 @@ This is a playground for frontendmentor.io challenges.
 * link:/challenges/newbie/recipe-page[Recipe page]
 * link:./challenges/newbie/3-column-preview-card-component[3 Column Preview Card Component]
 * link:./challenges/newbie/faq-accordion[FAQ Accordion]
+* link:./challenges/newbie/interactive-rating-component[Interactive Rating Component]
