@@ -1,0 +1,38 @@
+= Scratchpaper
+
+== MISC
+* [x] Helper Umrechnung von px in rem
+* [x] Umstellung auf Border-box
+
+== Colors
+* [x] Primary - Orange: hsl(25, 97%, 53%)
+* [x] neutral
+** [x] White: hsl(0, 0%, 100%)
+** [x] Light Grey: hsl(217, 12%, 63%) -> Description Text
+** [x] Medium Grey: hsl(216, 12%, 54%) -> Rating Buttons
+** [x] Dark Blue: hsl(213, 19%, 18%)
+** [x] Very Dark Blue: hsl(216, 12%, 8%)
+
+
+== body
+* [x] Font Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+* [x] Basis Schriftgröße auf 15px setzen
+* [x] Margin und Padding zurücksetzen
+
+== Mobile
+
+* [x] breakpoint: 375px;
+* [x] max-width: 375px;
+* [x] Content zentrieren 
+
+* [x] a's durch buttons ersetzen
+* [x] um ein Icon ein Oval zeichnen
+
+
+* [ ] state in Rating Form einbauen für Auswahl
+* [ ] Routing beim Submit einbauen damit auf die Ergebnisseite gesprungen wird
+** Übergabe des Parameters
+
+* [ ] Antwortseite Anzeizeigen
+
+=== Desktop Seite erstellen

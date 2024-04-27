@@ -1,12 +1,11 @@
 import './App.scss';
+import Rating from './components/Rating';
 
 function App() {
   return (
-    <>
-      <div>
-        <h1>Hallo Welt</h1>
-      </div>
-    </>
+    <main>
+      <Rating />
+    </main>
   );
 }
 

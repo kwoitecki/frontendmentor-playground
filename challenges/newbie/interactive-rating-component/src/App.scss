@@ -1,7 +1,119 @@
-$background-color: black;
-$text-color: white;
+@use 'sass:math';
+
+$base-font-size: 15px;
+
+@function px-to-rem($pixels) {
+  @return #{math.div($pixels, $base-font-size)}rem;
+}
+
+@function px-to-em($pixels) {
+  @return #{math.div($pixels, $base-font-size)}em;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $base-font-size;
+}
 
 body {
-  background-color: $background-color;
-  color: $text-color;
+  font-family: 'Overpass', sans-serif;
+  background: hsl(216, 12%, 8%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+
+.rating {
+  width: 90%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(213, 19%, 18%);
+
+  padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(32px) px-to-rem(24px);
+  border-radius: px-to-em(15px);
+
+  /* delete - just for design purpose */
+  max-width: 327px;
+}
+
+.rating__icon {
+  border-radius: 50%;
+  background: hsl(213, 18%, 23%);
+  width: px-to-em(48px);
+  height: px-to-em(48px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rating__title {
+  margin-top: px-to-rem(16px);
+  font-size: px-to-rem(24px);
+}
+
+.rating__description {
+  margin-top: px-to-rem(17px);
+  color: hsl(217, 12%, 63%);
+  font-size: px-to-rem(14px);
+}
+
+.rating__buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: px-to-rem(24px);
+}
+
+.rating__buttons,
+.rating__submit {
+  margin-top: px-to-rem(24px);
+}
+.btn--orange {
+  width: 100%;
+  height: px-to-em(45px);
+  border-radius: 100px;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.btn--orange:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.btn--grey {
+  padding: px-to-em(15px) px-to-em(20px);
+  background: hsl(213, 18%, 23%);
+  color: hsl(216, 12%, 54%);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn--grey:hover {
+  background-color: hsl(25, 97%, 53%);
+  font-weight: bolder;
+  color: white;
+}
+
+.btn--grey__selected {
+  background-color: hsl(217, 12%, 63%);
+  font-weight: bolder;
+  color: white;
 }
