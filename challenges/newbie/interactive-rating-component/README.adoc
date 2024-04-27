@@ -11,7 +11,11 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/interact
 
 === Screenshot
 
-// image:./public/final.png[Screenshot]
+.Initial
+image:./img/final1.png[Screenshot 1]
+
+.Feedback
+image:./img/final2.png[Screenshot 3]
 
 === Links
 
