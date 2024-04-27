@@ -34,6 +34,7 @@ main {
   height: 100svh;
 }
 
+.feedback,
 .rating {
   width: 90%;
   color: hsl(0, 0%, 100%);
@@ -58,14 +59,13 @@ main {
 }
 
 .rating__title {
-  margin-top: px-to-rem(16px);
+  margin-top: px-to-rem(30px);
   font-size: px-to-rem(24px);
 }
 
 .rating__description {
-  margin-top: px-to-rem(17px);
+  margin-top: px-to-rem(7px);
   color: hsl(217, 12%, 63%);
-  font-size: px-to-rem(14px);
 }
 
 .rating__buttons {
@@ -116,4 +116,29 @@ main {
   background-color: hsl(217, 12%, 63%);
   font-weight: bolder;
   color: white;
+}
+
+.feedback {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback__image {
+  width: 58%;
+  height: 58%;
+}
+
+.feedback__result {
+  margin-top: px-to-rem(32px);
+}
+
+.feedback__title {
+  margin-top: px-to-rem(32px);
+}
+
+.feedback__thankyou {
+  margin-top: px-to-rem(7px);
 }

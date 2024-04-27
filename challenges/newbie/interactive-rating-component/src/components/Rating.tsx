@@ -1,13 +1,14 @@
 import Description from './Description';
 import Header from './Header';
 import RatingForm from './RatingForm';
+import { RatingProps } from './model';
 
-const Rating = () => {
+const Rating = ({ onSubmit }: RatingProps) => {
   return (
     <div className='rating'>
       <Header />
       <Description />
-      <RatingForm />
+      <RatingForm onSubmit={onSubmit} />
     </div>
   );
 };

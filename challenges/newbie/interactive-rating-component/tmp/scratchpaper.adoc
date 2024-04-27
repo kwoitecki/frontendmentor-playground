@@ -27,12 +27,25 @@
 
 * [x] a's durch buttons ersetzen
 * [x] um ein Icon ein Oval zeichnen
+* [x] state in Rating Form einbauen für Auswahl
+
+* [ ] Submit
+** [x] beim Submit wird die Auswahl an die Obere Komponente gegeben
+** [x] die Obere Komponente gibt die Auswahl weiter an die Antwortseite
+*** [x] Feedbackseite erstellen
+
+.Desing Antwortseite
+* [x] Antwortseite Anzeizeigen
+
+* Font color für .feedback__thankyou
+* rounded corners feedback__result
 
 
-* [ ] state in Rating Form einbauen für Auswahl
-* [ ] Routing beim Submit einbauen damit auf die Ergebnisseite gesprungen wird
-** Übergabe des Parameters
+* [ ] Cleanup
+** [ ] Farben in CSS Variablen auslagern
+** [ ] ggf. Spacings auslagern
+** [ ] ggf. utility Klassen erstellen
 
-* [ ] Antwortseite Anzeizeigen
+
 
 === Desktop Seite erstellen
