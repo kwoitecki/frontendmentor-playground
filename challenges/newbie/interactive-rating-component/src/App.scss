@@ -1,14 +1,6 @@
-@use 'sass:math';
-
-$base-font-size: 15px;
-
-@function px-to-rem($pixels) {
-  @return #{math.div($pixels, $base-font-size)}rem;
-}
-
-@function px-to-em($pixels) {
-  @return #{math.div($pixels, $base-font-size)}em;
-}
+@import 'scss/helper';
+@import 'scss/variables';
+@import 'scss/colors';
 
 *,
 *::before,
@@ -24,7 +16,7 @@ html {
 
 body {
   font-family: 'Overpass', sans-serif;
-  background: hsl(216, 12%, 8%);
+  background: $color-very-dark-blue;
 }
 
 main {
@@ -37,19 +29,18 @@ main {
 .feedback,
 .rating {
   width: 90%;
-  color: hsl(0, 0%, 100%);
-  background: hsl(213, 19%, 18%);
+  color: $color-white;
+  background: $color-dark-blue;
 
   padding: px-to-rem(24px) px-to-rem(24px) px-to-rem(32px) px-to-rem(24px);
   border-radius: px-to-em(15px);
 
-  /* delete - just for design purpose */
-  max-width: 327px;
+  max-width: 412px;
 }
 
 .rating__icon {
   border-radius: 50%;
-  background: hsl(213, 18%, 23%);
+  background: $color-dark-blue-light;
   width: px-to-em(48px);
   height: px-to-em(48px);
   display: flex;
@@ -65,7 +56,7 @@ main {
 
 .rating__description {
   margin-top: px-to-rem(7px);
-  color: hsl(217, 12%, 63%);
+  color: $color-light-gray;
 }
 
 .rating__buttons {
@@ -73,9 +64,9 @@ main {
   justify-content: space-between;
   width: 100%;
   margin-top: px-to-rem(24px);
+  flex-wrap: wrap;
 }
 
-.rating__buttons,
 .rating__submit {
   margin-top: px-to-rem(24px);
 }
@@ -83,7 +74,7 @@ main {
   width: 100%;
   height: px-to-em(45px);
   border-radius: 100px;
-  background-color: hsl(25, 97%, 53%);
+  background: $color-orange;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -91,14 +82,14 @@ main {
 }
 
 .btn--orange:hover {
-  background: hsl(0, 0%, 100%);
-  color: hsl(25, 97%, 53%);
+  background: $color-white;
+  color: $color-orange;
 }
 
 .btn--grey {
   padding: px-to-em(15px) px-to-em(20px);
-  background: hsl(213, 18%, 23%);
-  color: hsl(216, 12%, 54%);
+  background: $color-dark-blue-light;
+  color: $color-medium-grey;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -107,13 +98,13 @@ main {
 }
 
 .btn--grey:hover {
-  background-color: hsl(25, 97%, 53%);
+  background-color: $color-orange;
   font-weight: bolder;
   color: white;
 }
 
 .btn--grey__selected {
-  background-color: hsl(217, 12%, 63%);
+  background-color: $color-light-gray;
   font-weight: bolder;
   color: white;
 }
@@ -133,12 +124,45 @@ main {
 
 .feedback__result {
   margin-top: px-to-rem(32px);
+  color: $color-orange;
+
+  border-radius: 100px;
+  background: $color-dark-blue-light;
+  width: px-to-em(168px);
+  height: px-to-em(32px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feedback__title {
-  margin-top: px-to-rem(32px);
+  margin-top: px-to-rem(24px);
+  font-size: px-to-rem(24px);
 }
 
 .feedback__thankyou {
-  margin-top: px-to-rem(7px);
+  margin-top: px-to-rem(17px);
+  color: $color-light-gray;
+}
+
+@media (min-width: 400px) {
+  .feedback,
+  .rating {
+    padding: px-to-rem(32px);
+    border-radius: px-to-em(30px);
+  }
+
+  .rating__description {
+    margin-top: px-to-rem(15px);
+  }
+
+  .btn--grey {
+    padding: px-to-em(15px) px-to-em(20px);
+    font-size: medium;
+  }
+
+  .feedback__result {
+    width: px-to-em(193px);
+  }
 }

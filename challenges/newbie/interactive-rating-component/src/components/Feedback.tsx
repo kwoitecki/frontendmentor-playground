@@ -5,7 +5,9 @@ const Feedback = ({ rating }: RatingFeedbackProps) => {
     <div className='feedback'>
       <img src='./illustration-thank-you.svg' className='feedback__image' />
 
-      <p className='feedback__result'>You selected {rating} out of 5</p>
+      <div className='feedback__result'>
+        <p className='feedback__result-text'>You selected {rating} out of 5</p>
+      </div>
       <h1 className='feedback__title'>Thank you!</h1>
       <p className='feedback__thankyou'>
         We appreciate you taking the time to give a rating. If you ever need
