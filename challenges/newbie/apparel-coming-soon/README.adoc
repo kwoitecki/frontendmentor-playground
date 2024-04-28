@@ -1,0 +1,36 @@
+[[top]]
+= Frontend Mentor - Base Apparel coming soon page solution
+:toc: preamble
+
+link:../../../[Back]
+
+== Overview
+
+This is a solution to the link:https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0[Base Apparel coming soon page challenge on Frontend Mentor]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+=== Screenshot
+
+.Initial
+// image:./img/final1.png[Screenshot 1]
+
+.Feedback
+// image:./img/final2.png[Screenshot 3]
+
+=== Links
+
+* Solution URL: link:https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/apparel-coming-soon[GitHub Repository]
+* Live Site URL: link:https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/apparel-coming-soon/dist/[GitHub Pages]
+
+== My process
+
+=== Built with
+
+* Semantic HTML5 markup
+* Flexbox
+* link:https://vitejs.dev/[Vite]
+* link:reactjs.org[React]
+* link:https://sass-lang.com/documentation/[Sass]
+
+=== Useful resources
+* link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]
+* link:https://www.youtube.com/watch?v=9oqu9134U8Q[Vite - Modern JavaScript Bundler | Full Course]

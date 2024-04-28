@@ -19,6 +19,7 @@ services:
       - fm-3-column-preview-card-component:/workspace/challenges/newbie/3-column-preview-card-component/node_modules
       - fm-faq-accordion:/workspace/challenges/newbie/faq-accordion/node_modules
       - fm-interactive-rating-component:/workspace/challenges/newbie/interactive-rating-component/node_modules
+      - fm-apparel-coming-soon:/workspace/challenges/newbie/apparel-coming-soon/node_modules
 
     ports:
       - 5555:5555
@@ -31,3 +32,4 @@ volumes:
   fm-3-column-preview-card-component:
   fm-faq-accordion:
   fm-interactive-rating-component:
+  fm-apparel-coming-soon:

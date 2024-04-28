@@ -1,0 +1,9 @@
+= Scratchpaper
+
+== Base Setup
+* [ ] Utility Klasse generieren für
+** [ ] Hintergrundfarben
+** [ ] Textfarben
+
+* [ ] Hilfsfunktionen übernehemen
+** [ ] px to em bzw rem

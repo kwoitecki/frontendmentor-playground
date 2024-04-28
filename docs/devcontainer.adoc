@@ -115,6 +115,42 @@ export default {
 $ npm run dev
 ----
 
+=== Setup Sass
+<<top,start of the page>>
+
+[source, bash]
+----
+$ npm install -D sass
+
+$ cat package.json
+..
+"scripts": {
+    "sass:watch": "sass -w scss/:dist/css/ --no-source-map",
+    "sass": "sass scss/:dist/css/ --no-source-map"
+  },
+..
+----
+
+=== Configuration Vite
+<<top,start of the page>>
+
+[source, bash]
+----
+$ cat vite.config.js
+
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: './',
+  server: {
+    host: '127.0.0.1',
+  },
+});
+----
+
 == VSCode 
 
 == Emmit abbreviations
