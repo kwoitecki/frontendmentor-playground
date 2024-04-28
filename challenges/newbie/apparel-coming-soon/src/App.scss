@@ -44,7 +44,7 @@ body {
 .content__image {
   min-width: px-to-em(376px);
   min-height: px-to-em(250px);
-  background-image: url('./img/hero-mobile.jpg');
+  background-image: url('./assets/hero-mobile.jpg');
   background-size: cover;
 }
 
@@ -200,7 +200,7 @@ body {
     grid-area: image;
     width: 42.3svw;
     height: 100vh;
-    background-image: url('./img/hero-desktop.jpg');
+    background-image: url('./assets/hero-desktop.jpg');
   }
   .content__text {
     grid-area: text;
@@ -221,10 +221,13 @@ body {
     line-height: px-to-rem(28px);
   }
 
-  // 16px
   .content__form__errormessage {
-    // color: map-get($colors, 'soft-red');
     margin-top: px-to-rem(8px);
     font-size: px-to-rem(16px);
+  }
+
+  .content__form__erroricon {
+    position: absolute;
+    left: 485px;
   }
 }
