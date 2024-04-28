@@ -32,11 +32,13 @@ body {
   margin: px-to-em(31px) 0 px-to-em(32px) px-to-em(32px);
 }
 
-.content {
-}
-
 .header__image {
   width: 29.2%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .content__image {
@@ -76,7 +78,6 @@ body {
 .content__form__input {
   flex-grow: 1;
   width: 100%;
-  // padding: px-to-rem(11px) px-to-rem(24px) px-to-rem(9px) px-to-rem(24px);
   padding: px-to-rem(11px) px-to-rem(24px);
 
   border: none;
@@ -105,7 +106,6 @@ body {
   padding-left: px-to-rem(20px);
   padding-right: px-to-rem(20px);
   border-radius: px-to-rem(28px);
-  font-size: large;
   border: 1px solid map-get($colors, 'desaturated-red');
   background-image: linear-gradient(to right, #f8bfbf, #ee8b8b);
   cursor: pointer;
@@ -121,4 +121,110 @@ body {
 .content__form__button:focus,
 .content__form__input:focus {
   outline: none;
+}
+
+// @media (min-width: 1440px) {
+@media (min-width: 1250px) {
+  .content {
+    grid-template-areas:
+      'header image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image'
+      'text image';
+    gap: 0;
+  }
+
+  .header {
+    grid-area: header;
+    margin: px-to-rem(68.45px) px-to-rem(165px);
+  }
+
+  .header__image {
+    width: 31.7%;
+  }
+
+  .content__image {
+    grid-area: image;
+    width: 42.3svw;
+    height: 100vh;
+    background-image: url('./img/hero-desktop.jpg');
+  }
+  .content__text {
+    grid-area: text;
+    margin: px-to-rem(68.45px) px-to-rem(165px);
+    text-align: left;
+    max-width: 445px;
+  }
+
+  .content__text__title {
+    font-size: px-to-em(64px);
+    letter-spacing: px-to-rem(17.32px);
+    line-height: px-to-rem(64px);
+  }
+
+  .content__text__description {
+    margin-top: px-to-rem(32px);
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(28px);
+  }
+
+  // 16px
+  .content__form__errormessage {
+    // color: map-get($colors, 'soft-red');
+    margin-top: px-to-rem(8px);
+    font-size: px-to-rem(16px);
+  }
 }

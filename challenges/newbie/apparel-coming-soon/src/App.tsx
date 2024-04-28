@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       {/* <CssClassDocumentation /> */}
-      <PageHeader />
       <div className='content'>
+        <PageHeader />
         <div className='content__image'></div>
         <div className='content__text'>
           <h1 className='content__text__title u-fw-bold fc-dark-grayish-red'>
