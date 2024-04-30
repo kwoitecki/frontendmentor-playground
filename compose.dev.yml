@@ -20,6 +20,7 @@ services:
       - fm-faq-accordion:/workspace/challenges/newbie/faq-accordion/node_modules
       - fm-interactive-rating-component:/workspace/challenges/newbie/interactive-rating-component/node_modules
       - fm-apparel-coming-soon:/workspace/challenges/newbie/apparel-coming-soon/node_modules
+      - fm-sign-up-form-component:/workspace/challenges/newbie/sign-up-form-component/node_modules
 
     ports:
       - 5555:5555
@@ -33,3 +34,4 @@ volumes:
   fm-faq-accordion:
   fm-interactive-rating-component:
   fm-apparel-coming-soon:
+  fm-sign-up-form-component:
