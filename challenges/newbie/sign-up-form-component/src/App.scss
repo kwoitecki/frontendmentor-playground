@@ -24,7 +24,7 @@ body {
 main::before {
   content: '';
   background: url('./assets/bg-intro-desktop.png') no-repeat center center/cover;
-  // opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,38 +41,68 @@ main::before {
 
 .signup__container {
   display: flex;
-  border: 1px solid black;
-  margin: px_to_em(121px) px_to_em(165px);
+  margin: px-to-em(121px) px-to-em(165px);
+  gap: px-to-em(45px);
 }
 
 .signup__header {
   max-width: 525px;
+  align-self: center;
 }
 
 .signup__title {
-  font-size: px_to_rem(50px);
-  letter-spacing: px_to_rem(-0.52px);
-  line-height: px_to_rem(55px);
+  font-size: px-to-rem(50px);
+  letter-spacing: px-to-rem(-0.52px);
+  line-height: px-to-rem(55px);
 }
 
 .signup__description {
-  line-height: px_to_rem(26px);
-  margin-top: px_to_rem(11px);
+  line-height: px-to-rem(26px);
+  margin-top: px-to-rem(11px);
+}
+
+.signup__form {
+  max-width: 540px;
 }
 
 .signup__accent {
-  font-size: px_to_rem(15px);
-  line-height: px_to_rem(26px);
-  letter-spacing: px_to_rem(0.27px);
+  font-size: px-to-rem(15px);
+  line-height: px-to-rem(26px);
+  letter-spacing: px-to-rem(0.27px);
   text-align: center;
   background: $color-blue;
-  padding: px_to_rem(17px) px_to_rem(112px);
-  border-radius: px_to_rem(10px);
+  padding-top: px-to-rem(17px);
+  padding-bottom: px-to-rem(17px);
+  border-radius: px-to-rem(10px);
 }
 
 .signup_form_container {
-  margin-top: px_to_rem(24px);
+  margin-top: px-to-rem(24px);
   background: $color-white;
-  color: black; // TODO: change or remove!
-  padding: px_to_rem(40px);
+  padding: px-to-rem(40px);
+  border-radius: px-to-rem(10px);
+}
+
+.signup__terms {
+  font-size: px-to-rem(11px);
+  text-align: center;
+  line-height: px-to-rem(26px);
+  margin-top: px-to-rem(8px);
+  color: $color-grayish-blue;
+}
+
+.signup__errormessage {
+  color: $color-red;
+  font-size: px-to-rem(11px);
+  text-align: right;
+  margin-top: px-to-rem(6px);
+  font-style: italic;
+  font-weight: $font-weight-normal;
+}
+
+.signup__erroricon {
+  position: relative;
+  top: -35px;
+  left: 90%;
+  display: inline-block;
 }

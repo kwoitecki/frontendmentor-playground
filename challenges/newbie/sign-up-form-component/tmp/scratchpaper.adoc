@@ -32,17 +32,23 @@
 * input
 ** [x] Border bei Focus setzen funktioniert nicht
 
-* [ ] submit Button stylen
-** [ ] Border, focus etc
+* [x] submit Button stylen
+** [x] Border, focus etc
 
-* [ ] Auslagern in Komponenten
-** [ ] button komponente
-
-
-
-
+* [x] Auslagern in Komponenten
 
 .Sonstiges
-* Fontweights übernehmen Weights: 400, 500, 600, 700
-* gap zwischen den beiden Spalten: 
-* horizontal alignment linke Seite: center
+* [x] Fontweights übernehmen Weights: 400, 500, 600, 700
+* [x] gap zwischen den beiden Spalten: 
+* [x] horizontal alignment linke Seite: center
+
+
+* [ ] Validierung einbauen
+** [ ] Roten border und Rote Schrift hinzufügen
+** [ ] Error Icon hinzufügen
+
+* [ ] Submit Funktionalität
+
+* [ ] Mobile design einbauen
+** [ ] Media Queries
+** [ ] 600px stack everything;

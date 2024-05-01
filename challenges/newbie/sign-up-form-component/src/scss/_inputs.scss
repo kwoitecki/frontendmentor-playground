@@ -1,3 +1,9 @@
+@mixin input-placeholder-font-style() {
+  font-size: px-to-rem($placeholder-font-size);
+  color: $color-gray;
+  font-weight: $font-weight-bold;
+}
+
 input {
   display: block;
   width: 100%;
@@ -7,10 +13,12 @@ input[type='text'],
 input[type='email'],
 input[type='password'] {
   padding: px-to-rem(15px) px-to-rem(32px);
-  border: 1px solid $color-light-gay;
+  border: 2px solid $color-light-gay;
   border-radius: px-to-rem(5px);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   outline: none;
+  color: $color-gray;
+  font-weight: $font-weight-bold;
 }
 
 input[type='text']:focus,
@@ -19,14 +27,28 @@ input[type='password']:focus {
   border-color: $color-blue;
 }
 
+// input[type='text']:invalid,
+// input[type='email']:invalid,
+// input[type='password']:invalid {
+//   border-color: $color-red;
+//   color: $color-red;
+// }
+
 input[type='submit'] {
-  padding-top: px-to-rem(15px);
-  padding-bottom: px-to-rem(15px);
+  padding: px-to-rem(15px);
+  border-radius: px-to-rem(5px);
+  background: $color-green;
+  color: $color-white;
+  font-weight: $font-weight-bold;
+  font-size: px-to-rem($submit-btn-font-size);
+  line-height: px-to-rem(26px);
+  border: 1px solid $color-green;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-@mixin input-placeholder-font-style() {
-  font-size: $placholder-font-size;
-  color: $color-gray;
+input[type='submit']:hover {
+  background-color: $color-light-green;
 }
 
 /* modern browser */

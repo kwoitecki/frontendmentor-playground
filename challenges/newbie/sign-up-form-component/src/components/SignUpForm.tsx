@@ -1,3 +1,5 @@
+import TextInput from './TextInput';
+
 const fields = [
   {
     type: 'text',
@@ -21,12 +23,13 @@ const SignUpForm = () => {
   return (
     <form className='signup__form'>
       <p className='signup__accent'>
-        Try it free 7 days then $20/mo. thereafter
+        <span className='u-text-bolder'>Try it free 7 days</span> then $20/mo.
+        thereafter
       </p>
 
       <div className='signup_form_container'>
         {fields.map((field, index) => (
-          <input
+          <TextInput
             key={index}
             className={`${index !== 0 ? 'u-mt-20' : ''}`}
             type={field.type}
@@ -41,7 +44,8 @@ const SignUpForm = () => {
         />
 
         <p className='signup__terms'>
-          By clicking the button, you are agreeing to our Terms and Services
+          By clicking the button, you are agreeing to our{' '}
+          <span className='u-text-red u-text-bolder'>Terms and Services</span>
         </p>
       </div>
     </form>

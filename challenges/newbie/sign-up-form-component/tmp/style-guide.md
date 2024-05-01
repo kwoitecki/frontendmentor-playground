@@ -14,7 +14,7 @@ The designs were created to the following widths:
 ### Primary
 
 - [x] Red: hsl(0, 100%, 74%)
-- Green: hsl(154, 59%, 51%)
+- [x] Green: hsl(154, 59%, 51%)
 
 ### Accent
 
