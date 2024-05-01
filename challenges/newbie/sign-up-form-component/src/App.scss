@@ -1,0 +1,78 @@
+@import 'scss/helper';
+@import 'scss/variables';
+@import 'scss/utilities';
+@import 'scss/inputs';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: $color-red;
+  color: $color-white;
+}
+
+main::before {
+  content: '';
+  background: url('./assets/bg-intro-desktop.png') no-repeat center center/cover;
+  // opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup__container {
+  display: flex;
+  border: 1px solid black;
+  margin: px_to_em(121px) px_to_em(165px);
+}
+
+.signup__header {
+  max-width: 525px;
+}
+
+.signup__title {
+  font-size: px_to_rem(50px);
+  letter-spacing: px_to_rem(-0.52px);
+  line-height: px_to_rem(55px);
+}
+
+.signup__description {
+  line-height: px_to_rem(26px);
+  margin-top: px_to_rem(11px);
+}
+
+.signup__accent {
+  font-size: px_to_rem(15px);
+  line-height: px_to_rem(26px);
+  letter-spacing: px_to_rem(0.27px);
+  text-align: center;
+  background: $color-blue;
+  padding: px_to_rem(17px) px_to_rem(112px);
+  border-radius: px_to_rem(10px);
+}
+
+.signup_form_container {
+  margin-top: px_to_rem(24px);
+  background: $color-white;
+  color: black; // TODO: change or remove!
+  padding: px_to_rem(40px);
+}

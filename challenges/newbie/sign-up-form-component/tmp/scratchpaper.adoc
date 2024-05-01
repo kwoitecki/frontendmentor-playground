@@ -1,0 +1,48 @@
+= Scratchpaper
+
+.Basework
+* [x] main ausrichten (.signup)
+** [x] margin: 121px 165px 121px 165px;
+* [x] sass umrechnungsfunktionen mitnehmen: px to rem to em
+* [x] basis fontsize setzen
+* [x] font-family
+* [x] background setzen
+
+.Linke Seite
+* [x] signup__title
+** [x] Schriftgröße
+** [x] Letterspacing
+** [x] Lineheight
+
+* [x] signup__description
+** [x] Letterspacing
+** [x] Lineheight
+
+.Rechte Seite
+* [x] signup__adverisement
+** [x] Schriftgröße
+** [x] Letterspacing
+** [x] Lineheight
+
+* [x] signup_form_container
+
+
+* [x] input padding (15px, 32px)
+
+* input
+** [x] Border bei Focus setzen funktioniert nicht
+
+* [ ] submit Button stylen
+** [ ] Border, focus etc
+
+* [ ] Auslagern in Komponenten
+** [ ] button komponente
+
+
+
+
+
+.Sonstiges
+* Fontweights übernehmen Weights: 400, 500, 600, 700
+* gap zwischen den beiden Spalten: 
+* horizontal alignment linke Seite: center

@@ -13,27 +13,27 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Red: hsl(0, 100%, 74%) 
+- [x] Red: hsl(0, 100%, 74%)
 - Green: hsl(154, 59%, 51%)
 
 ### Accent
 
-- Blue: hsl(248, 32%, 49%)
+- [x] Blue: hsl(248, 32%, 49%)
 
 ### Neutral
 
-- Dark Blue: hsl(249, 10%, 26%) 
+- [x] Dark Blue: hsl(249, 10%, 26%)
 - Grayish Blue: hsl(246, 25%, 77%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 16px
+- [x] Font size: 16px
 
 ### Font
 
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- [x] Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 500, 600, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
