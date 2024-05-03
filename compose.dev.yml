@@ -21,6 +21,7 @@ services:
       - fm-interactive-rating-component:/workspace/challenges/newbie/interactive-rating-component/node_modules
       - fm-apparel-coming-soon:/workspace/challenges/newbie/apparel-coming-soon/node_modules
       - fm-sign-up-form-component:/workspace/challenges/newbie/sign-up-form-component/node_modules
+      - fm-single-price-grid-component:/workspace/challenges/newbie/single-price-grid-component/node_modules
 
     ports:
       - 5555:5555
@@ -35,3 +36,4 @@ volumes:
   fm-interactive-rating-component:
   fm-apparel-coming-soon:
   fm-sign-up-form-component:
+  fm-single-price-grid-component:

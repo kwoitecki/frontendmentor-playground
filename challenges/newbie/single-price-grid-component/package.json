@@ -1,0 +1,16 @@
+{
+  "name": "single-price-grid-component",
+  "version": "1.0.0",
+  "description": "[[top]] = Frontend Mentor - Single price grid component solution :toc: preamble",
+  "main": "index.js",
+  "scripts": {
+    "sass:watch": "sass -w scss/:dist/css/ --no-source-map",
+    "sass": "sass scss/:dist/css/ --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.76.0"
+  }
+}
