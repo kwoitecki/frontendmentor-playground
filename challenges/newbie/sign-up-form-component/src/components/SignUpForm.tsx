@@ -22,16 +22,16 @@ const fields = [
 const SignUpForm = () => {
   return (
     <form className='signup__form'>
-      <p className='signup__accent'>
+      <p className='signup__form__accent'>
         <span className='u-text-bolder'>Try it free 7 days</span> then $20/mo.
         thereafter
       </p>
 
-      <div className='signup_form_container'>
+      <div className='signup__form__container'>
         {fields.map((field, index) => (
           <TextInput
             key={index}
-            className={`${index !== 0 ? 'u-mt-20' : ''}`}
+            className='u-mt-20'
             type={field.type}
             placeholder={field.placeholder}
           />

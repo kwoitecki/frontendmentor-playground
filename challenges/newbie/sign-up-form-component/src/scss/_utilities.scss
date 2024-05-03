@@ -1,9 +1,17 @@
 .u-mt-20 {
   margin-top: px-to-rem(20px);
+
+  @include mq-max-width('sm') {
+    margin-top: px-to-rem(16px);
+  }
 }
 
 .u-mt-35 {
   margin-top: px-to-rem(35px);
+
+  @include mq-max-width('sm') {
+    margin-top: px-to-rem(16px);
+  }
 }
 
 .u-text-red {
@@ -12,4 +20,8 @@
 
 .u-text-bolder {
   font-weight: $font-weight-bolder;
+}
+
+.u-border-red {
+  border-color: $color-red;
 }

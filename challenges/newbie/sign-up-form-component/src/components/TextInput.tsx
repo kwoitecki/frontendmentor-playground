@@ -1,4 +1,9 @@
-import { ComponentPropsWithoutRef, useRef, useState } from 'react';
+import {
+  CSSProperties,
+  ComponentPropsWithoutRef,
+  useRef,
+  useState,
+} from 'react';
 
 const TextInput = ({ ...props }: ComponentPropsWithoutRef<'input'>) => {
   const { placeholder } = props;
@@ -9,34 +14,54 @@ const TextInput = ({ ...props }: ComponentPropsWithoutRef<'input'>) => {
 
   const handleBlur = () => {
     const node = inputRef.current;
-    let isValid = true;
+    let tmpIsValid = true;
 
     if (node) {
-      if (node.value === '') {
-        isValid = false;
+      if (node.value?.trim() === '') {
+        tmpIsValid = false;
         setMessage(`${placeholder} cannot be empty`);
       } else if (!node.validity.valid) {
-        isValid = false;
+        tmpIsValid = false;
         setMessage(`Looks like this is not an ${placeholder}`);
       }
 
-      setIsValid(() => isValid);
+      setIsValid(() => tmpIsValid);
     }
   };
 
+  let inputElement = (
+    <input {...props} onBlur={handleBlur} ref={inputRef} required />
+  );
+
+  if (!isValid) {
+    const inlineStyle: CSSProperties = {
+      border: '2px solid hsl(0, 100%, 74%)',
+      color: 'hsl(0, 100%, 74%)',
+    };
+    inputElement = (
+      <input
+        {...props}
+        onBlur={handleBlur}
+        ref={inputRef}
+        required
+        style={inlineStyle}
+      />
+    );
+  }
+
   return (
     <>
-      <input {...props} onBlur={handleBlur} ref={inputRef} required />
-      {!isValid && (
-        <>
+      <div className='signup__inputarea'>
+        {inputElement}
+        {!isValid && (
           <img
             src='./icon-error.svg'
             alt='Validationerror'
             className='signup__erroricon'
           />
-          <p className='signup__errormessage'>{message}</p>
-        </>
-      )}
+        )}
+      </div>
+      {!isValid && <p className='signup__errormessage'>{message}</p>}
     </>
   );
 };
