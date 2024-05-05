@@ -29,12 +29,12 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size: 20px
+- [x] Font size: 20px
 
 ### Fonts
 
-- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
-- Weights: 300, 600, 700
+- [x] Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- [x] Weights: 300, 600, 700
 
 ## Icons
 
