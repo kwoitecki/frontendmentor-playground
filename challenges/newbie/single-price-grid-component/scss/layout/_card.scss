@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+$card-p-24: px-to-em(24px);
+
+%card {
+  padding: $card-p-24;
+}

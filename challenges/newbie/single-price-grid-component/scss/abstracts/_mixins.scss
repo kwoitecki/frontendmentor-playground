@@ -1,0 +1,7 @@
+@mixin create-utility-classes($prefix, $property, $map) {
+  @each $key, $value in $map {
+    .u-#{$prefix}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}

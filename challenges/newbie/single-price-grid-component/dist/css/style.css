@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding-top: 0.9375rem;
+  padding-bottom: 0.875rem;
+  border-radius: 0.3125rem;
+}
+
+.main {
+  margin: 4.5em 2em 3.875em 2em;
+}
+
+.hero {
+  padding: 1.75em 1.5em 2em 1.5em;
+  border-radius: 0.3125rem 0.3125rem 0 0;
+}
+.hero__title {
+  font-size: 1.25rem;
+  letter-spacing: -0.015625rem;
+}
+.hero__subtitle {
+  font-size: 0.9375rem;
+  margin-top: 1.5rem;
+  letter-spacing: -0.011875rem;
+  line-height: 1.25rem;
+}
+.hero__description {
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  letter-spacing: -0.010625rem;
+  line-height: 1.625rem;
+}
+
+.whyus, .subscription {
+  padding: 1.5em;
+}
+
+.subscription__title {
+  font-size: 1.125rem;
+  letter-spacing: -0.01375rem;
+}
+.subscription__price {
+  margin-top: 1.125rem;
+  letter-spacing: -0.0125rem;
+  line-height: 1.625rem;
+}
+.subscription__price__amount {
+  font-size: 2rem;
+  letter-spacing: -0.025rem;
+}
+.subscription__description {
+  margin-top: 0.25rem;
+  line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
+}
+.subscription__button {
+  margin-top: 1.625rem;
+  letter-spacing: -0.0125rem;
+}
+
+.whyus__title {
+  font-size: 1.125rem;
+  letter-spacing: -0.01375rem;
+}
+.whyus__description {
+  margin-top: 1.125rem;
+  font-size: 0.9375rem;
+}
+.whyus__description__item {
+  letter-spacing: -0.010625rem;
+  line-height: 1.25rem;
+}
+
+.u-bg-white {
+  background: #fff;
+}
+
+.u-bg-cyan {
+  background: hsl(179, 62%, 43%);
+}
+
+.u-bg-light-cyan {
+  background: hsl(179, 48%, 52%);
+}
+
+.u-bg-very-light-cyan {
+  background: hsl(179, 47%, 72%);
+}
+
+.u-bg-bright-yellow {
+  background: hsl(71, 73%, 54%);
+}
+
+.u-bg-light-gray {
+  background: hsl(204, 43%, 93%);
+}
+
+.u-bg-grayish-blue {
+  background: hsl(218, 22%, 67%);
+}
+
+.u-bg-gray {
+  background: #979797;
+}
+
+.u-fc-white {
+  color: #fff;
+}
+
+.u-fc-cyan {
+  color: hsl(179, 62%, 43%);
+}
+
+.u-fc-light-cyan {
+  color: hsl(179, 48%, 52%);
+}
+
+.u-fc-very-light-cyan {
+  color: hsl(179, 47%, 72%);
+}
+
+.u-fc-bright-yellow {
+  color: hsl(71, 73%, 54%);
+}
+
+.u-fc-light-gray {
+  color: hsl(204, 43%, 93%);
+}
+
+.u-fc-grayish-blue {
+  color: hsl(218, 22%, 67%);
+}
+
+.u-fc-gray {
+  color: #979797;
+}
+
+.u-fw-normal {
+  font-weight: 400;
+}
+
+.u-fw-bold {
+  font-weight: 700;
+}

@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+$btn-p-14: px-to-rem(14px);
+$btn-p-15: px-to-rem(15px);
+
+.btn {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  padding-top: $btn-p-15;
+  padding-bottom: $btn-p-14;
+  border-radius: px-to-rem(5px);
+}

@@ -1,0 +1,33 @@
+@use 'card' as *;
+@use '../abstracts/' as a;
+
+.subscription {
+  @extend %card;
+
+  &__title {
+    font-size: a.px-to-rem(18px);
+    letter-spacing: a.px-to-rem(-0.22px);
+  }
+
+  &__price {
+    margin-top: a.px-to-rem(18px);
+    letter-spacing: a.px-to-rem(-0.2px);
+    line-height: a.px-to-rem(26px);
+
+    &__amount {
+      font-size: a.px-to-rem(32px);
+      letter-spacing: a.px-to-rem(-0.4px);
+    }
+  }
+
+  &__description {
+    margin-top: a.px-to-rem(4px);
+    line-height: a.px-to-rem(26px);
+    letter-spacing: a.px-to-rem(-0.2px);
+  }
+
+  &__button {
+    margin-top: a.px-to-rem(26px);
+    letter-spacing: a.px-to-rem(-0.2px);
+  }
+}

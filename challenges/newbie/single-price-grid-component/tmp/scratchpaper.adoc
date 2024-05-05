@@ -1,0 +1,31 @@
+= Scratchpaper
+
+.Groundwork
+* [x] HTML structure
+* [x] css structure
+** [x] architecture
+** [x] utility classes
+
+.typography
+* [x] h1, h2
+* [x] font family
+* [x] utility Klassen für Textgrößen
+** [x] Textklassen anwenden
+* [x] Farben
+** [x] Textfarben
+** [x] Hintergrundfarben
+
+* [x] Button Styling
+
+* [x] Spacing Top Button
+
+* [x] Font Size
+
+* [x] Basis Klasse für die Cards schreiben
+
+* [x] utility classes herausbauen für margin etc
+* [x] neue Komponenten schaffen und mit BEM benennen so das diese dann für die media queries genutzt 
+
+* [x] Border radius
+* [x] letterspacing und line height einbauen
+* [ ] fontweight einbauen als untility Klassen

@@ -1,0 +1,9 @@
+@use '../abstracts/' as *;
+
+$main-m-32: px-to-em(32px);
+$main-m-62: px-to-em(62px);
+$main-m-72: px-to-em(72px);
+
+.main {
+  margin: $main-m-72 $main-m-32 $main-m-62 $main-m-32;
+}

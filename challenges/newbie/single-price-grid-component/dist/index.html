@@ -1,12 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head class="u-bg-grayish-blue">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Testdokument</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Single Price Grid Component</title>
   </head>
-  <body>
-    <h1>Hello World</h1>
+  <body class="u-bg-light-gray">
+    <main class="main">
+      <div class="hero u-bg-white">
+        <h1 class="hero__title u-fc-cyan u-fw-bold">Join our community</h1>
+        <p class="hero__subtitle u-fc-bright-yellow u-fw-bold">
+          30-day, hassle-free money back guarantee
+        </p>
+        <p class="hero__description u-fc-grayish-blue">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
+      <div class="content u-bg-cyan u-fc-white">
+        <div class="subscription">
+          <h2 class="subscription__title u-fw-bold">Monthly Subscription</h2>
+          <p class="subscription__price u-fc-very-light-cyan">
+            <span class="subscription__price__amount u-fc-white u-fw-bold"
+              >&dollar;29</span
+            >
+            per month
+          </p>
+          <p class="subscription__description">
+            Full access for less than &dollar;1 a day
+          </p>
+          <a
+            href="#"
+            class="subscription__button btn u-bg-bright-yellow u-fc-white u-fw-bold"
+            >Sign Up</a
+          >
+        </div>
+        <div class="whyus u-bg-light-cyan">
+          <h2 class="whyus__title u-fw-bold">Why Us</h2>
+          <ul class="whyus__description u-fc-light-gray">
+            <li class="whyus__description__item">
+              Tutorials by industry experts
+            </li>
+            <li class="whyus__description__item">
+              Peer &amp; expert code review
+            </li>
+            <li class="whyus__description__item">Coding exercises</li>
+            <li class="whyus__description__item">Access to our GitHub repos</li>
+            <li class="whyus__description__item">Community forum</li>
+            <li class="whyus__description__item">Flashcard decks</li>
+            <li class="whyus__description__item">New videos every week</li>
+          </ul>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

@@ -32,7 +32,9 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/single-p
 * Semantic HTML5 markup
 * Flexbox
 * link:https://sass-lang.com/documentation/[Sass]
+* colorZilla
 
 === Useful resources
 * link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]
-
+* link:https://dev.to/dostonnabotov/a-modern-sass-folder-structure-330f[Sass folder structure]
+* link:https://github.com/dostonnabotov/sass-template[Sass template]

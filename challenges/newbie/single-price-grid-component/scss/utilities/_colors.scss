@@ -1,0 +1,19 @@
+@use '../abstracts/' as a;
+
+$colors: (
+  'white': #fff,
+  //#2AB3B1
+  'cyan': hsl(179, 62%, 43%),
+  'light-cyan': hsl(179, 48%, 52%),
+  'very-light-cyan': hsl(179, 47%, 72%),
+  // #c0df33,
+  'bright-yellow': hsl(71, 73%, 54%),
+  // #E6EFF5,
+  'light-gray': hsl(204, 43%, 93%),
+  //#9aa7be,
+  'grayish-blue': hsl(218, 22%, 67%),
+  'gray': #979797,
+);
+
+@include a.create-utility-classes('bg', 'background', $colors);
+@include a.create-utility-classes('fc', 'color', $colors);

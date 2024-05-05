@@ -1,0 +1,13 @@
+@use '../abstracts/' as *;
+
+body {
+  font-family: $ff-karla;
+  font-size: $base-font-size;
+  font-weight: $f-weight-400;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,21 @@
+@use 'card' as *;
+@use '../abstracts/' as a;
+
+.whyus {
+  @extend %card;
+
+  &__title {
+    font-size: a.px-to-rem(18px);
+    letter-spacing: a.px-to-rem(-0.22px);
+  }
+
+  &__description {
+    margin-top: a.px-to-rem(18px);
+    font-size: a.px-to-rem(15px);
+
+    &__item {
+      letter-spacing: a.px-to-rem(-0.17px);
+      line-height: a.px-to-rem(20px);
+    }
+  }
+}
