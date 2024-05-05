@@ -1,0 +1,37 @@
+[[top]]
+= Frontend Mentor - Single price grid component solution
+:toc: preamble
+
+link:../../../[Back]
+
+== Overview
+This is a solution to the link:https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc[Single price grid component challenge on Frontend Mentor]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+
+
+=== Screenshot
+
+.Desktop
+image:./images/desktop.png[Desktop]
+
+.Mobile
+image:./images/mobile.png[Mobile]
+
+
+=== Links
+
+* Solution URL: link:https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/single-price-grid-component[GitHub Repository]
+* Live Site URL: link:https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/single-price-grid-component/dist/[GitHub Pages]
+
+== My process
+
+=== Built with
+
+* Semantic HTML5 markup
+* Flexbox
+* link:https://sass-lang.com/documentation/[Sass]
+* colorZilla
+
+=== Useful resources
+* link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]
+* link:https://dev.to/dostonnabotov/a-modern-sass-folder-structure-330f[Sass folder structure]
+* link:https://github.com/dostonnabotov/sass-template[Sass template]

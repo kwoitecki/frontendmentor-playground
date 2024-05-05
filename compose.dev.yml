@@ -22,6 +22,7 @@ services:
       - fm-apparel-coming-soon:/workspace/challenges/newbie/apparel-coming-soon/node_modules
       - fm-sign-up-form-component:/workspace/challenges/newbie/sign-up-form-component/node_modules
       - fm-single-price-grid-component:/workspace/challenges/newbie/single-price-grid-component/node_modules
+      - fm-ping-coming-soon-page:/workspace/challenges/newbie/ping-coming-soon-page/node_modules
 
     ports:
       - 5555:5555
@@ -37,3 +38,4 @@ volumes:
   fm-apparel-coming-soon:
   fm-sign-up-form-component:
   fm-single-price-grid-component:
+  fm-ping-coming-soon-page:

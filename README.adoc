@@ -23,3 +23,4 @@ This is a playground for frontendmentor.io challenges.
 * link:./challenges/newbie/apparel-coming-soon[Apparel Coming Soon Page] 
 * link:./challenges/newbie/sign-up-form-component[Intro Component with sign up form] 
 * link:./challenges/newbie/single-price-grid-component[Single Price Grid Component]
+* link:./challenges/newbie/ping-coming-soon-page[Ping Coming Soon Page]

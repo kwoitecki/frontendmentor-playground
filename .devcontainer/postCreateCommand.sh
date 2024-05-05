@@ -8,3 +8,4 @@ sudo chown node /workspace/challenges/newbie/interactive-rating-component/node_m
 sudo chown node /workspace/challenges/newbie/apparel-coming-soon/node_modules
 sudo chown node /workspace/challenges/newbie/sign-up-form-component/node_modules
 sudo chown node /workspace/challenges/newbie/single-price-grid-component/node_modules
+sudo chown node /workspace/challenges/newbie/ping-coming-soon-page/node_modules
