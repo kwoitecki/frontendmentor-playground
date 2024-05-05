@@ -3,13 +3,10 @@
 $hero-m-24: px-to-em(24px);
 $hero-m-28: px-to-em(28px);
 $hero-m-32: px-to-em(32px);
+$hero-m-40: px-to-rem(40px);
 
 $hero-border-radius-top: px-to-rem(5px);
-
-// Letterpsacing
-// hero
-// -0.19px (intro)
-// -0.17px (p)
+$hero-border-radius-top-desktop: px-to-rem(8px);
 
 .hero {
   padding: $hero-m-28 $hero-m-24 $hero-m-32 $hero-m-24;
@@ -19,16 +16,40 @@ $hero-border-radius-top: px-to-rem(5px);
     font-size: px-to-rem(20px);
     letter-spacing: px-to-rem(-0.25px);
   }
+
   &__subtitle {
     font-size: px-to-rem(15px);
     margin-top: px-to-rem(24px);
     letter-spacing: px-to-rem(-0.19px);
     line-height: px-to-rem(20px);
   }
+
   &__description {
     font-size: px-to-rem(14px);
     margin-top: px-to-rem(16px);
     letter-spacing: px-to-rem(-0.17px);
     line-height: px-to-rem(26px);
+  }
+
+  @include mq-min-width('lg') {
+    padding: $hero-m-40;
+    border-radius: $hero-border-radius-top-desktop
+      $hero-border-radius-top-desktop 0 0;
+
+    &__title {
+      font-size: px-to-rem(24px);
+      letter-spacing: px-to-rem(-0.3px);
+    }
+
+    &__subtitle {
+      font-size: px-to-rem(18px);
+      letter-spacing: px-to-rem(-0.22px);
+    }
+
+    &__description {
+      font-size: px-to-rem(16px);
+      margin-top: px-to-rem(11px);
+      letter-spacing: px-to-rem(-0.2px);
+    }
   }
 }

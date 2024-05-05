@@ -3,7 +3,18 @@
 $main-m-32: px-to-em(32px);
 $main-m-62: px-to-em(62px);
 $main-m-72: px-to-em(72px);
+$main-m-162: px-to-em(162px);
+$main-m-163: px-to-em(163px);
+$main-m-402: px-to-em(402px);
+$main-m-403: px-to-em(403px);
+
+// 163 402 162 403
 
 .main {
   margin: $main-m-72 $main-m-32 $main-m-62 $main-m-32;
+
+  @include mq-min-width('lg') {
+    margin: $main-m-163 $main-m-402 $main-m-162 $main-m-403;
+    max-width: 635px;
+  }
 }

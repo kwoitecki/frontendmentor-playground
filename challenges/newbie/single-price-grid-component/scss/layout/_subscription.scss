@@ -30,4 +30,8 @@
     margin-top: a.px-to-rem(26px);
     letter-spacing: a.px-to-rem(-0.2px);
   }
+
+  @include a.mq-min-width('lg') {
+    width: 50%;
+  }
 }

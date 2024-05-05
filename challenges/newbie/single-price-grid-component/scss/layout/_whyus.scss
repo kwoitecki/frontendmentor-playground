@@ -18,4 +18,13 @@
       line-height: a.px-to-rem(20px);
     }
   }
+
+  @include a.mq-min-width('lg') {
+    width: 50%;
+
+    &__description {
+      margin-top: a.px-to-rem(18px);
+      font-size: a.px-to-rem(14px);
+    }
+  }
 }

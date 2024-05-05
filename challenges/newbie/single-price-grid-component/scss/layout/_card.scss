@@ -1,7 +1,12 @@
 @use '../abstracts/' as *;
 
-$card-p-24: px-to-em(24px);
+$card-p-24: px-to-rem(24px);
+$card-p-40: px-to-rem(40px);
 
 %card {
   padding: $card-p-24;
+
+  @include mq-min-width('lg') {
+    padding: $card-p-40;
+  }
 }

@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.content {
+  @include mq-min-width('lg') {
+    display: flex;
+  }
+}

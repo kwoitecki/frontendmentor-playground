@@ -31,6 +31,12 @@ ul {
 .main {
   margin: 4.5em 2em 3.875em 2em;
 }
+@media (min-width: 1200px) {
+  .main {
+    margin: 10.1875em 25.125em 10.125em 25.1875em;
+    max-width: 635px;
+  }
+}
 
 .hero {
   padding: 1.75em 1.5em 2em 1.5em;
@@ -52,9 +58,33 @@ ul {
   letter-spacing: -0.010625rem;
   line-height: 1.625rem;
 }
+@media (min-width: 1200px) {
+  .hero {
+    padding: 2.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .hero__title {
+    font-size: 1.5rem;
+    letter-spacing: -0.01875rem;
+  }
+  .hero__subtitle {
+    font-size: 1.125rem;
+    letter-spacing: -0.01375rem;
+  }
+  .hero__description {
+    font-size: 1rem;
+    margin-top: 0.6875rem;
+    letter-spacing: -0.0125rem;
+  }
+}
 
 .whyus, .subscription {
-  padding: 1.5em;
+  padding: 1.5rem;
+}
+@media (min-width: 1200px) {
+  .whyus, .subscription {
+    padding: 2.5rem;
+  }
 }
 
 .subscription__title {
@@ -79,6 +109,11 @@ ul {
   margin-top: 1.625rem;
   letter-spacing: -0.0125rem;
 }
+@media (min-width: 1200px) {
+  .subscription {
+    width: 50%;
+  }
+}
 
 .whyus__title {
   font-size: 1.125rem;
@@ -91,6 +126,21 @@ ul {
 .whyus__description__item {
   letter-spacing: -0.010625rem;
   line-height: 1.25rem;
+}
+@media (min-width: 1200px) {
+  .whyus {
+    width: 50%;
+  }
+  .whyus__description {
+    margin-top: 1.125rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content {
+    display: flex;
+  }
 }
 
 .u-bg-white {

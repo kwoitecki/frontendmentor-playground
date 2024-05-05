@@ -10,14 +10,11 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/single-p
 
 === Screenshot
 
-// .Desktop 1
-// image:./img/desktop.png[Desktop 1]
+.Desktop
+image:./images/desktop.png[Desktop]
 
-// .Desktop 2
-// image:./img/desktop2.png[Desktop 2]
-
-// .Mobile
-// image:./img/mobile.png[Mobile]
+.Mobile
+image:./images/mobile.png[Mobile]
 
 
 === Links
