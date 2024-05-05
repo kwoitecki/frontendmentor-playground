@@ -1,0 +1,9 @@
+@use '../abstracts/' as a;
+
+$f-weight: (
+  'light': a.$f-weight-300,
+  'normal': a.$f-weight-600,
+  'bold': a.$f-weight-700,
+);
+
+@include a.create-utility-classes('fw', 'font-weight', $f-weight);

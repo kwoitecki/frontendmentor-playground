@@ -1,0 +1,16 @@
+@use '../abstracts/' as a;
+
+$rem-9: a.px-to-rem(9px);
+$rem-27: a.px-to-rem(27px);
+$rem-28: a.px-to-rem(28px);
+$rem-72: a.px-to-rem(72px);
+
+.content {
+  margin: $rem-72 $rem-27 0 $rem-28;
+  padding-left: $rem-9;
+  padding-right: $rem-9;
+
+  &__image {
+    width: 93.914%;
+  }
+}

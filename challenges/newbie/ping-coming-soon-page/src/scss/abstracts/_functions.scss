@@ -2,9 +2,9 @@
 @use 'fonts' as *;
 
 @function px-to-rem($pixels) {
-  @return #{math.div($pixels, $base-font-size)}rem;
+  @return #{math.div($pixels, $f-size-base)}rem;
 }
 
 @function px-to-em($pixels) {
-  @return #{math.div($pixels, $base-font-size)}em;
+  @return #{math.div($pixels, $f-size-base)}em;
 }

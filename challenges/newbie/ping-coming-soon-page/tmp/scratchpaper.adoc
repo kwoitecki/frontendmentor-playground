@@ -1,0 +1,14 @@
+= Scratchpaper
+
+.Groundwork
+* [x] (Font Awesome) Icons für Facebook, Twitter und Insta einbinden
+* [x] inputs stylen
+
+* [x] Validierung durchführen
+
+*  [ ] hover effekt Social icons
+** Textfarbe auf weiß setzen
+** Hintergrundfarbe auf blau setzen
+
+
+.Desktop Design (TODO)

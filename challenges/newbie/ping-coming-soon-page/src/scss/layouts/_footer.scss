@@ -1,0 +1,32 @@
+@use '../abstracts/' as a;
+
+$rem-f-11-71: a.px-to-rem(11.71px);
+$rem-f-31: a.px-to-rem(31px);
+$rem-f-32: a.px-to-rem(32px);
+$rem-f-37: a.px-to-rem(37px);
+$rem-f-102: a.px-to-rem(102px);
+$rem-f-103: a.px-to-rem(103px);
+$rem-f-120: a.px-to-rem(120px);
+
+.footer {
+  margin: $rem-f-120 $rem-f-102 $rem-f-37 $rem-f-103;
+  &__icons {
+    &-circle {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      width: $rem-f-32;
+      height: $rem-f-31;
+      border-radius: 50%;
+      border: 1px solid a.$c-pale-blue;
+      color: a.$c-blue;
+      margin-left: $rem-f-11-71;
+    }
+  }
+
+  &__copyright {
+    margin-top: a.px-to-rem(27px);
+    font-size: a.px-to-rem(10px);
+  }
+}

@@ -1,0 +1,92 @@
+@use '../abstracts/' as a;
+
+$rem-10: a.px-to-rem(10px);
+$rem-12: a.px-to-rem(12px);
+$rem-15: a.px-to-rem(15px);
+$rem-32: a.px-to-rem(32px);
+$rem-36: a.px-to-rem(36px);
+$rem-37: a.px-to-rem(37px);
+$rem-81: a.px-to-rem(81px);
+
+@mixin input-placeholder-font-style() {
+  color: a.$c-blue;
+}
+
+@mixin input-submit-style() {
+  border: 1px solid a.$c-pale-blue;
+}
+
+input::placeholder {
+  @include input-placeholder-font-style;
+}
+
+/* WebKit-browser like Chrome and Safari */
+input::-webkit-input-placeholder {
+  @include input-placeholder-font-style;
+}
+
+/* browser-specific CSS for Mozilla Firefox */
+input::-moz-placeholder {
+  @include input-placeholder-font-style;
+}
+
+/* browser-spezifisches CSS for IE */
+input:-ms-input-placeholder {
+  @include input-placeholder-font-style;
+}
+
+input[type='submit']:invalid {
+  @include input-submit-style;
+}
+
+.header {
+  margin: $rem-81 $rem-36 0 $rem-37;
+
+  &__logo {
+    &__image {
+      width: 17.69%;
+    }
+  }
+
+  &__title {
+    margin-top: $rem-32;
+    font-size: a.px-to-rem(22px);
+    line-height: a.px-to-rem(32px);
+  }
+
+  &__subtitle {
+    margin-top: $rem-15;
+    font-size: a.px-to-rem(12px);
+  }
+
+  &__form {
+    margin-top: $rem-32;
+
+    &__input {
+      display: block;
+      width: 100%;
+      padding: $rem-10 0 $rem-10 $rem-32;
+      border-radius: a.px-to-rem(28px);
+      border: 1px solid a.$c-pale-blue;
+
+      &__error {
+        border-top: a.px-to-rem(2px);
+        font-size: a.px-to-rem(10px);
+        line-height: a.px-to-rem(20px);
+        letter-spacing: a.px-to-rem(0.13px);
+        font-style: italic;
+      }
+    }
+
+    &__button {
+      margin-top: $rem-10;
+      padding-top: $rem-12;
+      padding-bottom: $rem-12;
+      display: block;
+      width: 100%;
+      border-radius: a.px-to-rem(28px);
+      cursor: pointer;
+      @include input-submit-style;
+    }
+  }
+}
