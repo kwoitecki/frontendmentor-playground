@@ -19,8 +19,8 @@ image:./images/mobile.png[Mobile]
 
 === Links
 
-* Solution URL: link:https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/single-price-grid-component[GitHub Repository]
-* Live Site URL: link:https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/single-price-grid-component/dist/[GitHub Pages]
+* Solution URL: link:https://github.com/kwoitecki/frontendmentor-playground/tree/main/challenges/newbie/ping-coming-soon-page[GitHub Repository]
+* Live Site URL: link:https://kwoitecki.github.io/frontendmentor-playground/challenges/newbie/ping-coming-soon-page/dist/[GitHub Pages]
 
 == My process
 
