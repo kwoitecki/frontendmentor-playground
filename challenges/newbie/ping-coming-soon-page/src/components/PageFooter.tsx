@@ -11,15 +11,15 @@ const PageFooter = () => {
     <footer className='footer'>
       <div className='footer__icons'>
         <div className='footer__icons-circle'>
-          <FontAwesomeIcon className='u-fc-blue' icon={faFacebookF} />
+          <FontAwesomeIcon icon={faFacebookF} />
         </div>
 
         <div className='footer__icons-circle'>
-          <FontAwesomeIcon className='u-fc-blue' icon={faTwitter} />
+          <FontAwesomeIcon icon={faTwitter} />
         </div>
 
         <div className='footer__icons-circle'>
-          <FontAwesomeIcon className='u-fc-blue' icon={faInstagram} />
+          <FontAwesomeIcon icon={faInstagram} />
         </div>
       </div>
       <p className='footer__copyright u-fw-light'>

@@ -10,6 +10,11 @@ $rem-f-120: a.px-to-rem(120px);
 
 .footer {
   margin: $rem-f-120 $rem-f-102 $rem-f-37 $rem-f-103;
+
+  @include a.mq-min-width('sm') {
+    margin-top: a.px-to-rem(72px);
+  }
+
   &__icons {
     &-circle {
       display: inline-flex;
@@ -22,6 +27,12 @@ $rem-f-120: a.px-to-rem(120px);
       border: 1px solid a.$c-pale-blue;
       color: a.$c-blue;
       margin-left: $rem-f-11-71;
+      color: a.$c-blue;
+      cursor: pointer;
+      &:hover {
+        background-color: a.$c-blue;
+        color: a.$c-white;
+      }
     }
   }
 

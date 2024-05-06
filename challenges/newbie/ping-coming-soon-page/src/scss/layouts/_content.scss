@@ -4,13 +4,19 @@ $rem-9: a.px-to-rem(9px);
 $rem-27: a.px-to-rem(27px);
 $rem-28: a.px-to-rem(28px);
 $rem-72: a.px-to-rem(72px);
+$rem-94: a.px-to-rem(94px);
 
 .content {
   margin: $rem-72 $rem-27 0 $rem-28;
   padding-left: $rem-9;
   padding-right: $rem-9;
 
+  @include a.mq-min-width('sm') {
+    margin-top: $rem-94;
+  }
+
   &__image {
     width: 93.914%;
+    max-width: a.px-to-rem(640px);
   }
 }

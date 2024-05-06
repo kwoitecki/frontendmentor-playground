@@ -25,11 +25,12 @@ image:./images/mobile.png[Mobile]
 == My process
 
 === Built with
-
 * Semantic HTML5 markup
 * Flexbox
 * link:https://sass-lang.com/documentation/[Sass]
+* link:https://vitejs.dev/[Vite]
 * colorZilla
+* link:reactjs.org[React]
 
 === Useful resources
 * link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]

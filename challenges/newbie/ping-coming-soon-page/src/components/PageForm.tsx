@@ -28,19 +28,21 @@ const PageForm = () => {
 
   return (
     <form className='header__form' onSubmit={submitHandler}>
-      <input
-        type='email'
-        className={cssClass}
-        placeholder='Your email address…'
-        required
-        ref={inputRef}
-        onBlur={handleBlur}
-      />
-      {!isValid && (
-        <p className='header__form__input__error u-fc-light-red'>
-          Please provide a valid email address
-        </p>
-      )}
+      <div className='header__form__inputarea'>
+        <input
+          type='email'
+          className={cssClass}
+          placeholder='Your email address…'
+          required
+          ref={inputRef}
+          onBlur={handleBlur}
+        />
+        {!isValid && (
+          <p className='header__form__input__error u-fc-light-red'>
+            Please provide a valid email address
+          </p>
+        )}
+      </div>
       <button
         type='submit'
         className='header__form__button u-bg-blue u-fc-white u-fw-normal'
