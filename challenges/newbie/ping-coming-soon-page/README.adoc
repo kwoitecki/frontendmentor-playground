@@ -1,11 +1,11 @@
 [[top]]
-= Frontend Mentor - Single price grid component solution
+= Frontend Mentor - Ping coming soon page solution
 :toc: preamble
 
 link:../../../[Back]
 
 == Overview
-This is a solution to the link:https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc[Single price grid component challenge on Frontend Mentor]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the link:https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da[Ping coming soon page challenge on Frontend Mentor]. Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
 === Screenshot
