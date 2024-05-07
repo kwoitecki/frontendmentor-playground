@@ -1,0 +1,4 @@
+@use '../abstracts/' as a;
+
+@include a.create-utility-classes('bg', 'background', a.$colors);
+@include a.create-utility-classes('fc', 'color', a.$colors);

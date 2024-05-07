@@ -1,0 +1,5 @@
+// Example:
+//
+@use '../abstracts/' as a;
+
+@include a.create-utility-classes('fw', 'font-weight', a.$f-weight);

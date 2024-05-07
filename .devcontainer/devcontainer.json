@@ -17,7 +17,8 @@
         "bradlc.vscode-tailwindcss",
         "ritwickdey.LiveServer",
         "csstools.postcss",
-        "formulahendry.auto-rename-tag"
+        "formulahendry.auto-rename-tag",
+        "ecmel.vscode-html-css"
       ]
     }
   }

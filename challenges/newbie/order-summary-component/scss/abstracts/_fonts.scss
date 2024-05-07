@@ -1,0 +1,13 @@
+// Example:
+$f-size-base: 16px;
+$f-family: 'Red Hat Display', sans-serif;
+
+$f-weight-500: 500;
+$f-weight-700: 700;
+$f-weight-900: 900;
+
+$f-weight: (
+  'light': $f-weight-500,
+  'normal': $f-weight-700,
+  'bold': $f-weight-900,
+);

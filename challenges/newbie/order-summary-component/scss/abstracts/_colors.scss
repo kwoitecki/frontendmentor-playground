@@ -1,0 +1,13 @@
+$c-very-pale-blue: hsl(225, 100%, 98%);
+$c-pale-blue: hsl(225, 100%, 94%);
+$c-desaturated-blue: hsl(224, 23%, 55%);
+$c-bright-blue: hsl(245, 75%, 52%);
+$c-dark-blue: hsl(223, 47%, 23%);
+
+$colors: (
+  'very-pale-blue': $c-very-pale-blue,
+  'pale-blue': $c-pale-blue,
+  'desaturated-blue': $c-desaturated-blue,
+  'bright-blue': $c-bright-blue,
+  'dark-blue': $c-dark-blue,
+);

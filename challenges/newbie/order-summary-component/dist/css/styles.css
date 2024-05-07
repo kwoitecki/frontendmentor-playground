@@ -1,0 +1,77 @@
+:root {
+  --color-very-pale-blue: hsl(225, 100%, 98%);
+  --color-pale-blue: hsl(225, 100%, 94%);
+  --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-bright-blue: hsl(245, 75%, 52%);
+  --color-dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-pale-blue);
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 11.856875rem;
+  background-position: center top;
+}
+
+.u-bg-very-pale-blue {
+  background: hsl(225, 100%, 98%);
+}
+
+.u-bg-pale-blue {
+  background: hsl(225, 100%, 94%);
+}
+
+.u-bg-desaturated-blue {
+  background: hsl(224, 23%, 55%);
+}
+
+.u-bg-bright-blue {
+  background: hsl(245, 75%, 52%);
+}
+
+.u-bg-dark-blue {
+  background: hsl(223, 47%, 23%);
+}
+
+.u-fc-very-pale-blue {
+  color: hsl(225, 100%, 98%);
+}
+
+.u-fc-pale-blue {
+  color: hsl(225, 100%, 94%);
+}
+
+.u-fc-desaturated-blue {
+  color: hsl(224, 23%, 55%);
+}
+
+.u-fc-bright-blue {
+  color: hsl(245, 75%, 52%);
+}
+
+.u-fc-dark-blue {
+  color: hsl(223, 47%, 23%);
+}
+
+.u-fw-light {
+  font-weight: 500;
+}
+
+.u-fw-normal {
+  font-weight: 700;
+}
+
+.u-fw-bold {
+  font-weight: 900;
+}
