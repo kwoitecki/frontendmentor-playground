@@ -10,11 +10,10 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/order-su
 
 === Screenshot
 
-// .Desktop
-// image:./images/desktop.png[Desktop]
 
-// .Mobile
-// image:./images/mobile.png[Mobile]
+image:./images/desktop.png[Desktop]
+
+image:./images/mobile.png[Mobile]
 
 
 === Links
