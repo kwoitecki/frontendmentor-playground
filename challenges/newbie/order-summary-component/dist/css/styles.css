@@ -1,17 +1,47 @@
 :root {
+  --color-white: #ffffff;
   --color-very-pale-blue: hsl(225, 100%, 98%);
   --color-pale-blue: hsl(225, 100%, 94%);
   --color-desaturated-blue: hsl(224, 23%, 55%);
+  --color-blue-violett: #766cf1;
   --color-bright-blue: hsl(245, 75%, 52%);
   --color-dark-blue: hsl(223, 47%, 23%);
 }
 
+/* use box-sizeing model */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* remove default margin */
+* {
   margin: 0;
-  padding: 0;
+}
+
+/* improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove built in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
 }
 
 body {
@@ -22,6 +52,137 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 11.856875rem;
   background-position: center top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100svh;
+}
+@media (min-width: 500px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-size: 100% 11.856875rem;
+  }
+}
+
+.summary {
+  margin: 0 1.5rem;
+  background-color: var(--color-white);
+  text-align: center;
+  border-radius: 1.25rem;
+  max-width: 28.125rem;
+  box-shadow: 0 0.625rem 2.8125rem #979797;
+  overflow: hidden;
+}
+.summary__hero__image {
+  max-width: 100%;
+}
+.summary__heading {
+  margin-top: 2rem;
+  font-size: 1.375rem;
+}
+@media (min-width: 500px) {
+  .summary__heading {
+    margin-top: 2.8125rem;
+    font-size: 1.75rem;
+  }
+}
+.summary__description {
+  margin: 1rem 2rem 0 1rem;
+  line-height: 1.5625rem;
+  font-size: 0.9375rem;
+}
+@media (min-width: 500px) {
+  .summary__description {
+    margin: 1.0625rem 3rem 0 3rem;
+    line-height: 1.625rem;
+    font-size: 1rem;
+  }
+}
+.summary__detail {
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  padding: 1.0625rem 1rem 1rem;
+  border-radius: 0.6875rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 500px) {
+  .summary__detail {
+    margin: 1.25rem 3rem 0 3rem;
+    padding: 1.5625rem 1.5rem;
+  }
+}
+.summary__detail__content {
+  margin-left: 1.25rem;
+}
+.summary__detail__content__heading {
+  font-size: 0.875rem;
+}
+@media (min-width: 500px) {
+  .summary__detail__content__heading {
+    font-size: 1rem;
+  }
+}
+.summary__detail__content__price {
+  font-size: 0.875rem;
+}
+@media (min-width: 500px) {
+  .summary__detail__content__price {
+    font-size: 1rem;
+  }
+}
+.summary__detail__change {
+  margin-left: 3.125rem;
+  font-size: 0.8125rem;
+}
+@media (min-width: 500px) {
+  .summary__detail__change {
+    margin-left: 5.875rem;
+    font-size: 0.875rem;
+  }
+}
+.summary__detail__change:hover {
+  text-decoration: none;
+  color: var(--color-blue-violett);
+}
+.summary__action {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 1.5rem 1.5rem;
+  padding-bottom: 2rem;
+  gap: 1.5rem;
+}
+@media (min-width: 500px) {
+  .summary__action {
+    margin: 2rem 3rem 0 3rem;
+    padding-bottom: 3rem;
+    gap: 2rem;
+  }
+}
+.summary__action__proceed {
+  display: block;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  padding: 0.9375rem 0;
+  border-radius: 0.6875rem;
+  box-shadow: 0 0.625rem 2.8125rem #979797;
+}
+.summary__action__proceed:hover {
+  background-color: var(--color-blue-violett);
+}
+.summary__action__cancel {
+  display: block;
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+.summary__action__cancel:hover {
+  color: var(--color-dark-blue);
+}
+
+.u-bg-white {
+  background: #ffffff;
 }
 
 .u-bg-very-pale-blue {
@@ -36,12 +197,20 @@ body {
   background: hsl(224, 23%, 55%);
 }
 
+.u-bg-blue-violett {
+  background: #766cf1;
+}
+
 .u-bg-bright-blue {
   background: hsl(245, 75%, 52%);
 }
 
 .u-bg-dark-blue {
   background: hsl(223, 47%, 23%);
+}
+
+.u-fc-white {
+  color: #ffffff;
 }
 
 .u-fc-very-pale-blue {
@@ -54,6 +223,10 @@ body {
 
 .u-fc-desaturated-blue {
   color: hsl(224, 23%, 55%);
+}
+
+.u-fc-blue-violett {
+  color: #766cf1;
 }
 
 .u-fc-bright-blue {

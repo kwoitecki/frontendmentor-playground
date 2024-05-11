@@ -3,6 +3,7 @@
 
 @mixin create-utility-classes($prefix, $property, $map) {
   @each $key, $value in $map {
+    @debug '.u-#{$prefix}-#{$key}';
     .u-#{$prefix}-#{$key} {
       #{$property}: $value;
     }

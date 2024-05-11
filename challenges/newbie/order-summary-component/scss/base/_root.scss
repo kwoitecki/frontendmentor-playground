@@ -1,7 +1,9 @@
 @use '../abstracts/' as *;
 
 :root {
+  @debug "CSS Color Vars:";
   @each $key, $value in $colors {
+    @debug "--color-#{$key}: #{$value}";
     --color-#{$key}: #{$value};
   }
 }
