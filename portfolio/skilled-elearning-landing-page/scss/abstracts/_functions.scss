@@ -1,0 +1,10 @@
+@use 'sass:math';
+@use 'fonts' as *;
+
+@function px-to-rem($pixels) {
+  @return #{math.div($pixels, $f-size-base)}rem;
+}
+
+@function px-to-em($pixels) {
+  @return #{math.div($pixels, $f-size-base)}em;
+}

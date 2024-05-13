@@ -25,3 +25,8 @@ This is a playground for frontendmentor.io challenges.
 * link:./challenges/newbie/single-price-grid-component[Single Price Grid Component]
 * link:./challenges/newbie/ping-coming-soon-page[Ping Coming Soon Page]
 * link:./challenges/newbie/order-summary-component[Order Summary Component]
+
+== Portfolio
+
+=== Newbie
+* link:./portfolio/skilled-elearning-landing-page[Skilled eLearning Landing Page]
