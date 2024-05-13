@@ -165,10 +165,9 @@ export default SocialMediaIcons;
 === Configuration Vite
 <<top,start of the page>>
 
-[source, bash]
+[source, javascript]
 ----
 $ cat vite.config.js
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
@@ -180,6 +179,18 @@ export default defineConfig({
     host: '127.0.0.1',
   },
 });
+----
+
+== GIT
+<<top,start of the page>>
+
+[source, bash]
+----
+# delete branch locally
+$ git branch -d ${BRANCH_NAME}
+
+# delete branch remotely
+$ git push origin --delete ${BRANCH_NAME}
 ----
 
 == VSCode 

@@ -1,7 +1,0 @@
-= Scratchpaper
-
-* [x] Border Shadow einstellen
-
-* [x] Desktop Design
-** [x] Warum geht der Preis bei kleineren Auflösungen verloren?
-** [x] Background Image ersetzen
