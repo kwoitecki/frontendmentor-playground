@@ -1,16 +1,9 @@
 @use '../abstracts/' as *;
 
 :root {
-  @debug 'CSS Color Vars:';
-  @each $key, $value in $colors {
-    @debug '--color-#{$key}: #{$value}';
-    --color-#{$key}: #{$value};
-  }
-
-  @for $i from 1 through 100 {
-    $rem-value: px-to-rem($i * 1px);
-
-    @debug '--px-#{$i}px: #{$rem-value}';
-    --px-#{$i}px: #{$rem-value};
-  }
+  @include var('fs-base', $fs-base);
+  @include vars('fs', $f-size);
+  @include var('ff', $ff-primary);
+  @include vars('fw', $f-weight);
+  @include vars('flh', $f-line-height);
 }

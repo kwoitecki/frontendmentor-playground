@@ -17,3 +17,14 @@
     @content;
   }
 }
+
+@mixin vars($prefix, $map) {
+  @each $key, $value in $map {
+    @include var('#{$prefix}-#{$key}', $value);
+  }
+}
+
+@mixin var($property, $value) {
+  @debug '--#{$property}: #{$value}';
+  --#{$property}: #{$value};
+}

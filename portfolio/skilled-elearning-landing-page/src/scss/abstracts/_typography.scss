@@ -1,0 +1,41 @@
+@use 'functions' as *;
+
+$ff-primary: 'Plus Jakarta Sans', sans-serif;
+
+$fs-base: 16px;
+$fs-large: 18px;
+$fs-xlarge: 24px;
+$fs-2xlarge: 32px;
+$fs-3xlarge: 40px;
+$fs-4xlarge: 56px;
+
+$f-size: (
+  'normal': px-to-rem($fs-base, $fs-base),
+  'lg': px-to-rem($fs-large, $fs-base),
+  'xl': px-to-rem($fs-xlarge, $fs-base),
+  '2xl': px-to-rem($fs-2xlarge, $fs-base),
+  '3xl': px-to-rem($fs-3xlarge, $fs-base),
+  '4xl': px-to-rem($fs-4xlarge, $fs-base),
+);
+
+$flh-base: 28px;
+$flh-large: 40px;
+$flh-xlarge: 51px;
+$flh-2xlarge: 70px;
+
+$f-line-height: (
+  'normal': px-to-rem($flh-base, $fs-base),
+  'lg': px-to-rem($flh-large, $fs-base),
+  'xl': px-to-rem($flh-xlarge, $fs-base),
+  '2xl': px-to-rem($flh-2xlarge, $fs-base),
+);
+
+$f-weight-500: 500;
+$f-weight-700: 700;
+$f-weight-800: 800;
+
+$f-weight: (
+  'medium': $f-weight-500,
+  'bold': $f-weight-700,
+  'extra-bold': $f-weight-800,
+);

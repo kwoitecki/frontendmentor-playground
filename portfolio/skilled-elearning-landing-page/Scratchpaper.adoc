@@ -1,20 +1,39 @@
 = Scratchpaper
 
+.Schritte
+* Basis Projekt aufsetzen
+* Komponenten identifizieren
+* Typographie setzen
+
 .base
-* [ ] Projekt neu aufsetzen
+* [x] Projekt neu aufsetzen
 ** [x] mit React und Typescript
-** [ ] Basisstruktur scss
+** [x] Basisstruktur scss
+** [x] Basis Einstellungen vornehmen
+** [x] CleanUp
+** [x] Typographie setzen
 
 .Components Identifizieren
+* Button Component
 * [ ] Navigation
 ** [ ] Normal Mode
 ** [ ] Navigation--dark
-* [ ] Card
-** [ ] für course
-** [ ] für hero 
-* [ ] Hero
-* [ ] Courses
+* Card
+** für course
+** für hero 
+* Hero
+* Courses
 
+.Basis Button Component erstellen
+
+
+.Navigation
+* [ ] Komponente erzeugen
+* [ ] Parameter übergeben
+* [ ] Normal Mode
+* [ ] Dark Mode
+* [ ] Einbauen in Header
+* [ ] Einbauen in Footer
 
 .Mobile design
 
