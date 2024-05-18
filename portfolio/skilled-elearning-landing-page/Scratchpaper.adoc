@@ -1,0 +1,24 @@
+= Scratchpaper
+
+.base
+* [ ] Projekt neu aufsetzen
+** [x] mit React und Typescript
+** [ ] Basisstruktur scss
+
+.Components Identifizieren
+* [ ] Navigation
+** [ ] Normal Mode
+** [ ] Navigation--dark
+* [ ] Card
+** [ ] für course
+** [ ] für hero 
+* [ ] Hero
+* [ ] Courses
+
+
+.Mobile design
+
+.Tablet design
+* [ ] hero__image durch picture ersetzen mit breakpoint
+
+.Desktop design
