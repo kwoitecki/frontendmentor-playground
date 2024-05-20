@@ -63,6 +63,7 @@ Bold
 * [x] fertigstellen
 
 .Tablet design
+* [ ] Breakpoint 650px
 * [ ] design erstellen
 * [ ] hero__image durch picture ersetzen mit breakpoint
 

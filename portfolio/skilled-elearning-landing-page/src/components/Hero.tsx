@@ -19,6 +19,8 @@ const Hero = () => {
           {/* <source media="(min-width: var(--large-screen))" srcSet={largeImage} />
       <source media="(min-width: var(--medium-screen))" srcSet={mediumImage} />
       <source media="(max-width: calc(var(--medium-screen) - 1px))" srcSet={smallImage} /> */}
+
+          <source media='(min-width: 650px)' srcSet='./image-hero-tablet.png' />
           <img
             className='hero__picture__img'
             src='./image-hero-mobile.png'

@@ -1,6 +1,12 @@
+@use '../abstracts/' as *;
+
 .container {
   --u-container-m-lr: var(--space-16);
   --u-container-m-tb: 0;
 
   margin: var(--u-container-m-tb) var(--u-container-m-lr);
+
+  @include mq-min-width('md') {
+    --u-container-m-lr: var(--space-39);
+  }
 }

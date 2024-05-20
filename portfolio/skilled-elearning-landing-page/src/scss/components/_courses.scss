@@ -1,9 +1,18 @@
+@use '../abstracts/' as *;
+
 .courses {
-  --courses-grid-gap: var(--space-40);
+  --courses-grid-gap-v: var(--space-40);
+  --courses-grid-gap-h: 0;
 
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--courses-grid-gap);
+  gap: var(--courses-grid-gap-v) var(--courses-grid-gap-h); // vertical horizontal
+
+  @include mq-min-width('md') {
+    grid-template-columns: repeat(2, 1fr);
+    --courses-grid-gap-h: var(--space-32);
+    --courses-grid-gap-h: var(--space-10);
+  }
 
   &__teaser {
     --course-teaser-br: 10px;

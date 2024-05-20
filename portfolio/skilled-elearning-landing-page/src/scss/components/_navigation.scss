@@ -1,7 +1,13 @@
+@use '../abstracts/' as *;
+
 .navigation {
   --c-nav-m-t: var(--space-16);
 
   margin-top: var(--c-nav-m-t);
+
+  @include mq-min-width('md') {
+    --c-nav-m-t: var(--space-24);
+  }
 
   &__items {
     list-style: none;

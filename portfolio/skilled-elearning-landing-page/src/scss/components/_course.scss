@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .course {
   --course-bg-clr: var(--clr-secondary-white);
   --course-br: 10px;
@@ -19,12 +21,14 @@
   padding-right: var(--course-pr);
   position: relative;
 
+  @include mq-min-width('md') {
+    --course-pl: var(--space-32);
+    --course-pr: var(--space-21);
+  }
+
   &__img-wrapper {
     position: absolute;
     top: calc(-56px / 2);
-    // &__img {
-    //   // 56x56
-    // }
   }
 
   &__title {

@@ -1,3 +1,10 @@
+@use '../abstracts/' as *;
 .page-content {
-  // background: var(--clr-secondary-courses-gradient);
+  --page-content-m-t: 0;
+
+  margin-top: var(--page-content-m-t);
+
+  @include mq-min-width('md') {
+    --page-content-m-t: var(--space-186);
+  }
 }

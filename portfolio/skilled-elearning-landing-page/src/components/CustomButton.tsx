@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 type CustomButtonProps = {
-  style?: 'dark' | 'lite' | '';
+  style?: 'dark' | 'lite' | 'no-border' | '';
   onClick?: () => void;
 };
 
