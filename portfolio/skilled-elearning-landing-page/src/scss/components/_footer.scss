@@ -1,0 +1,9 @@
+.footer {
+  --footer-bg-clr: var(--clr-primary);
+  --footer-mt: var(--space-80);
+  --footer-ptb: var(--space-36);
+
+  background: var(--footer-bg-clr);
+  margin-top: var(--footer-mt);
+  padding: var(--footer-ptb) 0 var(--footer-ptb);
+}

@@ -5,6 +5,18 @@
 * Komponenten identifizieren
 * Typographie setzen
 
+.Components Identifizieren
+* Button Component
+* Navigation
+** Normal Mode
+** Navigation--dark
+* Card
+** für course
+** für hero 
+* Hero
+* Courses
+
+
 .base
 * [x] Projekt neu aufsetzen
 ** [x] mit React und Typescript
@@ -13,31 +25,47 @@
 ** [x] CleanUp
 ** [x] Typographie setzen
 
-.Components Identifizieren
-* Button Component
-* [ ] Navigation
-** [ ] Normal Mode
-** [ ] Navigation--dark
-* Card
-** für course
-** für hero 
-* Hero
-* Courses
 
 .Basis Button Component erstellen
+* [x] Komponente erstellen
+* [x] Basis CSS für Button erstellen
 
+
+Border-Radius
+28px
+31.5px --> large radius
+no border variante
+
+Font-size
+18
+
+Line Height:
+28
+
+Bold
+* [x] Warum flackert der Button beim hover?
+* [x] Breiten abstimmen prüfen
+* [x] Click Event zurückliefern
 
 .Navigation
-* [ ] Komponente erzeugen
-* [ ] Parameter übergeben
-* [ ] Normal Mode
-* [ ] Dark Mode
-* [ ] Einbauen in Header
-* [ ] Einbauen in Footer
+* [x] Komponente erzeugen
+* [x] Einbauen in Header
+* [x] Normal Mode
+
+.Typographie
+* [x] H1, H2, H3, H4, p mit Variablen besetzen
+
+
+.Hero Bereich
+* [x] Stylen - Margin
 
 .Mobile design
+* [x] fertigstellen
 
 .Tablet design
+* [ ] design erstellen
 * [ ] hero__image durch picture ersetzen mit breakpoint
 
 .Desktop design
+* [ ] design erstellen
+* [ ] hero__image durch picture ersetzen mit breakpoint

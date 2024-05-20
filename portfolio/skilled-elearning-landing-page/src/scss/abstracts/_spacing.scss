@@ -1,0 +1,30 @@
+@use 'functions' as f;
+@use 'typography' as t;
+
+$px-16: 16px;
+$px-24: 24px;
+$px-26: 26px;
+$px-28: 28px;
+$px-29: 29px;
+$px-32: 32px;
+$px-36: 36px;
+$px-38: 38px;
+$px-40: 40px;
+$px-46: 46px;
+$px-56: 56px;
+$px-80: 80px;
+
+$spacing: (
+  '16': f.px-to-rem($px-16, t.$fs-base),
+  '24': f.px-to-rem($px-24, t.$fs-base),
+  '26': f.px-to-rem($px-26, t.$fs-base),
+  '28': f.px-to-rem($px-28, t.$fs-base),
+  '29': f.px-to-rem($px-29, t.$fs-base),
+  '32': f.px-to-rem($px-32, t.$fs-base),
+  '36': f.px-to-rem($px-36, t.$fs-base),
+  '38': f.px-to-rem($px-38, t.$fs-base),
+  '40': f.px-to-rem($px-40, t.$fs-base),
+  '46': f.px-to-rem($px-46, t.$fs-base),
+  '56': f.px-to-rem($px-56, t.$fs-base),
+  '80': f.px-to-rem($px-80, t.$fs-base),
+);

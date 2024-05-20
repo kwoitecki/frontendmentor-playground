@@ -4,6 +4,7 @@ $ff-primary: 'Plus Jakarta Sans', sans-serif;
 
 $fs-base: 16px;
 $fs-large: 18px;
+$fs-h3-large: 20px;
 $fs-xlarge: 24px;
 $fs-2xlarge: 32px;
 $fs-3xlarge: 40px;
@@ -11,6 +12,7 @@ $fs-4xlarge: 56px;
 
 $f-size: (
   'normal': px-to-rem($fs-base, $fs-base),
+  'h3-lg': px-to-rem($fs-h3-large, $fs-base),
   'lg': px-to-rem($fs-large, $fs-base),
   'xl': px-to-rem($fs-xlarge, $fs-base),
   '2xl': px-to-rem($fs-2xlarge, $fs-base),
@@ -18,13 +20,17 @@ $f-size: (
   '4xl': px-to-rem($fs-4xlarge, $fs-base),
 );
 
+$flh-small: 26px;
 $flh-base: 28px;
+$flh-medium: 32px;
 $flh-large: 40px;
 $flh-xlarge: 51px;
 $flh-2xlarge: 70px;
 
 $f-line-height: (
+  'small': px-to-rem($flh-small, $fs-base),
   'normal': px-to-rem($flh-base, $fs-base),
+  'medium': px-to-rem($flh-medium, $fs-base),
   'lg': px-to-rem($flh-large, $fs-base),
   'xl': px-to-rem($flh-xlarge, $fs-base),
   '2xl': px-to-rem($flh-2xlarge, $fs-base),

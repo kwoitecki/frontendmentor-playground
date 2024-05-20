@@ -1,36 +1,49 @@
 @use '../abstracts/' as *;
 
+:root {
+  --h1-fs: var(--fs-3xl);
+  --h1-lh: var(--flh-xl);
+  --h1-fw: var(--fw-extra-bold);
+}
+
 body {
   font-family: var(--ff);
   font-size: var(--fs-base);
+  background: var(--clr-secondary-courses-gradient);
 }
 
 h1 {
-  font-size: var(--fs-4xl);
-  line-height: var(--flh-2xl);
-  font-weight: var(--fw-extra-bold);
+  font-size: var(--h1-fs);
+  line-height: var(--h1-lh);
+  font-weight: var(--h1-fw);
 }
 
-h2 {
-  font-size: var(--fs-3xl);
-  line-height: var(--flh-xl);
-  font-weight: var(--fw-extra-bold);
-}
+// heading-xl {
+//   font-size: var(--fs-4xl);
+//   line-height: var(--flh-2xl);
+//   font-weight: var(--fw-extra-bold);
+// }
 
-h3 {
-  font-size: var(--fs-2xl);
-  line-height: var(--flh-lg);
-  font-weight: var(--fw-extra-bold);
-}
+// heading-l {
+//   font-size: var(--fs-3xl);
+//   line-height: var(--flh-xl);
+//   font-weight: var(--fw-extra-bold);
+// }
 
-h4 {
-  font-size: var(--fs-xl);
-  line-height: var(--flh-normal);
-  font-weight: var(--fw-extra-bold);
-}
+// heading-m {
+//   font-size: var(--fs-2xl);
+//   line-height: var(--flh-lg);
+//   font-weight: var(--fw-extra-bold);
+// }
 
-p {
-  font-size: var(--fs-normal);
-  line-height: var(--flh-normal);
-  font-weight: var(--fw-medium);
-}
+// heading-s {
+//   font-size: var(--fs-xl);
+//   line-height: var(--flh-normal);
+//   font-weight: var(--fw-extra-bold);
+// }
+
+// p {
+//   font-size: var(--fs-normal);
+//   line-height: var(--flh-normal);
+//   font-weight: var(--fw-medium);
+// }
