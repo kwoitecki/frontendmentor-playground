@@ -1,0 +1,45 @@
+$clr-primary-200: hsl(233, 54%, 16%);
+$clr-primary-400: hsl(237, 100%, 64%);
+$clr-primary-500: hsl(234, 25%, 52%);
+$clr-primary-600: hsl(232, 10%, 56%);
+
+$clr-secondary-500: hsl(322, 87%, 55%);
+$clr-secondary-600: #ff6f48;
+$clr-secondary-700: hsl(293, 55%, 75%);
+$clr-secondary-800: hsl(341, 100%, 83%);
+$clr-secondary-950: #f0f1ff;
+$clr-secondary-1000: hsl(0, 0%, 100%);
+
+$dark-gradient: linear-gradient(
+  to bottom,
+  $clr-primary-400,
+  $clr-secondary-500
+);
+
+$lite-gradient: linear-gradient(
+  to bottom,
+  $clr-secondary-600 0%,
+  $clr-secondary-500 100%
+);
+
+$courses-gradient: linear-gradient(
+  to bottom,
+  $clr-secondary-1000,
+  $clr-secondary-950
+);
+
+$colors: (
+  'primary-200': $clr-primary-200,
+  'primary-400': $clr-primary-400,
+  'primary-500': $clr-primary-500,
+  'primary-600': $clr-primary-600,
+  'secondary-500': $clr-secondary-500,
+  'secondary-600': $clr-secondary-600,
+  'secondary-700': $clr-secondary-700,
+  'secondary-800': $clr-secondary-800,
+  'secondary-950': $clr-secondary-950,
+  'secondary-1000': $clr-secondary-1000,
+  'gradient-dark': $dark-gradient,
+  'gradient-lite': $lite-gradient,
+  'gradient-courses': $courses-gradient,
+);

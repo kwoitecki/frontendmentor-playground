@@ -1,0 +1,14 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__items {
+    list-style: none;
+  }
+
+  &__logo {
+    // 89x35
+    width: 79.465%;
+  }
+}

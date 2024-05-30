@@ -1,0 +1,8 @@
+.footer {
+  --footer-margin-t: var(--space-80);
+  --footer-padding-tb: var(--space-36);
+
+  background-color: var(--clr-primary-200);
+  margin-top: var(--footer-margin-t);
+  padding-block: var(--footer-padding-tb);
+}

@@ -24,7 +24,7 @@ services:
       - fm-single-price-grid-component:/workspace/challenges/newbie/single-price-grid-component/node_modules
       - fm-ping-coming-soon-page:/workspace/challenges/newbie/ping-coming-soon-page/node_modules
       - fm-order-summary-component:/workspace/challenges/newbie/order-summary-component/node_modules
-      - fm-skilled-elearning-landing-page:/workspace/portfolio/skilled-elearning-landing-page/node_modules
+      - fm-skilled-elearning-landing-page:/workspace/premium/skilled-elearning-landing-page/node_modules
 
     ports:
       - 5555:5555

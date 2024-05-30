@@ -1,0 +1,11 @@
+@use '../abstracts/' as *;
+
+:root {
+  @include var('ff-primary', $ff-primary);
+  @include vars('fs', $f-sizes);
+  @include vars('fw', $f-weight);
+  @include vars('flh', $f-line-height);
+  @include vars('f-paragraph-spacing', $f-paragraph-spacing);
+  @include vars('space', $spacing);
+  @include vars('clr', $colors);
+}
