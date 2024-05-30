@@ -29,10 +29,13 @@
 
 
 * Tablett
-* [ ] Design umsetzen (ohne Background)
+* [ ] Breakpoint ermitteln
+* [ ] Navigation
 * [ ] Hero
 ** [ ] MaxWidth für Content Bereich ähnlich container (ohne margin-right)
        damit Bild außerhalb des Rands laufen kann
+* [ ] Courses
+* [ ] Footer
 
 * Desktop 
 * [ ] Design umsetzen (ohne Background)
