@@ -5,11 +5,11 @@ import PageHeader from './components/PageHeader';
 
 function App() {
   return (
-    <>
+    <div className='content'>
       <PageHeader />
       <PageContent />
       <PageFooter />
-    </>
+    </div>
   );
 }
 

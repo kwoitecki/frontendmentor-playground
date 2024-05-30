@@ -8,4 +8,5 @@
   @include vars('f-paragraph-spacing', $f-paragraph-spacing);
   @include vars('space', $spacing);
   @include vars('clr', $colors);
+  @include vars('breakpoint', $breakpoints);
 }

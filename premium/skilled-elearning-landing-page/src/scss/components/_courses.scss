@@ -1,10 +1,18 @@
+@use '../abstracts/mixins' as *;
+
 .courses {
+  --courses-margin-t: 0;
   --courses-gap-v: var(--space-40);
   --courses-gap-h: 0;
 
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--courses-gap-v) var(--courses-gap-h); // vertical horizontal
+  margin-top: var(--courses-margin-t);
+
+  @include mq-min-width('md') {
+    --courses-margin-t: var(--space-186);
+  }
 
   &__teaser-title {
     --courses-teaser-border-radius: var(--space-10);

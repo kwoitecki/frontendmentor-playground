@@ -1,5 +1,5 @@
 @use 'sass:map';
-// @use 'breakpoints' as *;
+@use 'breakpoints' as *;
 
 @mixin create-utility-classes($prefix, $property, $map) {
   @each $key, $value in $map {
@@ -10,13 +10,13 @@
   }
 }
 
-// @mixin mq-min-width($key) {
-//   $size: map.get($breakpoints, $key);
+@mixin mq-min-width($key) {
+  $size: map.get($breakpoints, $key);
 
-//   @media (min-width: $size) {
-//     @content;
-//   }
-// }
+  @media (min-width: $size) {
+    @content;
+  }
+}
 
 @mixin vars($prefix, $map) {
   @each $key, $value in $map {

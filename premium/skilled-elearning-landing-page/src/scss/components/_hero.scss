@@ -1,9 +1,26 @@
+@use '../abstracts/mixins' as *;
+
 .hero {
   --hero-margin-t: var(--space-38);
   --hero-margin-l: var(--space-16);
   --hero-margin-r: var(--space-16);
+  --hero-column-max-width: 398px;
 
   margin: var(--hero-margin-t) var(--hero-margin-r) 0 var(--hero-margin-l);
+
+  @include mq-min-width('md') {
+    --hero-margin-t: var(--space-99);
+    --hero-margin-l: var(--space-39);
+    --hero-margin-r: 0px;
+  }
+
+  &__column {
+    width: 100%;
+
+    @include mq-min-width('md') {
+      width: min(var(--hero-column-max-width), 100%);
+    }
+  }
 
   &__title {
     --hero-title-fs: var(--fs-40);
@@ -25,6 +42,10 @@
 
     margin-top: var(--hero-description-mt);
     margin-bottom: var(--f-paragraph-spacing-1);
+
+    @include mq-min-width('md') {
+      --hero-description-mt: var(--space-25);
+    }
   }
 
   &__action {
@@ -40,5 +61,17 @@
     width: 95.339%;
     margin: var(--hero-image-mt) auto 0;
     display: block;
+
+    @include mq-min-width('md') {
+      margin: 0;
+      position: absolute;
+      z-index: 2;
+
+      // 640.71x640
+      width: 750px;
+      height: 750px;
+      top: -100px;
+      right: -335px;
+    }
   }
 }

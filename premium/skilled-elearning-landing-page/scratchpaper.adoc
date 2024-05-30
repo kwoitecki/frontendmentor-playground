@@ -29,11 +29,15 @@
 
 
 * Tablett
-* [ ] Breakpoint ermitteln
-* [ ] Navigation
+* [x] Breakpoint ermitteln (768px - 1760)
+* [x] Navigation
 * [ ] Hero
-** [ ] MaxWidth für Content Bereich ähnlich container (ohne margin-right)
+** [x] MaxWidth (398x ) für Content Bereich ähnlich container (ohne margin-right)
        damit Bild außerhalb des Rands laufen kann
+** [x] Title
+** [x] Text 
+** [x] Button
+** [ ] Image
 * [ ] Courses
 * [ ] Footer
 

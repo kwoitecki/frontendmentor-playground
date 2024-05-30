@@ -1,7 +1,18 @@
+@use '../abstracts/mixins' as *;
+
 .container {
   --max-width: 1110px;
-  --container-margin: var(--fs-16);
+  --container-margin: var(--space-16);
 
   width: min(var(--max-width), 100% - (var(--container-margin) * 2));
   margin-inline: var(--container-margin);
+
+  @include mq-min-width('md') {
+    --container-margin: var(--space-39);
+  }
+}
+
+.content {
+  position: relative;
+  overflow: hidden;
 }

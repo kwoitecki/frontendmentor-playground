@@ -1,5 +1,8 @@
+@use '../abstracts/mixins' as *;
+
 .button {
   --btn-fs: var(--fs-16);
+  --btn-lh: var(--flh-28);
   --btn-w: 140px;
   --btn-h: 48px;
   --btn-bg-clr: var(--clr-primary-200);
@@ -7,7 +10,7 @@
 
   font-size: var(--btn-fs);
   font-weight: var(--fw-bold);
-  line-height: var(--flh-28);
+  line-height: var(--btn-lh);
   margin-bottom: var(--f-paragraph-spacing-1);
 
   background: var(--btn-bg-clr);
@@ -34,6 +37,13 @@
 
   &--lite {
     --btn-bg-clr: var(--clr-gradient-lite);
+
+    @include mq-min-width('md') {
+      --btn-w: 167px;
+      --btn-h: 56px;
+      --btn-lh: var(--flh-26);
+    }
+
     &:hover {
       --btn-bg-clr: var(--clr-secondary-800);
     }

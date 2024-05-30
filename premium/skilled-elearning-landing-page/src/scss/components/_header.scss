@@ -1,5 +1,11 @@
+@use '../abstracts/mixins' as *;
+
 .header {
   --nav-margin-top: var(--space-16);
 
   margin-top: var(--nav-margin-top);
+
+  @include mq-min-width('md') {
+    --nav-margin-top: var(--space-24);
+  }
 }
