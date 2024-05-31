@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as *;
+
 .course {
   --course-border-radius: var(--space-10);
   --course-padding-r: var(--space-29);
@@ -11,6 +13,11 @@
   padding-left: var(--course-padding-l);
   padding-right: var(--course-padding-r);
   position: relative;
+
+  @include mq-min-width('md') {
+    --course-padding-l: var(--space-32);
+    --course-padding-r: var(--space-22);
+  }
 
   &__img {
     --image-size: 56px;

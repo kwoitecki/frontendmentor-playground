@@ -31,18 +31,28 @@
 * Tablett
 * [x] Breakpoint ermitteln (768px - 1760)
 * [x] Navigation
-* [ ] Hero
+* [x] Hero
 ** [x] MaxWidth (398x ) für Content Bereich ähnlich container (ohne margin-right)
        damit Bild außerhalb des Rands laufen kann
 ** [x] Title
 ** [x] Text 
 ** [x] Button
+** [x] Image
+* [x] Courses
+* [x] Footer
+
+* Desktop 
+* [ ] Breakpoint ermitteln (768px - 1760)
+* [ ] Navigation
+* [ ] Hero
+** [ ] MaxWidth (398x ) für Content Bereich ähnlich container (ohne margin-right)
+       damit Bild außerhalb des Rands laufen kann
+** [ ] Title
+** [ ] Text 
+** [ ] Button
 ** [ ] Image
 * [ ] Courses
 * [ ] Footer
-
-* Desktop 
-* [ ] Design umsetzen (ohne Background)
 
 
 .Nacharbeiten

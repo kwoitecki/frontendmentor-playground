@@ -65,7 +65,7 @@
     @include mq-min-width('md') {
       margin: 0;
       position: absolute;
-      z-index: 2;
+      z-index: -1;
 
       // 640.71x640
       width: 750px;

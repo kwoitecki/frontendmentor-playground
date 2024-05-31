@@ -12,6 +12,9 @@
 
   @include mq-min-width('md') {
     --courses-margin-t: var(--space-186);
+    grid-template-columns: 1fr 1fr;
+    --courses-gap-h: var(--space-11);
+    --courses-gap-v: var(--space-56);
   }
 
   &__teaser-title {
@@ -33,5 +36,12 @@
       var(--courses-teaser-padding-b) var(--courses-teaser-padding-l);
     border-radius: var(--courses-teaser-border-radius);
     margin-bottom: var(--f-paragraph-spacing-1);
+
+    @include mq-min-width('md') {
+      --courses-teaser-padding-t: var(--space-56);
+      --courses-teaser-padding-r: var(--space-23);
+      --courses-teaser-padding-b: var(--space-139);
+      --courses-teaser-padding-l: var(--space-30);
+    }
   }
 }
