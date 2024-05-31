@@ -1,5 +1,12 @@
+@use '../abstracts/mixins' as *;
+
 body {
   font-family: var(--ff-primary);
   font-size: var(--fs-16);
   background: var(--clr-gradient-courses);
+
+  @include mq-min-width('lg') {
+    display: flex;
+    align-items: center;
+  }
 }

@@ -42,20 +42,22 @@
 * [x] Footer
 
 * Desktop 
-* [ ] Breakpoint ermitteln (768px - 1760)
-* [ ] Navigation
-* [ ] Hero
-** [ ] MaxWidth (398x ) für Content Bereich ähnlich container (ohne margin-right)
+* [x] Breakpoint ermitteln (1440px)
+* [x] Navigation
+* [x] Hero
+** [x] MaxWidth (398x ) für Content Bereich ähnlich container (ohne margin-right)
        damit Bild außerhalb des Rands laufen kann
-** [ ] Title
-** [ ] Text 
-** [ ] Button
-** [ ] Image
-* [ ] Courses
-* [ ] Footer
+** [x] Title
+** [x] Text 
+** [x] Button
+** [x] Image
+* [x] Courses
+* [x] Footer
 
 
 .Nacharbeiten
 * [x] Button Footer - hover effekt Hintergrundfarbe
 * [x] Background hinzufügen
+* [ ] Inhalt zentrieren body bei large flex center!
+* [ ] Testen
 * [ ] Scss Template anpassen in howto Projekt

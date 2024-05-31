@@ -8,14 +8,18 @@ $fs-16: $fs-base;
 $fs-18: 18px;
 $fs-20: 20px;
 $fs-24: 24px;
+$fs-32: 32px;
 $fs-40: 40px;
+$fs-56: 56px;
 
 $f-sizes: (
   '16': px-to-rem($fs-16, $fs-base),
   '18': px-to-rem($fs-18, $fs-base),
   '20': px-to-rem($fs-20, $fs-base),
   '24': px-to-rem($fs-24, $fs-base),
+  '32': px-to-rem($fs-32, $fs-base),
   '40': px-to-rem($fs-40, $fs-base),
+  '56': px-to-rem($fs-56, $fs-base),
 );
 
 $f-weight-500: 500;
@@ -31,11 +35,13 @@ $f-weight: (
 $line-height-26: 26px;
 $line-height-28: 28px;
 $line-height-32: 32px;
+$line-height-40: 40px;
 
 $f-line-height: (
   '26': px-to-rem($line-height-26, $fs-base),
   '28': px-to-rem($line-height-28, $fs-base),
   '32': px-to-rem($line-height-32, $fs-base),
+  '40': px-to-rem($line-height-40, $fs-base),
 );
 
 $f-paragraph-spacing-1: 1px;

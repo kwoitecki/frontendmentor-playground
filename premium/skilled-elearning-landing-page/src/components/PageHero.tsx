@@ -17,6 +17,7 @@ export const PageHero = () => {
         </div>
       </div>
       <picture className='hero__image-wrapper'>
+        <source media='(min-width: 1439px)' srcSet='./image-hero-desktop.png' />
         <source media='(min-width: 768px)' srcSet='./image-hero-tablet.png' />
         <img
           className='hero__image'

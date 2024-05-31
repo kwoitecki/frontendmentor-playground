@@ -17,6 +17,12 @@
     --courses-gap-v: var(--space-56);
   }
 
+  @include mq-min-width('lg') {
+    --courses-margin-t: var(--space-226);
+    grid-template-columns: 1fr 1fr 1fr;
+    --courses-gap-h: var(--space-30);
+  }
+
   &__teaser-title {
     --courses-teaser-border-radius: var(--space-10);
     --courses-teaser-padding-t: var(--space-24);
@@ -42,6 +48,16 @@
       --courses-teaser-padding-r: var(--space-23);
       --courses-teaser-padding-b: var(--space-139);
       --courses-teaser-padding-l: var(--space-30);
+    }
+
+    @include mq-min-width('lg') {
+      --courses-teaser-border-radius: var(--space-15);
+      --courses-teaser-padding-t: var(--space-64);
+      --courses-teaser-padding-r: var(--space-32);
+      --courses-teaser-padding-b: var(--space-138);
+      --courses-teaser-padding-l: var(--space-32);
+      --courses-teaser-fs: var(--fs-32);
+      --courses-teaser-lh: var(--lh-40);
     }
   }
 }

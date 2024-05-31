@@ -23,6 +23,12 @@
 
   cursor: pointer;
 
+  @include mq-min-width('lg') {
+    --btn-fs: var(--fs-18);
+    --btn-w: 167px;
+    --btn-h: 56px;
+  }
+
   &:hover {
     --btn-bg-clr: var(--clr-primary-500);
   }
@@ -31,7 +37,6 @@
     --btn-bg-clr: var(--clr-gradient-dark);
     &:hover {
       --btn-bg-clr: var(--clr-secondary-700);
-      // opacity: 0.5;
     }
   }
 
@@ -42,6 +47,10 @@
       --btn-w: 167px;
       --btn-h: 56px;
       --btn-lh: var(--flh-26);
+    }
+
+    @include mq-min-width('md') {
+      --btn-h: 63px;
     }
 
     &:hover {

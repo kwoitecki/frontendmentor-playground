@@ -11,4 +11,9 @@
   @include mq-min-width('md') {
     --footer-margin-t: var(--space-86);
   }
+
+  @include mq-min-width('lg') {
+    --footer-margin-t: var(--space-140);
+    --footer-padding-tb: var(--space-32);
+  }
 }

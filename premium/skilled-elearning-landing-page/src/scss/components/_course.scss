@@ -19,6 +19,15 @@
     --course-padding-r: var(--space-22);
   }
 
+  @include mq-min-width('lg') {
+    --course-border-radius: var(--space-15);
+    --course-padding-r: var(--space-32);
+    display: flex;
+    flex-direction: column;
+    min-height: var(--space-346);
+    min-width: var(--space-350);
+  }
+
   &__img {
     --image-size: 56px;
     position: absolute;
@@ -34,6 +43,11 @@
 
     margin-top: var(--course-title-margin-t);
     margin-bottom: var(--f-paragraph-spacing-1);
+
+    @include mq-min-width('lg') {
+      --course-title-margin-t: var(--space-64);
+      --course-title-fs: var(--fs-24);
+    }
   }
 
   &__description {
@@ -46,6 +60,11 @@
     font-size: var(--course-description-fs);
     line-height: var(--flh-26);
     color: var(--clr-primary-600);
+
+    @include mq-min-width('lg') {
+      --course-description-margin-t: var(--space-24);
+      --course-description-fs: var(--fs-18);
+    }
   }
 
   &__action {
@@ -55,5 +74,10 @@
     font-size: var(--fs-18);
     line-height: var(--flh-28);
     margin-bottom: var(--course-action-margin-bottom);
+
+    @include mq-min-width('lg') {
+      --course-action-margin-bottom: var(--space-40);
+      margin-top: auto;
+    }
   }
 }

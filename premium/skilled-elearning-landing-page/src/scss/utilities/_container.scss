@@ -10,9 +10,8 @@
   @include mq-min-width('md') {
     --container-margin: var(--space-39);
   }
-}
 
-.content {
-  position: relative;
-  overflow: hidden;
+  @include mq-min-width('lg') {
+    --container-margin: var(--space-165);
+  }
 }

@@ -3,6 +3,7 @@
 
 $px-10: 10px;
 $px-11: 11px;
+$px-15: 15px;
 $px-16: 16px;
 $px-22: 22px;
 $px-23: 23px;
@@ -19,15 +20,25 @@ $px-39: 39px;
 $px-40: 40px;
 $px-46: 46px;
 $px-56: 56px;
+$px-64: 64px;
 $px-80: 80px;
 $px-86: 86px;
 $px-99: 99px;
+$px-138: 138px;
 $px-139: 139px;
+$px-140: 140px;
+$px-165: 165px;
 $px-186: 186px;
+$px-226: 226px;
+$px-346: 346px;
+$px-350: 350px;
+$px-398: 398px;
+$px-457: 457px;
 
 $spacing: (
   '10': f.px-to-rem($px-10, t.$fs-base),
   '11': f.px-to-rem($px-11, t.$fs-base),
+  '15': f.px-to-rem($px-15, t.$fs-base),
   '16': f.px-to-rem($px-16, t.$fs-base),
   '22': f.px-to-rem($px-22, t.$fs-base),
   '23': f.px-to-rem($px-23, t.$fs-base),
@@ -44,9 +55,18 @@ $spacing: (
   '40': f.px-to-rem($px-40, t.$fs-base),
   '46': f.px-to-rem($px-46, t.$fs-base),
   '56': f.px-to-rem($px-56, t.$fs-base),
+  '64': f.px-to-rem($px-64, t.$fs-base),
   '80': f.px-to-rem($px-80, t.$fs-base),
   '86': f.px-to-rem($px-86, t.$fs-base),
   '99': f.px-to-rem($px-99, t.$fs-base),
+  '138': f.px-to-rem($px-138, t.$fs-base),
   '139': f.px-to-rem($px-139, t.$fs-base),
+  '140': f.px-to-rem($px-140, t.$fs-base),
+  '165': f.px-to-rem($px-165, t.$fs-base),
   '186': f.px-to-rem($px-186, t.$fs-base),
+  '226': f.px-to-rem($px-226, t.$fs-base),
+  '346': f.px-to-rem($px-346, t.$fs-base),
+  '350': f.px-to-rem($px-350, t.$fs-base),
+  '398': f.px-to-rem($px-398, t.$fs-base),
+  '457': f.px-to-rem($px-457, t.$fs-base),
 );
