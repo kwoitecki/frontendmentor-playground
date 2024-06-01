@@ -1,8 +1,16 @@
 @use '../abstracts/mixins' as *;
 
 .wrapper {
-  --max-width: var(--breakpoint-max-lg);
+  --max-width: 100%;
   position: relative;
   overflow: hidden;
   max-width: var(--max-width);
+
+  @include mq-min-width('md') {
+    --max-width: var(--breakpoint-max-md);
+  }
+
+  @include mq-min-width('lg') {
+    --max-width: var(--breakpoint-lg);
+  }
 }

@@ -1,9 +1,9 @@
 $breakpoint-md: 768px;
-$breakpoint-lg: 1100px;
-$max-size-lg: 1440px;
+$breakpoint-lg: 1440px;
+$breakpoint-max-md: 1200px;
 
 $breakpoints: (
   'md': $breakpoint-md,
+  'max-md': $breakpoint-max-md,
   'lg': $breakpoint-lg,
-  'max-lg': $max-size-lg,
 );
