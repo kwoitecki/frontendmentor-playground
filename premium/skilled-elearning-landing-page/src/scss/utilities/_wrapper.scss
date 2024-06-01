@@ -1,0 +1,8 @@
+@use '../abstracts/mixins' as *;
+
+.wrapper {
+  --max-width: var(--breakpoint-max-lg);
+  position: relative;
+  overflow: hidden;
+  max-width: var(--max-width);
+}

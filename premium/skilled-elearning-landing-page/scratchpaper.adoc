@@ -59,8 +59,8 @@
 * [x] Button Footer - hover effekt Hintergrundfarbe
 * [x] Background hinzufügen
 * [x] Breakpoint angepasst
-* [ ] Image von Links setzen
-* [ ] Inhalt zentrieren body bei large flex center ggf. neuen Breakpoint XL
+* [-] Image von Links setzen
+* [x] Inhalt zentrieren body bei large flex center ggf. neuen Breakpoint XL
 * [ ] Testen
 * [ ] Clean-Up
 * [ ] Scss Template anpassen in howto Projekt
