@@ -1,0 +1,30 @@
+.hero {
+  --hero-margin-r: var(--spacing-24);
+
+  margin-right: var(--hero-margin-r);
+
+  &__title {
+    --hero-title-fs: var(--fs-40);
+    --hero-title-lh: var(--flh-48);
+    --hero-title-ls: var(--f-ls-minus-0-45);
+
+    font-size: var(--hero-title-fs);
+    line-height: var(--hero-title-lh);
+    font-weight: var(--fw-bold);
+    letter-spacing: var(--hero-title-ls);
+    margin-bottom: var(--spacing-1);
+  }
+
+  &__description {
+    --hero-description-margin-t: var(--spacing-20);
+    --hero-description-fs: var(--fs-16);
+    --hero-description-lh: var(--flh-26);
+
+    margin-top: var(--hero-description-margin-t);
+    font-size: var(--hero-description-fs);
+    line-height: var(--hero-description-lh);
+
+    margin-bottom: var(--spacing-1);
+    font-weight: var(--fw-regular);
+  }
+}

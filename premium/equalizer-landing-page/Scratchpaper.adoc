@@ -4,10 +4,11 @@
 * [x] add Markup
 
 .Mobile
-* [ ] Header
-* [ ] Hero
+* [x] Header
+* [x] Hero
 * [ ] Products
 * [ ] Footer
+* [ ] Background Image
 
 .Tablett
 * [ ] Header

@@ -1,10 +1,13 @@
+@use 'functions' as *;
 $ff-primary: 'IBM Plex Sans', sans-serif;
 
-$fs-base: 16px;
-$fs-16: $fs-base;
+$fs-base: 16;
+$fs-16: 16px;
+$fs-40: 40px;
 
 $f-sizes: (
   '16': $fs-16,
+  '40': $fs-40,
 );
 
 $fw-regular: 400;
@@ -13,4 +16,18 @@ $fw-bold: 700;
 $f-weight: (
   'regular': $fw-regular,
   'bold': $fw-bold,
+);
+
+$line-height-26: 26px;
+$line-height-48: 48px;
+
+$f-line-height: (
+  '26': px-to-rem($line-height-26, $fs-16),
+  '48': px-to-rem($line-height-48, $fs-16),
+);
+
+$letter-spacing-minus-0-45: -0.45px;
+
+$f-letter-spacing: (
+  'minus-0-45': $letter-spacing-minus-0-45,
 );

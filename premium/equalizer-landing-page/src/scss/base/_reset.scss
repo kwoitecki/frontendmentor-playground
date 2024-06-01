@@ -27,3 +27,8 @@ html:focus-within {
 body {
   text-rendering: optimizeSpeed;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+}

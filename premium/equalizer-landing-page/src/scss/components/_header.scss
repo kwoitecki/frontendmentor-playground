@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as *;
+
+.header {
+  --header-margin-t: var(--spacing-40);
+  --header-margin-l: var(--spacing-24);
+  --header-v-gap: var(--spacing-64);
+
+  margin-top: var(--header-margin-t);
+  margin-left: var(--header-margin-l);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--header-v-gap);
+
+  &__logo {
+    max-width: 100%;
+    display: block;
+  }
+
+  &__background-pattern {
+    display: none;
+
+    @include mq-min-width('md') {
+      display: block;
+    }
+  }
+}
