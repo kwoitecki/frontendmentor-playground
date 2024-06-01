@@ -30,4 +30,5 @@ This is a playground for frontendmentor.io challenges.
 
 ==== Newbie
 * link:./premium/skilled-elearning-landing-page[Skilled eLearning Landing Page]
+* link:./premium/equalizer-landing-page[Equalizer Landing Page]
 

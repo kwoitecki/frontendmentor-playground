@@ -25,6 +25,7 @@ services:
       - fm-ping-coming-soon-page:/workspace/challenges/newbie/ping-coming-soon-page/node_modules
       - fm-order-summary-component:/workspace/challenges/newbie/order-summary-component/node_modules
       - fm-skilled-elearning-landing-page:/workspace/premium/skilled-elearning-landing-page/node_modules
+      - fm-equalizer-landing-page:/workspace/premium/equalizer-landing-page/node_modules
 
     ports:
       - 5555:5555
@@ -43,3 +44,4 @@ volumes:
   fm-ping-coming-soon-page:
   fm-order-summary-component:
   fm-skilled-elearning-landing-page:
+  fm-equalizer-landing-page:
