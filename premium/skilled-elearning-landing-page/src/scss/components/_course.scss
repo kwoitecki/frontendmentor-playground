@@ -29,7 +29,7 @@
   }
 
   &__img {
-    --image-size: 56px;
+    --image-size: var(--space-56);
     position: absolute;
     top: calc(-1 * var(--image-size) / 2);
   }

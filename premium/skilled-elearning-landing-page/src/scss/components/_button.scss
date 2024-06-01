@@ -3,8 +3,8 @@
 .button {
   --btn-fs: var(--fs-16);
   --btn-lh: var(--flh-28);
-  --btn-w: 140px;
-  --btn-h: 48px;
+  --btn-w: var(--space-140);
+  --btn-h: var(--space-48);
   --btn-bg-clr: var(--clr-primary-200);
   --btn-clr: var(--clr-secondary-1000);
 
@@ -19,14 +19,14 @@
   width: var(--btn-w);
   height: var(--btn-h);
   border: 0;
-  border-radius: 28px;
+  border-radius: var(--space-28);
 
   cursor: pointer;
 
   @include mq-min-width('lg') {
     --btn-fs: var(--fs-18);
-    --btn-w: 167px;
-    --btn-h: 56px;
+    --btn-w: var(--space-167);
+    --btn-h: var(--space-56);
   }
 
   &:hover {
@@ -44,13 +44,13 @@
     --btn-bg-clr: var(--clr-gradient-lite);
 
     @include mq-min-width('md') {
-      --btn-w: 167px;
-      --btn-h: 56px;
+      --btn-w: var(--space-167);
+      --btn-h: var(--space-56);
       --btn-lh: var(--flh-26);
     }
 
     @include mq-min-width('md') {
-      --btn-h: 63px;
+      --btn-h: var(--space-63);
     }
 
     &:hover {
