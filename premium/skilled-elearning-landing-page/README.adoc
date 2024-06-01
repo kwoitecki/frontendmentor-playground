@@ -1,4 +1,4 @@
-  [[top]]
+[[top]]
 = Frontend Mentor - Skilled e-learning landing page solution
 :toc: preamble
 
