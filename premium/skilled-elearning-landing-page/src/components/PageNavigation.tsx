@@ -4,12 +4,13 @@ import { Mode } from './Mode';
 
 type NavigationProps = {
   mode?: Mode;
+  ariaLabel: string;
 };
 
-const PageNavigation: FC<NavigationProps> = ({ mode }) => {
+const PageNavigation: FC<NavigationProps> = ({ mode, ariaLabel }) => {
   const image = mode === 'dark' ? 'logo-light.svg' : './logo-dark.svg';
   return (
-    <nav className='container'>
+    <nav className='container' aria-label={ariaLabel}>
       <ul className='navigation'>
         <li className='navigation__items'>
           <img src={image} className='navigation__logo' alt='logo' />

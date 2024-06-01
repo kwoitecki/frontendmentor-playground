@@ -3,7 +3,7 @@ import PageNavigation from './PageNavigation';
 const PageHeader = () => {
   return (
     <header className='header'>
-      <PageNavigation />
+      <PageNavigation ariaLabel='Primary Navigation' />
     </header>
   );
 };
