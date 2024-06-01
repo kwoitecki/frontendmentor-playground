@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+:root {
+  @include var('ff-primary', $ff-primary);
+  @include vars('fs', $f-sizes);
+  @include vars('fw', $f-weight);
+}

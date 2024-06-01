@@ -1,0 +1,22 @@
+= Scratchpaper
+
+* [x] add typography
+* [x] add Markup
+
+.Mobile
+* [ ] Header
+* [ ] Hero
+* [ ] Products
+* [ ] Footer
+
+.Tablett
+* [ ] Header
+* [ ] Hero
+* [ ] Products
+* [ ] Footer
+
+.Desktop
+* [ ] Header
+* [ ] Hero
+* [ ] Products
+* [ ] Footer
