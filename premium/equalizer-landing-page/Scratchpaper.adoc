@@ -3,11 +3,20 @@
 * [x] add typography
 * [x] add Markup
 
+* [x] Fonts einbinden
+** [x] Testen wie es sich bei einem Build verhält
+
 .Mobile
 * [x] Header
 * [x] Hero
 * [ ] Products
+** [x] Fertigstellen Typographie
+** [ ] Markup umstellen Idee (Positionierung)
+*** 1 Parent Element und 3 Child Elemente die absolut positioniert werden
+*** Parent Element hat position relativ und eine min-height
+
 * [ ] Footer
+
 * [ ] Background Image
 
 .Tablett

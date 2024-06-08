@@ -1,0 +1,33 @@
+.btn {
+  font-size: var(--fs-18);
+  font-weight: var(--fw-bold);
+  line-height: var(--flh-32);
+  letter-spacing: var(--f-ls-minus-0-18);
+  margin-bottom: var(--spacing-1);
+
+  width: 100%;
+  display: inline-flex;
+  gap: var(--spacing-8);
+  align-items: center;
+  justify-content: center;
+
+  padding-top: var(--spacing-15);
+  padding-bottom: var(--spacing-14);
+
+  border: none;
+  border-radius: var(--spacing-12);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--clr-secondary-700);
+  }
+
+  &--dark {
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-900);
+
+    &:hover {
+      background-color: var(--clr-secondary-400);
+    }
+  }
+}

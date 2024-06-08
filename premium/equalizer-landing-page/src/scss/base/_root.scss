@@ -7,6 +7,7 @@
   @include vars('fw', $f-weight);
   @include vars('flh', $f-line-height);
   @include vars('f-ls', $f-letter-spacing);
+  @include vars('clr', $colors);
 
   @for $i from $spacing-min through $spacing-max {
     --spacing-#{$i}: #{math.div($i, $fs-base)}rem;

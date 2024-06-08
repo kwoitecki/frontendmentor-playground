@@ -1,13 +1,23 @@
 @use 'functions' as *;
+
 $ff-primary: 'IBM Plex Sans', sans-serif;
+// $ff-primary: sans-serif;
 
 $fs-base: 16;
 $fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-32: 32px;
 $fs-40: 40px;
+$fs-65: 65px;
 
 $f-sizes: (
   '16': $fs-16,
+  '18': $fs-18,
+  '20': $fs-20,
+  '32': $fs-32,
   '40': $fs-40,
+  '65': $fs-65,
 );
 
 $fw-regular: 400;
@@ -19,15 +29,27 @@ $f-weight: (
 );
 
 $line-height-26: 26px;
+$line-height-28: 28px;
+$line-height-32: 32px;
+$line-height-40: 40px;
 $line-height-48: 48px;
+$line-height-52: 52px;
 
 $f-line-height: (
   '26': px-to-rem($line-height-26, $fs-16),
+  '28': px-to-rem($line-height-28, $fs-16),
+  '32': px-to-rem($line-height-32, $fs-16),
+  '40': px-to-rem($line-height-40, $fs-16),
   '48': px-to-rem($line-height-48, $fs-16),
+  '52': px-to-rem($line-height-52, $fs-16),
 );
 
+$letter-spacing-minus-0-2: -0.2px;
+$letter-spacing-minus-0-18: -0.18px;
 $letter-spacing-minus-0-45: -0.45px;
 
 $f-letter-spacing: (
+  'minus-0-18': $letter-spacing-minus-0-18,
+  'minus-0-2': $letter-spacing-minus-0-2,
   'minus-0-45': $letter-spacing-minus-0-45,
 );

@@ -1,0 +1,14 @@
+$clr-primary-100: hsl(244, 23%, 12%);
+$clr-primary-900: hsl(20, 33%, 98%);
+
+$clr-secondary-400: hsl(177, 68%, 64%);
+$clr-secondary-600: hsl(12, 94%, 65%);
+$clr-secondary-700: hsl(33, 100%, 70%);
+
+$colors: (
+  'primary-100': $clr-primary-100,
+  'primary-900': $clr-primary-900,
+  'secondary-400': $clr-secondary-400,
+  'secondary-600': $clr-secondary-600,
+  'secondary-700': $clr-secondary-700,
+);
