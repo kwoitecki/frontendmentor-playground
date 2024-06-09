@@ -9,15 +9,18 @@
 .Mobile
 * [x] Header
 * [x] Hero
-* [ ] Products
+* [x] Products
 ** [x] Fertigstellen Typographie
+* [x] Footer
+
+.Finetuning
+* [ ] Product Refactoring
 ** [ ] Markup umstellen Idee (Positionierung)
 *** 1 Parent Element und 3 Child Elemente die absolut positioniert werden
 *** Parent Element hat position relativ und eine min-height
-
-* [ ] Footer
-
 * [ ] Background Image
+* [ ] Hover Effekte für social icons
+
 
 .Tablett
 * [ ] Header
