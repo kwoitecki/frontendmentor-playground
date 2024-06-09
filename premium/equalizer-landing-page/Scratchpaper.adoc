@@ -23,9 +23,13 @@
 ** Idee Awesome Fonts einsetzen
 
 .Tablett
-* [ ] Header
-* [ ] Hero
+* [x] Breakpoint bestimmen (768px (???))
+* [x] body background image
+* [x] Header
+** [x] Image
+* [x] Hero
 * [ ] Products
+** [ ] Aktueller Stand: _product-content.scss
 * [ ] Footer
 
 .Desktop
@@ -33,3 +37,6 @@
 * [ ] Hero
 * [ ] Products
 * [ ] Footer
+
+.Finetuning
+* [ ] Facebook icon Footer Facebook austausen mit einem Icon mit Weißer Schrift auf schwarzen Hintergrund

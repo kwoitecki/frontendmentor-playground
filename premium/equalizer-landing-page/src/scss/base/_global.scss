@@ -15,4 +15,8 @@ body {
   background-size: auto;
   background-image: url('./assets/images/bg-main-mobile.png');
   background-position: calc(100% + 200px) -250px;
+
+  @include mq-min-width('md') {
+    background-image: url('./assets/images/bg-main-tablet.png');
+  }
 }

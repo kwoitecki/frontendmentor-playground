@@ -1,7 +1,14 @@
+@use '../abstracts/mixins' as *;
+
 .products {
   --products-margin-top: var(--spacing-68);
   --products-margin-inline: 0;
 
   margin-top: var(--products-margin-top);
   margin-inline: var(--products-margin-inline);
+
+  @include mq-min-width('md') {
+    --products-margin-top: var(--spacing-111);
+    --products-margin-inline: var(--spacing-33);
+  }
 }

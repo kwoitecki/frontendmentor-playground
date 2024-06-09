@@ -1,7 +1,14 @@
+@use '../abstracts/' as *;
+
 .hero {
   --hero-margin-r: var(--spacing-24);
 
   margin-right: var(--hero-margin-r);
+
+  @include mq-min-width('md') {
+    --hero-margin-r: 0;
+    max-width: 520px;
+  }
 
   &__title {
     --hero-title-fs: var(--fs-40);
@@ -13,6 +20,12 @@
     font-weight: var(--fw-bold);
     letter-spacing: var(--hero-title-ls);
     margin-bottom: var(--spacing-1);
+
+    @include mq-min-width('md') {
+      --hero-title-fs: var(--fs-64);
+      --hero-title-lh: var(--flh-64);
+      --hero-title-ls: var(--f-ls-minus-0-73);
+    }
   }
 
   &__description {
@@ -26,5 +39,11 @@
 
     margin-bottom: var(--spacing-1);
     font-weight: var(--fw-regular);
+
+    @include mq-min-width('md') {
+      --hero-description-margin-t: var(--spacing-28);
+      --hero-description-fs: var(--fs-18);
+      --hero-description-lh: var(--flh-28);
+    }
   }
 }

@@ -12,6 +12,12 @@
   grid-template-columns: 1fr;
   row-gap: var(--header-v-gap);
 
+  @include mq-min-width('md') {
+    --header-margin-t: var(--spacing-62);
+    --header-margin-l: var(--spacing-39);
+    --header-v-gap: var(--spacing-95);
+  }
+
   &__logo {
     max-width: 100%;
     display: block;
@@ -22,6 +28,11 @@
 
     @include mq-min-width('md') {
       display: block;
+      position: absolute;
+      width: 267px;
+      height: 400px;
+      top: calc(var(--header-margin-t) * -1.6);
+      right: -40px;
     }
   }
 }

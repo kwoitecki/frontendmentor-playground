@@ -13,7 +13,8 @@ $fs-20: 20px;
 $fs-22-87: 22.87px;
 $fs-32: 32px;
 $fs-40: 40px;
-$fs-65: 65px;
+$fs-64: 64px;
+$fs-65: 64px;
 
 $f-sizes: (
   '16': $fs-16,
@@ -22,6 +23,7 @@ $f-sizes: (
   '22-87': $fs-22-87,
   '32': $fs-32,
   '40': $fs-40,
+  '64': $fs-64,
   '65': $fs-65,
 );
 
@@ -39,6 +41,7 @@ $line-height-32: 32px;
 $line-height-40: 40px;
 $line-height-48: 48px;
 $line-height-52: 52px;
+$line-height-64: 64px;
 
 $f-line-height: (
   '26': px-to-rem($line-height-26, $fs-16),
@@ -47,14 +50,17 @@ $f-line-height: (
   '40': px-to-rem($line-height-40, $fs-16),
   '48': px-to-rem($line-height-48, $fs-16),
   '52': px-to-rem($line-height-52, $fs-16),
+  '64': px-to-rem($line-height-64, $fs-16),
 );
 
 $letter-spacing-minus-0-2: -0.2px;
 $letter-spacing-minus-0-18: -0.18px;
 $letter-spacing-minus-0-45: -0.45px;
+$letter-spacing-minus-0-73: -0.73px;
 
 $f-letter-spacing: (
   'minus-0-18': $letter-spacing-minus-0-18,
   'minus-0-2': $letter-spacing-minus-0-2,
   'minus-0-45': $letter-spacing-minus-0-45,
+  'minus-0-73': $letter-spacing-minus-0-73,
 );
