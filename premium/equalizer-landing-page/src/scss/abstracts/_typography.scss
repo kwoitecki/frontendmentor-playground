@@ -1,7 +1,10 @@
 @use 'functions' as *;
 
-$ff-primary: 'IBM Plex Sans', sans-serif;
-// $ff-primary: sans-serif;
+$font-family: 'IBM Plex Sans';
+$f-regular-file: './assets/fonts/IBMPlexSans-Regular.ttf';
+$f-bold-file: './assets/fonts/IBMPlexSans-Bold.ttf';
+
+$ff-primary: $font-family, sans-serif;
 
 $fs-base: 16;
 $fs-16: 16px;

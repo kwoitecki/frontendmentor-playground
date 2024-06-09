@@ -1,18 +1,7 @@
-/* Für IBMPlexSans Regular */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('./assets/fonts/IBMPlexSans-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
+@use '../abstracts/' as *;
 
-/* Für IBMPlexSans Bold */
-@font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('./assets/fonts/IBMPlexSans-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: bold;
-}
+@include add-font-face($font-family, $f-regular-file, $fw-regular, 'normal');
+@include add-font-face($font-family, $f-bold-file, $fw-bold, 'bold');
 
 body {
   font-family: var(--ff-primary);

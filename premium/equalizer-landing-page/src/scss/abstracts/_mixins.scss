@@ -10,6 +10,15 @@
   }
 }
 
+@mixin add-font-face($font-family, $file, $weight, $style) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file}') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
 @mixin mq-min-width($key) {
   $size: map.get($breakpoints, $key);
 
