@@ -6,13 +6,16 @@ const Product = () => {
         src='./illustration-app.png'
         alt='Illustration of the app'
       />
-      <picture>
-        <img
-          className='product__background'
-          src='./bg-pattern-2.svg'
-          alt='Product Background'
-        />
-      </picture>
+
+      <div className='product__background'>
+        <picture>
+          <img
+            className='product__background-img'
+            src='./bg-pattern-2.svg'
+            alt='Product Background'
+          />
+        </picture>
+      </div>
       <div className='product__content'>
         <h2 className='product__header'>Premium EQ</h2>
         <p className='product__description'>

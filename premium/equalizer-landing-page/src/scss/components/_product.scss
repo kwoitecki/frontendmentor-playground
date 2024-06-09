@@ -1,8 +1,8 @@
 .product {
   position: relative;
   border-radius: var(--spacing-12);
-  // height: 600px;
-  background-color: var(--clr-primary-100);
+  height: 1024px;
+  background-color: var(--clr-primary-900);
 
   display: flex;
 
@@ -11,19 +11,34 @@
 
   &__image {
     position: absolute;
-    top: -98px;
     margin: auto;
     display: block;
-    // 208.97x 430
-    width: 55.725%;
+    width: 208.97px;
+    height: 430px;
+    z-index: 1;
   }
 
   &__background {
-    display: block;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--clr-primary-100);
     width: 100%;
+    height: 600px;
+    top: 98px;
+
+    &-img {
+      display: block;
+      width: 280px;
+      height: 420px;
+    }
   }
 
   &__content {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
     background-color: var(--clr-secondary-600);
     color: var(--clr-primary-900);
     border-radius: var(--spacing-12);
