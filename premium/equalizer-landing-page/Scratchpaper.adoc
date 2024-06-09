@@ -19,9 +19,8 @@
 ** [x] Markup umstellen Idee (Positionierung)
 *** 1 Parent Element und 3 Child Elemente die absolut positioniert werden
 *** Parent Element hat position relativ und eine min-height
-* [ ] Hover Effekte für social icons
+* [x] Hover Effekte für social icons
 ** Idee Awesome Fonts einsetzen
-
 
 .Tablett
 * [ ] Header

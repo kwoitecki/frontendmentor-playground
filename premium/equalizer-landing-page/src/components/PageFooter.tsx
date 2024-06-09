@@ -1,3 +1,10 @@
+import {
+  faFacebookSquare,
+  faInstagram,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const PageFooter = () => {
   return (
     <footer className='footer'>
@@ -13,9 +20,18 @@ const PageFooter = () => {
         </div>
       </div>
       <div className='footer__social'>
-        <img src='./icon-facebook.svg' alt='Facebook icon' />
-        <img src='./icon-instagram.svg' alt='Instagram icon' />
-        <img src='./icon-twitter.svg' alt='Twitter icon' />
+        <div className='social-icon'>
+          <FontAwesomeIcon
+            icon={faFacebookSquare}
+            className='social-icon__item'
+          />
+        </div>
+        <div className='social-icon'>
+          <FontAwesomeIcon icon={faInstagram} className='social-icon__item' />
+        </div>
+        <div className='social-icon'>
+          <FontAwesomeIcon icon={faTwitter} className='social-icon__item' />
+        </div>
       </div>
     </footer>
   );

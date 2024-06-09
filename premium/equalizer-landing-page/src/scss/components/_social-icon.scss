@@ -1,0 +1,11 @@
+.social-icon {
+  cursor: pointer;
+
+  &__item {
+    font-size: var(--fs-22-87);
+
+    &:hover {
+      background-color: var(--clr-secondary-600);
+    }
+  }
+}
