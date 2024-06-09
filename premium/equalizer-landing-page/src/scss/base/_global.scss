@@ -7,4 +7,12 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-16);
   color: var(--clr-primary-100);
+
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-image: url('./assets/images/bg-main-mobile.png');
+  background-position: calc(100% + 200px) -250px;
 }
