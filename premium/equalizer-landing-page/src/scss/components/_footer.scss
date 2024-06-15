@@ -1,6 +1,9 @@
+@use '../abstracts/mixins' as *;
+
 .footer {
   --footer-margin-t: var(--spacing-64);
-  --footer-margin-lr: var(--spacing-24);
+  --footer-margin-r: var(--spacing-24);
+  --footer-margin-l: var(--spacing-24);
   --footer-margin-b: var(--spacing-80);
 
   --footer-gap: var(--spacing-64);
@@ -9,8 +12,16 @@
   flex-direction: column;
   gap: var(--footer-gap);
 
-  margin: var(--footer-margin-t) var(--footer-margin-lr) var(--footer-margin-b)
-    var(--footer-margin-lr);
+  margin: var(--footer-margin-t) var(--footer-margin-r) var(--footer-margin-b)
+    var(--footer-margin-l);
+
+  @include mq-min-width('md') {
+    --footer-margin-t: var(--spacing-87);
+    --footer-margin-l: var(--spacing-33);
+    --footer-margin-r: var(--spacing-39);
+    --footer-margin-b: var(--spacing-85);
+    flex-direction: row;
+  }
 
   &__image-text {
     --image-text-gap: var(--spacing-32);
@@ -37,5 +48,9 @@
   &__social {
     display: flex;
     gap: var(--spacing-20);
+
+    @include mq-min-width('md') {
+      align-self: flex-end;
+    }
   }
 }

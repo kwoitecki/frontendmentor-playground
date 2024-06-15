@@ -28,9 +28,9 @@
 * [x] Header
 ** [x] Image
 * [x] Hero
-* [ ] Products
-** [ ] Aktueller Stand: _product-content.scss
-* [ ] Footer
+* [x] Products
+** [x] Aktueller Stand: _product-content.scss
+* [x] Footer
 
 .Desktop
 * [ ] Header
@@ -40,3 +40,5 @@
 
 .Finetuning
 * [ ] Facebook icon Footer Facebook austausen mit einem Icon mit Weißer Schrift auf schwarzen Hintergrund
+* [ ] Background image ragt über den Bereich hinaus
+* [ ] PostCSS - minifiy css
