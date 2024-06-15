@@ -21,15 +21,16 @@ const PageHeader = () => {
   }, []);
 
   const isVisible = windowSize.width > 767;
+  console.log(isVisible);
 
   return (
     <header className='header'>
       <img src='./logo.svg' alt='logo equalizer' className='header__logo' />
       <img
         src='./bg-pattern-1.svg'
-        alt='background pattern'
+        alt='welcome to the equalizer landing page'
         className='header__background-pattern'
-        aria-visible={isVisible}
+        // aria-visible={isVisible}
       />
       <Hero />
     </header>
