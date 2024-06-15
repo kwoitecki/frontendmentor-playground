@@ -19,4 +19,8 @@ body {
   @include mq-min-width('md') {
     background-image: url('./assets/images/bg-main-tablet.png');
   }
+
+  @include mq-min-width('lg') {
+    background-image: url('./assets/images/bg-main-desktop.png');
+  }
 }

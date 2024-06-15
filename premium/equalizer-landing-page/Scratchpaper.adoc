@@ -1,14 +1,5 @@
 = Scratchpaper
 
 .Finetuning
-* [ ] Images
-** [ ] Images bei entsprechenden Beakpoint ändern (Product image z.B.)
-*** Im Desktop Design nicht mehr zentieren sondern left Abstand
-** [ ] Background image Desktop Desgin
-** [ ] Background image ragt über den Bereich hinaus
-
-* [ ] Bei größeren Auflösungen soll der Content Zentriert ausgerichtet werden
-* [ ] Facebook icon Footer Facebook austausen mit einem Icon mit Weißer Schrift auf schwarzen Hintergrund
-* [ ] Tests
 * [ ] PostCSS - minifiy css
 

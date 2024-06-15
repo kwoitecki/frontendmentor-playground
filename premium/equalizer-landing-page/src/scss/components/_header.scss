@@ -36,14 +36,19 @@
       position: absolute;
       width: 267px;
       height: 400px;
-      top: calc(var(--header-margin-t) * -1.6);
-      right: -40px;
+
+      // see figma file
+      top: -32px;
+      right: -36px;
     }
 
     @include mq-min-width('lg') {
       width: 312px;
       height: 468px;
-      right: 34px;
+
+      // see figma file
+      right: 0px;
+      top: -40px;
     }
   }
 }
