@@ -1,44 +1,14 @@
 = Scratchpaper
 
-* [x] add typography
-* [x] add Markup
-
-* [x] Fonts einbinden
-** [x] Testen wie es sich bei einem Build verhält
-
-.Mobile
-* [x] Header
-* [x] Hero
-* [x] Products
-** [x] Fertigstellen Typographie
-* [x] Footer
-
 .Finetuning
-* [x] Background Image
-* [x] Product Refactoring
-** [x] Markup umstellen Idee (Positionierung)
-*** 1 Parent Element und 3 Child Elemente die absolut positioniert werden
-*** Parent Element hat position relativ und eine min-height
-* [x] Hover Effekte für social icons
-** Idee Awesome Fonts einsetzen
+* [ ] Images
+** [ ] Images bei entsprechenden Beakpoint ändern (Product image z.B.)
+*** Im Desktop Design nicht mehr zentieren sondern left Abstand
+** [ ] Background image Desktop Desgin
+** [ ] Background image ragt über den Bereich hinaus
 
-.Tablett
-* [x] Breakpoint bestimmen (768px (???))
-* [x] body background image
-* [x] Header
-** [x] Image
-* [x] Hero
-* [x] Products
-** [x] Aktueller Stand: _product-content.scss
-* [x] Footer
-
-.Desktop
-* [ ] Header
-* [ ] Hero
-* [ ] Products
-* [ ] Footer
-
-.Finetuning
+* [ ] Bei größeren Auflösungen soll der Content Zentriert ausgerichtet werden
 * [ ] Facebook icon Footer Facebook austausen mit einem Icon mit Weißer Schrift auf schwarzen Hintergrund
-* [ ] Background image ragt über den Bereich hinaus
+* [ ] Tests
 * [ ] PostCSS - minifiy css
+

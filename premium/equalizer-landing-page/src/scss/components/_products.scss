@@ -11,4 +11,8 @@
     --products-margin-top: var(--spacing-111);
     --products-margin-inline: var(--spacing-33);
   }
+
+  @include mq-min-width('lg') {
+    --products-margin-inline: var(--spacing-165);
+  }
 }

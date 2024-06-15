@@ -18,6 +18,11 @@
     --header-v-gap: var(--spacing-95);
   }
 
+  @include mq-min-width('lg') {
+    --header-margin-l: var(--spacing-165);
+    --header-v-gap: var(--spacing-127);
+  }
+
   &__logo {
     max-width: 100%;
     display: block;
@@ -33,6 +38,12 @@
       height: 400px;
       top: calc(var(--header-margin-t) * -1.6);
       right: -40px;
+    }
+
+    @include mq-min-width('lg') {
+      width: 312px;
+      height: 468px;
+      right: 34px;
     }
   }
 }

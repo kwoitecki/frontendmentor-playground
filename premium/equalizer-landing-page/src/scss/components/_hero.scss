@@ -10,6 +10,10 @@
     max-width: 520px;
   }
 
+  @include mq-min-width('lg') {
+    max-width: 1015px;
+  }
+
   &__title {
     --hero-title-fs: var(--fs-40);
     --hero-title-lh: var(--flh-48);
@@ -25,6 +29,12 @@
       --hero-title-fs: var(--fs-64);
       --hero-title-lh: var(--flh-64);
       --hero-title-ls: var(--f-ls-minus-0-73);
+    }
+
+    @include mq-min-width('lg') {
+      --hero-title-fs: var(--fs-88);
+      --hero-title-lh: var(--flh-88);
+      --hero-title-ls: var(--f-ls-minus-1);
     }
   }
 
@@ -44,6 +54,14 @@
       --hero-description-margin-t: var(--spacing-28);
       --hero-description-fs: var(--fs-18);
       --hero-description-lh: var(--flh-28);
+    }
+
+    @include mq-min-width('lg') {
+      --hero-description-margin-t: var(--spacing-40);
+      --hero-description-fs: var(--fs-20);
+      --hero-description-lh: var(--flh-34);
+
+      max-width: 825px;
     }
   }
 }

@@ -19,6 +19,14 @@
       --product-header-pr: var(--spacing-49);
       --product-header-pl: var(--spacing-48);
     }
+
+    @include mq-min-width('lg') {
+      --product-header-fs: var(--fs-40);
+      --product-header-lh: var(--flh-52);
+      --product-header-pt: var(--spacing-58);
+      --product-header-pr: var(--spacing-59);
+      --product-header-pl: var(--spacing-54);
+    }
   }
 
   &__description {
@@ -40,6 +48,14 @@
       --product-description-pr: var(--spacing-49);
       --product-description-pl: var(--spacing-48);
     }
+
+    @include mq-min-width('lg') {
+      --product-description-fs: var(--fs-20);
+      --product-description-lh: var(--flh-34);
+      --product-description-pt: var(--spacing-22);
+      --product-description-pr: var(--spacing-59);
+      --product-description-pl: var(--spacing-54);
+    }
   }
 
   &__price {
@@ -60,6 +76,12 @@
     gap: var(--spacing-16);
 
     @include mq-min-width('md') {
+      --product-price-pl: var(--spacing-54);
+    }
+
+    @include mq-min-width('lg') {
+      letter-spacing: var(--f-ls-minux-0-2);
+      --product-price-pt: var(--spacing-39);
       --product-price-pl: var(--spacing-54);
     }
 
@@ -88,6 +110,10 @@
     @include mq-min-width('md') {
       --product-actions-pl: var(--spacing-54);
       --product-action--pr: var(--spacing-49);
+    }
+
+    @include mq-min-width('md') {
+      --product-action--pr: var(--spacing-59);
     }
   }
 }
