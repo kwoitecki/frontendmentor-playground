@@ -1,5 +1,0 @@
-= Scratchpaper
-
-.Finetuning
-* [ ] PostCSS - minifiy css
-

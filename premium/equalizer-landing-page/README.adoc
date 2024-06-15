@@ -9,15 +9,16 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/equalize
 
 === Screenshot
 
-TODO
-// .Mobile
-// image:./images/mobile.png[Mobile]
+.Mobile
+image:./images/mobile.png[Mobile]
 
-// .Tablet
-// image:./images/tablet.png[Tablet]
 
-// .Desktop
-// image:./images/desktop.png[Desktop]
+.Tablet
+image:./images/tablet.png[Tablet]
+
+
+.Desktop
+image:./images/desktop.png[Desktop]
 
 
 === Links
