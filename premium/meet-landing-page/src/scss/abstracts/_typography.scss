@@ -1,17 +1,8 @@
-/*
-Example:
-
-$f-ff: 'IBM Plex Sans';
-$f-regular-file: './assets/fonts/IBMPlexSans-Regular.ttf';
-$f-bold-file: './assets/fonts/IBMPlexSans-Bold.ttf';
-
-$ff-primary: $font-family, sans-serif;
-*/
-
-$f-ff: '';
-$f-regular-file: '';
-$f-bold-file: '';
-$f-ff-primary: $f-ff;
+$f-ff: 'Red Hat Display';
+$f-regular-file: './assets/fonts/RedHatDisplay-Regular.ttf';
+$f-bold-file: './assets/fonts/RedHatDisplay-Bold.ttf';
+$f-black-file: './assets/fonts/RedHatDisplay-Black.ttf';
+$f-ff-primary: $f-ff, sans-serif;
 
 $f-fs-base: 16px;
 
@@ -23,17 +14,15 @@ $f-sizes: (
 */
 $f-fs: ();
 
-/*
-Example:
 $f-fw-regular: 400;
 $f-fw-bold: 700;
+$f-fw-black: 900;
 
 $f-fw: (
   'regular': $f-fw-regular,
-  'bold': $f-fw-bold
+  'bold': $f-fw-bold,
+  'black': $f-fw-black,
 );
-*/
-$f-fw: ();
 
 /*
 Example: 

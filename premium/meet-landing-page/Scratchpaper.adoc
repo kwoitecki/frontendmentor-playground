@@ -6,14 +6,19 @@ Start: 2024-06-16
 * [x] Create Project
 * [x] Project cleanup for sass
 * [x] Sass Template folder erstellen
-* [ ] Create a new branch
+* [x] Create a new branch
 
 .Basic
-* [ ] Typographie
-* [ ] Colors
-* [ ] Spacing (new: --px-xx)
+* [x] Colors
+* [x] Typographie
+
+.idea
+* set different icons in header depending on the resolution and change markup
 
 .Mobile
+* [ ] Header
+* [ ] Content
+* [ ] Footer
 
 .Tablet
 

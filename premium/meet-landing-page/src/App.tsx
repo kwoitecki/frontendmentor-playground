@@ -1,9 +1,12 @@
 import './App.scss';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
 
 function App() {
   return (
     <>
-      <h1>Frontend Mentor | Meet landing page</h1>
+      <Header />
+      <MainContent />
     </>
   );
 }

@@ -3,9 +3,9 @@
 @use 'sass:math';
 
 :root {
-  @include var('f-ff-primary', $f-ff);
+  @include var('f-ff-primary', $f-ff-primary);
   @include h.calculate-vars('f-fs', $f-fs);
-  @include h.calculate-vars('f-fw', $f-fw);
+  @include vars('f-fw', $f-fw);
   @include h.calculate-vars('f-lh', $f-lh);
   @include h.calculate-vars('f-ls', $f-ls);
   @include vars('clr', $colors);
