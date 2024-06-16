@@ -11,6 +11,7 @@ Start: 2024-06-16
 .Basic
 * [x] Colors
 * [x] Typographie
+* [ ] Grundstructure
 
 .idea
 * set different icons in header depending on the resolution and change markup

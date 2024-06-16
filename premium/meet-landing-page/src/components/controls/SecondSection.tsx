@@ -7,6 +7,7 @@ const SecondSection = () => {
         Stay connected with reliable HD meetings and unlimited one-on-one and
         group video sessions.
       </p>
+      <button>Download v1.3</button>
     </section>
   );
 };
