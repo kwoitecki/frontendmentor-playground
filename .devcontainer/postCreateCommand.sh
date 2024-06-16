@@ -12,3 +12,4 @@ sudo chown node /workspace/challenges/newbie/ping-coming-soon-page/node_modules
 sudo chown node /workspace/challenges/newbie/order-summary-component/node_modules
 sudo chown node /workspace/premium/skilled-elearning-landing-page/node_modules
 sudo chown node /workspace/premium/equalizer-landing-page/node_modules
+sudo chown node /workspace/premium/meet-landing-page/node_modules

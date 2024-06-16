@@ -1,0 +1,30 @@
+@use 'sass:map';
+
+@mixin create-utility-classes($prefix, $property, $map) {
+  @each $key, $value in $map {
+    @debug '.u-#{$prefix}-#{$key}';
+    .u-#{$prefix}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin add-font-face($font-family, $file, $weight, $style) {
+  @font-face {
+    font-family: $font-family;
+    src: url('#{$file}') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@mixin vars($prefix, $map) {
+  @each $key, $value in $map {
+    @include var('#{$prefix}-#{$key}', $value);
+  }
+}
+
+@mixin var($property, $value) {
+  // @debug '--#{$property}: #{$value}';
+  --#{$property}: #{$value};
+}

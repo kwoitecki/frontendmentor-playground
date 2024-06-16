@@ -1,0 +1,22 @@
+= Scratchpaper
+
+Start: 2024-06-16
+
+.miscalenous
+* [x] Create Project
+* [x] Project cleanup for sass
+* [x] Sass Template folder erstellen
+* [ ] Create a new branch
+
+.Basic
+* [ ] Typographie
+* [ ] Colors
+* [ ] Spacing (new: --px-xx)
+
+.Mobile
+
+.Tablet
+
+.Desktop
+
+.Finetuning

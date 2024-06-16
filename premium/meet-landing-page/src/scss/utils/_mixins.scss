@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+
+@mixin calculate-vars($prefix, $map) {
+  @each $key, $value in $map {
+    @include var('#{$prefix}-#{$key}', px-to-rem($value, $f-fs-base));
+  }
+}
+
+@mixin mq-min-width($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin mq-max-width($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media (max-width: $size) {
+    @content;
+  }
+}
