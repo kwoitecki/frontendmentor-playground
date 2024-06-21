@@ -6,13 +6,11 @@ $f-ff-primary: $f-ff, sans-serif;
 
 $f-fs-base: 16px;
 
-/*
-Example:
-$f-sizes: (
-  '16': 16px
+
+$f-fs: (
+  '16': $f-fs-base,
+  '40': 40px
 );
-*/
-$f-fs: ();
 
 $f-fw-regular: 400;
 $f-fw-bold: 700;
@@ -24,13 +22,11 @@ $f-fw: (
   'black': $f-fw-black,
 );
 
-/*
-Example: 
+
 $f-lh: (
-  '26': 26px
+  '26': 26px,
+  '44': 44px
 );
-*/
-$f-lh: ();
 
 /*
 Example:

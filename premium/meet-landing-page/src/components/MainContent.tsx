@@ -1,11 +1,11 @@
-import FirstSection from './controls/FirstSection';
-import SecondSection from './controls/SecondSection';
+import StepOne from './controls/FirstStep';
+import SecondStep from './controls/SecondStep';
 
 const MainContent = () => {
   return (
-    <main>
-      <FirstSection />
-      <SecondSection />
+    <main className='steps'>
+      <StepOne />
+      <SecondStep />
     </main>
   );
 };

@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+@include create-utility-classes('bg', 'background', $colors);
+@include create-utility-classes('fc','color', $colors);
+
+.u-bg-secondary1-400:hover {
+  background-color: var(--clr-secondary1-600);
+}
+
+.u-bg-secondary2-500:hover {
+  background-color: var(--clr-secondary2-700);
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+
+.img-setup {
+  max-width: 100%;
+  display: block;
+}

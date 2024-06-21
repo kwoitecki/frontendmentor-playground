@@ -1,0 +1,20 @@
+.header {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  
+  &__logo {
+    --header-logo-mt: var(--px-48);
+
+    margin-top: var(--header-logo-mt);
+  }
+
+  &__hero { 
+    --header-hero-mt: var(--px-54);
+
+    margin-top: var(--header-hero-mt);
+    width: 414px;
+    height: 153px;
+  }
+}

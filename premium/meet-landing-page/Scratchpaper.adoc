@@ -11,18 +11,38 @@ Start: 2024-06-16
 .Basic
 * [x] Colors
 * [x] Typographie
-* [ ] Grundstructure
+* [x] Grundstructure
 
 .idea
-* set different icons in header depending on the resolution and change markup
+* change structure of document depending on the resolution.
 
 .Mobile
 * [ ] Header
+** [x] Logo
+** [x] Hero Logo
+** [x] Header Text
 * [ ] Content
-* [ ] Footer
+** [ ] 1st step
+** [ ] 2nd step
+
 
 .Tablet
+* [ ] Header
+** [ ] Logo
+** [ ] Hero Logo
+** [ ] Header Text
+* [ ] Content
+
+
 
 .Desktop
+* [ ] Header
+** [ ] Logo
+** [ ] Hero Logo
+** [ ] Header Text
+* [ ] Content
+
 
 .Finetuning
+* [ ] Hero Image doesn't scale! should it?
+

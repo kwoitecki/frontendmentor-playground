@@ -1,0 +1,17 @@
+.step1 {
+  &__images {
+    --step1-images-mt: var(--px-64);
+    --step1-ml: var(--px-24);
+    --step1-mr: var(--px-24);
+    --step1-images-gap: var(--px-25);
+
+    margin: var(--step1-images-mt) var(--step1-mr) 0 var(--step1-ml);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--step1-images-gap);
+
+    & img {
+      border-radius: 5%;
+    }
+  }
+}
