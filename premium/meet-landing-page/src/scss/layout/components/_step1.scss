@@ -11,7 +11,8 @@
     gap: var(--step1-images-gap);
 
     & img {
-      border-radius: 5%;
+      border-radius: var(--px-15px);
     }
   }
+
 }

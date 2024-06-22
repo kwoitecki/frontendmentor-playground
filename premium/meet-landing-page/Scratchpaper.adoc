@@ -17,13 +17,13 @@ Start: 2024-06-16
 * change structure of document depending on the resolution.
 
 .Mobile
-* [ ] Header
+* [x] Header
 ** [x] Logo
 ** [x] Hero Logo
 ** [x] Header Text
-* [ ] Content
-** [ ] 1st step
-** [ ] 2nd step
+* [x] Content
+** [x] 1st step
+** [x] 2nd step
 
 
 .Tablet
@@ -45,4 +45,4 @@ Start: 2024-06-16
 
 .Finetuning
 * [ ] Hero Image doesn't scale! should it?
-
+* [ ] PostCSS minify

@@ -1,1 +1,10 @@
-.step2 {}
+.step2 {
+  --step2-mt: var(--px-64);
+
+  margin-top: var(--step2-mt);
+  position: relative;
+
+  & img {
+    z-index: 1;
+  }
+}

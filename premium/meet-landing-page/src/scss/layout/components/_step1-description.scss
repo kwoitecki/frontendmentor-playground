@@ -1,0 +1,36 @@
+
+.step1-description {
+  --step1-description-mt: var(--px-64);
+  --step1-description-ml: var(--px-24);
+  --step1-description-mr: var(--px-24);
+  text-align: center;
+
+  margin: var(--step1-description-mt) var(--step1-description-mr) 0 var(--step1-description-ml);
+
+  &__teaser {
+    display: block;
+    line-height: var(--f-lh-26);
+    letter-spacing: var(--f-ls-4);
+    font-weight: var(--f-fw-black);
+    text-transform: uppercase;
+  }
+
+  &__heading{
+    --step1-heading-mt: var(--px-24);
+    --step1-heading-fs: var(--f-fs-32);
+    --step1-heading-lh: var(--f-lh-36);
+
+    margin-top: var(--step1-heading-mt);
+    font-size: var(--step1-heading-fs);
+    font-weight: var(--f-fw-black);
+  }
+
+  &__text{
+    --step1-description-fs: var(--f-fs-16);
+
+    margin-top: var(--px-32);
+    font-size: var(--step1-description-fs);
+    line-height: var(--f-lh-26);
+    font-weight: var(--f-fw-regular);
+  }
+}
