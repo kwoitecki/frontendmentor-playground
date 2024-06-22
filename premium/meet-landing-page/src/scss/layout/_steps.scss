@@ -1,5 +1,11 @@
+@use '../utils/' as *;
+
 .steps {
   --steps-mt: var(--px-64);
 
   margin-top: var(--steps-mt);
+
+  @include mq-min-width('md') {
+    --steps-mt: var(--px-80);
+  }
 }

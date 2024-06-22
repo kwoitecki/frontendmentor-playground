@@ -1,11 +1,23 @@
+@use '../../utils/' as *;
 
 .step1-description {
   --step1-description-mt: var(--px-64);
   --step1-description-ml: var(--px-24);
   --step1-description-mr: var(--px-24);
-  text-align: center;
+  --step1-description-max-width: 100%;
 
+  text-align: center;
   margin: var(--step1-description-mt) var(--step1-description-mr) 0 var(--step1-description-ml);
+  max-width: var(--step1-description-max-width);
+
+  @include mq-min-width('md') {
+    --step1-description-mt: var(--px-48);
+    --step1-description-ml: auto;
+    --step1-description-mr: auto;
+    --step1-description-max-width: var(--px-573);
+  }
+
+
 
   &__teaser {
     display: block;
@@ -19,10 +31,20 @@
     --step1-heading-mt: var(--px-24);
     --step1-heading-fs: var(--f-fs-32);
     --step1-heading-lh: var(--f-lh-36);
+    --step1-max-widht: var(--px-327);
 
     margin-top: var(--step1-heading-mt);
+    margin-inline: auto;
     font-size: var(--step1-heading-fs);
     font-weight: var(--f-fw-black);
+    max-width: var(--step1-max-widht);
+
+    @include mq-min-width('md') {
+      --step1-heading-mt: var(--px-16); 
+      --step1-heading-fs: var(--f-fs-40);
+      --step1-heading-lh: var(--f-lh-44);
+      --step1-max-widht: var(--px-445);
+    }
   }
 
   &__text{

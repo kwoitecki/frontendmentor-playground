@@ -16,7 +16,7 @@ Start: 2024-06-16
 .idea
 * change structure of document depending on the resolution.
 
-.Mobile
+.Mobile (375x)
 * [x] Header
 ** [x] Logo
 ** [x] Hero Logo
@@ -26,13 +26,15 @@ Start: 2024-06-16
 ** [x] 2nd step
 
 
-.Tablet
-* [ ] Header
-** [ ] Logo
-** [ ] Hero Logo
-** [ ] Header Text
-* [ ] Content
-
+.Tablet (768x)
+* [x] Header
+** [x] Logo
+** [x] Hero Logo
+** [x] Header Text
+* [x] Content
+** [x] 1st step 
+*** Images begrenzen auf max breite und Höhe
+** [x] 2nd step
 
 
 .Desktop
@@ -41,8 +43,12 @@ Start: 2024-06-16
 ** [ ] Hero Logo
 ** [ ] Header Text
 * [ ] Content
+** [ ] 1st step 
+** [ ] 2nd step
+
 
 
 .Finetuning
+* [ ] Step 2 - Image
 * [ ] Hero Image doesn't scale! should it?
 * [ ] PostCSS minify

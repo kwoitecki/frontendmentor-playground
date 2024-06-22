@@ -1,3 +1,5 @@
+@use '../utils/' as *;
+
 .header {
   display: flex; 
   flex-direction: column;
@@ -12,9 +14,18 @@
 
   &__hero { 
     --header-hero-mt: var(--px-54);
+    --header-hero-widht: var(--px-414);
+    --header-hero-height: var(--px-153);
 
     margin-top: var(--header-hero-mt);
-    width: 414px;
-    height: 153px;
+    width: var(--header-hero-widht);
+    height: var(--header-hero-height);
+
+    @include mq-min-width('md') {
+      --header-hero-mt: var(--px-64);
+      --header-hero-widht: var(--px-820);
+      --header-hero-height: var(--px-303);
+    }
+  
   }
 }

@@ -1,3 +1,5 @@
+@use '../../utils/' as *;
+
 .step1 {
   &__images {
     --step1-images-mt: var(--px-64);
@@ -10,8 +12,16 @@
     grid-template-columns: repeat(2, 1fr);
     gap: var(--step1-images-gap);
 
+    @include mq-min-width('md') {
+      --step1-images-mt: var(--px-67);
+      --step1-ml: var(--px-39);
+      --step1-mr: var(--px-40);
+      --step1-images-gap: var(--px-11);
+      grid-template-columns: repeat(4, 1fr);
+    }
+
     & img {
-      border-radius: var(--px-15px);
+      border-radius: var(--px-15);
     }
   }
 
