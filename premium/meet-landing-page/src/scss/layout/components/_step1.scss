@@ -20,9 +20,25 @@
       grid-template-columns: repeat(4, 1fr);
     }
 
+    @include mq-min-width('lg') {
+      --step1-images-mt: var(--px-64);
+      --step1-ml: auto;
+      --step1-mr: auto;
+      --step1-images-gap: var(--px-30);
+    }
+
     & img {
+      --step1-image-max-width: var(--px-164);
+      --step1-image-max-height: var(--px-156);
+
       border-radius: var(--px-15);
+      max-width: var(--step1-image-max-width);
+      max-height: var(--step1-image-max-height);
+    }
+
+    @include mq-min-width('lg') {
+      --step1-image-max-width: var(--px-255);
+      --step1-image-max-height: var(--px-242);
     }
   }
-
 }

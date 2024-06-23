@@ -1,27 +1,38 @@
-import HeaderDescription from './controls/HeaderDescription';
+import { useEffect, useState } from 'react';
+import HeaderSmall from './controls/HeaderSmall';
+import HeaderLarge from './controls/HeaderLarge';
 
 const Header = () => {
-  const headerLogo = (
-    <div className='header__logo'>
-      <img
-        className='img-setup'
-        src='/logo.svg'
-        alt='Welcome to the meet landing page'
-      />
-    </div>
-  );
+  const [windowSize, setWindowSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const content = windowSize.width < 1440 ? <HeaderSmall /> : <HeaderLarge />;
 
   return (
     <header className='header'>
-      {headerLogo}
-      <div className='header__hero'>
+      <div className='header__logo'>
         <img
           className='img-setup'
-          src='/image-hero-small.png'
-          alt='Meet a group of people'
+          src='logo.svg'
+          alt='Welcome to the meet landing page'
         />
       </div>
-      <HeaderDescription />
+      {content}
     </header>
   );
 };

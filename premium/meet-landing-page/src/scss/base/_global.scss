@@ -1,4 +1,5 @@
 @use '../abstracts/' as *;
+@use '../utils/' as *;
 
 @include add-font-face($f-ff, $f-regular-file, $f-fw-regular, 'normal');
 @include add-font-face($f-ff, $f-bold-file, $f-fw-bold, 'bold');

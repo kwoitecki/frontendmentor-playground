@@ -5,6 +5,7 @@
   --step2-content-pl: var(--px-24);
   --step2-content-pr: var(--px-24);
   --step2-content-pb: var(--px-72);
+  --step2-content-bg-image: url('./assets/image-footer-mobile.jpg');
 
   position: absolute;
   top: var(--px-112);
@@ -22,11 +23,23 @@
 
   width: 100%;
 
-  // background-image: url("./assets/image-footer-mobile.jpg");
-  // background-size: cover;
+  background-image: var(--step2-content-bg-image);
+  background-size: cover;
+  background-blend-mode: soft-light;
 
   @include mq-min-width('md') {
     --step2-content-pb: var(--px-66);
+    --step2-content-bg-image: url('./assets/image-footer-tablet.jpg');
+  }
+
+  @include mq-min-width('lg') {
+    --step2-content-pt: var(--px-116);
+    --step2-content-pl: auto;
+    --step2-content-pr: auto;
+    --step2-content-pb: var(--px-104);
+    --step2-content-bg-image: url('./assets/image-footer-desktop.jpg');
+
+    flex-direction: row;
   }
 
   &__title {
@@ -41,6 +54,13 @@
 
     @include mq-min-width('md') {
       --step2-content-max-width: var(--px-457);
+      --step2-content-title-fs: var(--f-fs-40);
+      --step2-content-title-lh: var(--f-lh-44);
+    }
+
+    @include mq-min-width('lg') {
+      text-align: left;
+      --step2-content-max-width: var(--px-350);
       --step2-content-title-fs: var(--f-fs-40);
       --step2-content-title-lh: var(--f-lh-44);
     }
@@ -60,6 +80,13 @@
       --step2-content-text-mt: var(--px-32);
       --step2-max-width: var(--px-573);
     }
+
+    @include mq-min-width('lg') {
+      --step2-content-text-mt: 0;
+      --step2-max-width: var(--px-350);
+
+      margin-inline: var(--px-125) var(--px-92);
+    }
   }
 
   &__actions {
@@ -69,6 +96,10 @@
 
     @include mq-min-width('md') {
       --step2-content-actions-mt: var(--px-40);
+    }
+
+    @include mq-min-width('lg') {
+      --step2-content-actions-mt: 0;
     }
   }
 }

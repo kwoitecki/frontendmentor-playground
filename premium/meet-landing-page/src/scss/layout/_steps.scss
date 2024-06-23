@@ -8,4 +8,8 @@
   @include mq-min-width('md') {
     --steps-mt: var(--px-80);
   }
+
+  @include mq-min-width('lg') {
+    --steps-mt: var(--px-110);
+  }
 }

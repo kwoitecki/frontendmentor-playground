@@ -6,13 +6,13 @@ $f-ff-primary: $f-ff, sans-serif;
 
 $f-fs-base: 16px;
 
-
 $f-fs: (
   '16': $f-fs-base,
   '18': 18px,
   '32': 32px,
   '40': 40px,
   '48': 48px,
+  '64': 64px,
 );
 
 $f-fw-regular: 400;
@@ -25,16 +25,15 @@ $f-fw: (
   'black': $f-fw-black,
 );
 
-
 $f-lh: (
   '26': 26px,
   '32': 32px,
   '36': 36px,
   '44': 44px,
   '48': 48px,
+  '64': 64px,
 );
 
-
 $f-ls: (
-  '4': 4px
+  '4': 4px,
 );

@@ -9,16 +9,16 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/meet-lan
 
 === Screenshot
 
-// .Mobile
-// image:./images/mobile.png[Mobile]
+.Mobile
+image:./images/mobile.png[Mobile]
 
 
-// .Tablet
-// image:./images/tablet.png[Tablet]
+.Tablet
+image:./images/tablet.png[Tablet]
 
 
-// .Desktop
-// image:./images/desktop.png[Desktop]
+.Desktop
+image:./images/desktop.png[Desktop]
 
 
 === Links

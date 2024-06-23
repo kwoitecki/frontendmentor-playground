@@ -10,6 +10,10 @@
     --step2-mt: var(--px-80);
   }
 
+  @include mq-min-width('lg') {
+    --step2-mt: var(--px-64);
+  }
+
   & img {
     z-index: 1;
   }

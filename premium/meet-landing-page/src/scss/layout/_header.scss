@@ -1,18 +1,22 @@
 @use '../utils/' as *;
 
 .header {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  
+
   &__logo {
     --header-logo-mt: var(--px-48);
 
     margin-top: var(--header-logo-mt);
+
+    @include mq-min-width('lg') {
+      --header-logo-mt: var(--px-80);
+    }
   }
 
-  &__hero { 
+  &__hero {
     --header-hero-mt: var(--px-54);
     --header-hero-widht: var(--px-414);
     --header-hero-height: var(--px-153);
@@ -26,6 +30,23 @@
       --header-hero-widht: var(--px-820);
       --header-hero-height: var(--px-303);
     }
-  
+  }
+
+  &--large {
+    --header-move: calc(var(--px-32) * -1);
+
+    margin-top: var(--px-61);
+    display: flex;
+    gap: var(--px-88);
+
+    &-img-left {
+      position: absolute;
+      left: var(--header-move);
+    }
+
+    &-img-right {
+      position: absolute;
+      right: var(--header-move);
+    }
   }
 }
