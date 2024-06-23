@@ -1,0 +1,36 @@
+[[top]]
+= Figma Help
+:toc: preamble
+
+link:../README.adoc[Back]
+
+== Links
+
+* https://www.frontendmentor.io/articles/figma-for-developers-how-to-work-with-a-design-file-m6CZKZ1rC1[How to work with a design file]
+
+== Keyboard Shortcuts
+
+=== Navigation
+
+|===
+| action | description
+| ctrl+scroll | zoom in/out
+| space+drag | move around the canvas
+| shift+0 | zoom to 100%
+| shift+1 | zoom to fit
+| shift+2 | zoom into selection
+|===
+
+=== Inspecting Elements
+
+|===
+| action | description
+| ctrl+click | select a layer
+|===
+
+=== other useful shortcuts
+
+|===
+| action | description
+| i | inspect used colors
+|===

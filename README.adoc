@@ -9,6 +9,7 @@ This is a playground for frontendmentor.io challenges.
 
 == Documentation
 * link:./docs/devcontainer.adoc[Setting up the development environment]
+* link:./docs/figma-help.adoc[Figma Help]
 
 == Challenges
 
