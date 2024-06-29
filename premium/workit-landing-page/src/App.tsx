@@ -1,9 +1,14 @@
-import './App.css';
+import './App.scss';
+import PageContent from './components/PageContent';
+import PageFooter from './components/PageFooter';
+import PageHeader from './components/PageHeader';
 
 function App() {
   return (
     <>
-      <h1>Frontend Mentor | Workit landing page</h1>
+      <PageHeader />
+      <PageContent />
+      <PageFooter />
     </>
   );
 }

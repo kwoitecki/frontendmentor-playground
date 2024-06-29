@@ -1,0 +1,15 @@
+= Scratchpaper
+
+.Configuration
+* [x] Structure
+* [ ] typographie
+* [ ] Colors
+
+.Mobile
+* [ ]
+
+.Tablet
+* [ ]
+
+.Desktop
+* [ ]
