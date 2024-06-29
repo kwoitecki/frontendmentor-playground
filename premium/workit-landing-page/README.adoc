@@ -33,10 +33,10 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/workit-l
 * Semantic HTML5 markup
 * Flexbox
 * CSS Grid
-* link:https://postcss.org/[PostCSS]
+* link:https://sass-lang.com/documentation/[Sass]
 
 === Useful resources
 * link:https://code.visualstudio.com/docs/devcontainers/containers[devcontainer]
-* link:https://www.youtube.com/watch?v=ohJcZW60br0[Learn how to power-up your CSS with PostCSS]
-* link:https://www.youtube.com/watch?v=SP8mSVSAh6s[PostCSS Crash Course]
-* link:https://www.youtube.com/watch?v=Kn2SKUOaoT4&t=631s[Learn PostCSS in 15 Minutes]
+* link:https://dev.to/dostonnabotov/a-modern-sass-folder-structure-330f[Sass folder structure]
+* link:https://github.com/dostonnabotov/sass-template[Sass template]
+* link:https://www.youtube.com/watch?v=h3bTwCqX4ns&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA[Build a responsive website with HTML & CSS]

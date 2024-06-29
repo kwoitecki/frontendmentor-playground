@@ -1,29 +1,34 @@
 const PageHeader = () => {
   return (
     <header className='header'>
-      <nav className='header__navigation'>
-        <img
-          src='logo-light.svg'
-          alt='Welcome to the workit landingpage'
-          className='header__navigation-image'
-        />
-        <a href='#' className='header__navigation-link'>
-          Apply for access
-        </a>
-      </nav>
-
-      <div className='hero'>
-        <h1 className='hero__title'>Data tailored to your needs.</h1>
-        <button>Learn more</button>
-
-        <div className='hero__image-container'>
+      <div className='bg-pattern-dark'>
+        <nav className='header__navigation'>
           <img
-            src='image-hero-mobile.png'
-            alt='Hero Image Cellphone'
-            className='hero__image-img img-clear'
+            src='logo-light.svg'
+            alt='Welcome to the workit landingpage'
+            className='header__navigation-image'
           />
+          <button className='button button--secondary'>Apply for access</button>
+        </nav>
+
+        <div className='header__hero'>
+          <h1 className='heading heading--large u-fc-primary-1000'>
+            Data <span className='underline'>tailored</span> to your needs.
+          </h1>
+
+          <div className='header__hero-actions'>
+            <button className='button button--primary header__hero-actions-button'>
+              Learn more
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* <img
+        src='image-hero-mobile.png'
+        alt='Hero Image Cellphone'
+        className='header__hero-img img-clear'
+      /> */}
     </header>
   );
 };

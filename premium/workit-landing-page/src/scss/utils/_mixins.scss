@@ -17,8 +17,9 @@
 
 @mixin mq-max-width($key) {
   $size: map.get($breakpoints, $key);
+  $new-size: $size - 1;
 
-  @media (max-width: $size) {
+  @media (max-width: $new-size) {
     @content;
   }
 }

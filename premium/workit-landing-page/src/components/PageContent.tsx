@@ -3,7 +3,12 @@ import Card from './controls/Card';
 
 const PageContent = () => {
   return (
-    <main>
+    <main className='bg-pattern-light content'>
+      <img
+        src='image-hero-mobile.png'
+        alt='Hero Image Cellphone'
+        className='content-img img-clear'
+      />
       <article className='cards'>
         {cards.map((card) => (
           <Card key={card.id} {...card} />
@@ -15,14 +20,14 @@ const PageContent = () => {
           className='apply__image img-clear'
           alt='Apply for access'
         />
-        <h2 className='apply__title'>Be the first to test</h2>
-        <p className='apply__description'>
+        <h2 className='heading heading--medium'>Be the first to test</h2>
+        <p className='content'>
           Hi, I'm Louis Graham, the founder of the company. Book a demo call
           with me to become a beta tester for our app and kickstart your
           company. Apply for access below and I’ll be in touch to schedule a
           call.
         </p>
-        <button>Apply for access</button>
+        <button className='button button--primary'>Apply for access</button>
       </article>
     </main>
   );

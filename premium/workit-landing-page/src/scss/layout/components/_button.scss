@@ -1,0 +1,32 @@
+@use '../../utils/' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    background-color: var(--clr-primary-600);
+    font-weight: bold;
+    color: var(--clr-primary-100);
+
+    &:hover {
+      background-color: var(--clr-primary-100);
+      color: var(--clr-primary-600);
+      border: var(--px-4) solid var(--clr-primary-600);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--clr-primary-100);
+    font-weight: bold;
+    color: var(--clr-primary-1000);
+    border-bottom: var(--px-4) solid var(--clr-primary-600);
+
+    &:hover {
+      color: var(--clr-primary-600);
+    }
+  }
+}

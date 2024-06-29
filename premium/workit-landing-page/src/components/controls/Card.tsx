@@ -10,8 +10,8 @@ const Card: FC<CardProps> = ({ id, title, description }) => {
   return (
     <div className='card'>
       <span>{id}</span>
-      <h2>{title}</h2>
-      <p>{description}</p>
+      <h2 className='heading heading--small'>{title}</h2>
+      <p className='content'>{description}</p>
     </div>
   );
 };

@@ -1,47 +1,36 @@
-/*
-Example:
-
-$f-ff: 'IBM Plex Sans';
-$f-regular-file: './assets/fonts/IBMPlexSans-Regular.ttf';
-$f-bold-file: './assets/fonts/IBMPlexSans-Bold.ttf';
-
-$ff-primary: $font-family, sans-serif;
-*/
-
-$f-ff: '';
-$f-regular-file: '';
-$f-bold-file: '';
-$f-ff-primary: $f-ff;
+$f-ff: 'Manrope';
+$f-ff2: 'Fraunces';
+$f-regular-file: './assets/fonts/Manrope-Regular.ttf';
+$f-bold-file: './assets/fonts/Fraunces_144pt-SemiBold.ttf';
+$f-ff-primary: $f-ff, sans-serif;
+$f-ff2-primary: $f-ff2, sans-serif;
 
 $f-fs-base: 16px;
 
-/*
-Example:
-$f-sizes: (
-  '16': 16px
+$f-fs: (
+  '16': $f-fs-base,
+  '18': 18px,
+  '32': 32px,
+  '50': 50px,
+  '56': 56px,
+  '80': 80px,
 );
-*/
-$f-fs: ();
 
-/*
-Example:
 $f-fw-regular: 400;
-$f-fw-bold: 700;
+$f-fw-semibold: 600;
 
 $f-fw: (
   'regular': $f-fw-regular,
-  'bold': $f-fw-bold
+  'semibold': $f-fw-semibold,
 );
-*/
-$f-fw: ();
 
-/*
-Example: 
 $f-lh: (
-  '26': 26px
+  '32': 32px,
+  '40': 40px,
+  '50': 50px,
+  '64': 64px,
+  '80': 80px,
 );
-*/
-$f-lh: ();
 
 /*
 Example:

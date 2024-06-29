@@ -1,13 +1,10 @@
 @use '../abstracts/' as *;
 
-/*
-Example:
-
 @include add-font-face($f-ff, $f-regular-file, $f-fw-regular, 'normal');
-@include add-font-face($f-ff, $f-bold-file, $f-fw-bold, 'bold');
-*/
+@include add-font-face($f-ff2, $f-bold-file, $f-fw-semibold, 'semibold');
 
 body {
   font-family: var(--f-ff-primary);
   font-size: $f-fs-base;
+  background-color: var(--clr-primary-950);
 }

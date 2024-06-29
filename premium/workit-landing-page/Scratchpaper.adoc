@@ -2,14 +2,37 @@
 
 .Configuration
 * [x] Structure
-* [ ] typographie
-* [ ] Colors
+* [x] typographie
+* [x] Colors
+* [x] Utility Klassen
+** [x] heading (s)
+** [x] Button ()
 
 .Mobile
-* [ ]
+* [ ] Header
+** [ ] Navigation
+** [ ] Hero
+* [ ] Main
+** [ ] article description
+** [ ] article apply
+* [ ] Footer
 
 .Tablet
-* [ ]
+* [ ] Header
+** [ ] Navigation
+** [ ] Hero
+* [ ] Main
+** [ ] article description
+** [ ] article apply
+* [ ] Footer
+
 
 .Desktop
-* [ ]
+* [ ] Header
+** [ ] Navigation
+** [ ] Hero
+* [ ] Main
+** [ ] article description
+** [ ] article apply
+* [ ] Footer
+
