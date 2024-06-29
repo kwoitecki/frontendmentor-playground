@@ -9,12 +9,12 @@
 ** [x] Button ()
 
 .Mobile
-* [ ] Header
-** [ ] Navigation
-** [ ] Hero
+* [x] Header
+** [x] Navigation
+** [x] Hero
 * [ ] Main
-** [ ] article description
-** [ ] article apply
+** [x] article description
+** [ ] article apply <---
 * [ ] Footer
 
 .Tablet

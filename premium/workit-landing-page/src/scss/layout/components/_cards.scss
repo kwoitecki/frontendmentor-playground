@@ -1,0 +1,7 @@
+.cards {
+  --card-gap: var(--px-40);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--card-gap);
+}

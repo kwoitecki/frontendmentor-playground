@@ -1,7 +1,15 @@
+@use '../../utils/' as *;
+
 .content {
   --body-f-fs: var(--f-fs-18);
   --body-f-lh: var(--f-lh-32);
 
   font-size: var(--body-f-fs);
   line-height: var(--body-f-lh);
+  margin-bottom: var(--px-1);
+
+  @include mq-max-width('md') {
+    --body-f-fs: var(--f-fs-16);
+    --body-f-lh: var(--f-lh-28);
+  }
 }

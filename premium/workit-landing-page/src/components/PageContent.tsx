@@ -3,12 +3,7 @@ import Card from './controls/Card';
 
 const PageContent = () => {
   return (
-    <main className='bg-pattern-light content'>
-      <img
-        src='image-hero-mobile.png'
-        alt='Hero Image Cellphone'
-        className='content-img img-clear'
-      />
+    <main className='bg-pattern-light main-content'>
       <article className='cards'>
         {cards.map((card) => (
           <Card key={card.id} {...card} />

@@ -35,5 +35,12 @@
         height: var(--px-55);
       }
     }
+
+    &-img {
+      position: relative;
+      margin-top: -94px;
+      width: var(--px-320);
+      height: var(--px-184);
+    }
   }
 }

@@ -18,8 +18,8 @@
     line-height: var(--heading-f-lh-large);
 
     @include mq-max-width('md') {
-      font-size: var(--f-fs-50);
-      line-height: var(--f-lh-50);
+      --heading-f-size-large: var(--f-fs-50);
+      --heading-f-lh-large: var(--f-lh-50);
     }
   }
 
@@ -31,5 +31,15 @@
   &--small {
     font-size: var(--heading-f-size-small);
     line-height: var(--heading-f-lh-small);
+
+    @include mq-max-width('md') {
+      --heading-f-size-small: var(--f-fs-28);
+      --heading-f-lh-small: var(--f-lh-36);
+    }
+  }
+
+  &--x-small {
+    font-size: var(--f-fs-20);
+    line-height: var(--f-lh-36);
   }
 }

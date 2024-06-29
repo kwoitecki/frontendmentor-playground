@@ -1,0 +1,27 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+
+  &__caption {
+    width: var(--px-48);
+    height: var(--px-46);
+    border: 1px solid var(--clr-primary-300);
+    border-radius: var(--px-30_5);
+    margin: 0 auto;
+    display: inline-block;
+    justify-content: center;
+  }
+
+  &__title {
+    --card-title-mt: var(--px-24);
+
+    margin-top: var(--card-title-mt);
+  }
+
+  &__content {
+    --card-content-mt: var(--px-16);
+
+    margin-top: var(--card-content-mt);
+  }
+}

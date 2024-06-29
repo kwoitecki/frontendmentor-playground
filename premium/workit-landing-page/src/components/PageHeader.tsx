@@ -24,11 +24,11 @@ const PageHeader = () => {
         </div>
       </div>
 
-      {/* <img
+      <img
         src='image-hero-mobile.png'
         alt='Hero Image Cellphone'
         className='header__hero-img img-clear'
-      /> */}
+      />
     </header>
   );
 };

@@ -9,9 +9,9 @@ type CardProps = {
 const Card: FC<CardProps> = ({ id, title, description }) => {
   return (
     <div className='card'>
-      <span>{id}</span>
-      <h2 className='heading heading--small'>{title}</h2>
-      <p className='content'>{description}</p>
+      <div className='card__caption heading heading--x-small'>{id}</div>
+      <h2 className='heading heading--small card__title'>{title}</h2>
+      <p className='content card__content u-fc-primary-300'>{description}</p>
     </div>
   );
 };
