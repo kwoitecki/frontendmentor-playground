@@ -13,11 +13,8 @@
 }
 
 .bg-pattern-dark {
-  background-image: url(./assets/dark-background.png);
-  background-repeat: no-repeat;
-}
-
-.bg-pattern-light {
-  background-image: url(./assets/light-background.png);
-  background-repeat: no-repeat;
+  // u-bg-primary-100
+  // background-image: url('./assets/dark-background-md.png');
+  // background-repeat: no-repeat;
+  background-color: var(--clr-primary-100);
 }

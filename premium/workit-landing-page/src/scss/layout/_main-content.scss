@@ -1,8 +1,9 @@
 .main-content {
-  --content-mt: var(--px-64);
-  --content-ml: var(--px-16);
-  --content-mr: var(--px-16);
+  --content-pt: var(--px-64);
+  --content-pl: var(--px-16);
+  --content-pr: var(--px-16);
 
-  margin: var(--content-mt) var(--content-mr) var(--content-mt)
-    var(--content-ml);
+  padding: var(--content-pt) var(--content-pr) 0 var(--content-pl);
+  // background-image: url(./assets/light-background.png);
+  // background-repeat: no-repeat;
 }

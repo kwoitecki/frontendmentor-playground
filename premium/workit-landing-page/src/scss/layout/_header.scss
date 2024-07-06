@@ -1,7 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  // align-items: center;
 
   &__navigation {
     --navigation-pt: var(--px-37);
@@ -37,6 +37,7 @@
     }
 
     &-img {
+      align-self: center;
       position: relative;
       margin-top: -94px;
       width: var(--px-320);

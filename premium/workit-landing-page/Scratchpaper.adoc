@@ -12,10 +12,10 @@
 * [x] Header
 ** [x] Navigation
 ** [x] Hero
-* [ ] Main
+* [x] Main
 ** [x] article description
-** [ ] article apply <---
-* [ ] Footer
+** [x] article apply
+* [x] Footer
 
 .Tablet
 * [ ] Header
@@ -36,3 +36,6 @@
 ** [ ] article apply
 * [ ] Footer
 
+
+.Finetuning
+* [ ] Background image light and dark setzen

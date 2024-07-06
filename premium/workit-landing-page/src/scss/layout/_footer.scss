@@ -1,0 +1,20 @@
+.footer {
+  --footer-mt: var(--px-74);
+
+  margin-top: var(--footer-mt);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__links {
+    --footer-links-gap: var(--px-28);
+    --footer-links-mt: var(--px-58);
+    --footer-links-mb: var(--px-64);
+
+    display: flex;
+    gap: var(--footer-links-gap);
+    margin-top: var(--footer-links-mt);
+    margin-bottom: var(--footer-links-mb);
+  }
+}

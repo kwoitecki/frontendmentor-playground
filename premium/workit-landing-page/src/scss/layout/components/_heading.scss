@@ -26,6 +26,11 @@
   &--medium {
     font-size: var(--heading-f-size-medium);
     line-height: var(--heading-f-lh-medium);
+
+    @include mq-max-width('md') {
+      --heading-f-size-medium: var(--f-fs-32);
+      --heading-f-lh-medium: var(--f-lh-48);
+    }
   }
 
   &--small {
