@@ -1,3 +1,5 @@
+@use '../../utils/' as *;
+
 .apply {
   --apply-mt: var(--px-100);
 
@@ -8,9 +10,22 @@
   margin-top: var(--apply-mt);
 
   &__image {
+    --apply-image-width: var(--px-281);
+    --apply-image-height: var(--px-281);
+    --apply-image-pos-bottom: var(--px-m53);
+
     position: relative;
-    bottom: -53px;
+    bottom: var(--apply-image-pos-bottom);
     z-index: 1;
+
+    width: var(--apply-image-width);
+    height: var(--apply-image-height);
+
+    @include mq-min-width('md') {
+      --apply-image-pos-bottom: calc(var(--apply-image-height) / -2);
+      align-self: flex-start;
+      margin-left: var(--px-39);
+    }
   }
 
   &__content {
@@ -24,6 +39,12 @@
     flex-direction: column;
     align-items: center;
     z-index: 2;
+
+    @include mq-min-width('md') {
+      margin-inline: var(--px-214) var(--px-40);
+
+      // Aktueller Stand (!!!)
+    }
 
     &-description {
       --apply-description-mt: var(--px-16);

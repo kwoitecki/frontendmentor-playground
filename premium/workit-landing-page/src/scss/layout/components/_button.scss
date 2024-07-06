@@ -24,6 +24,10 @@
     font-weight: bold;
     color: var(--clr-primary-1000);
     border-bottom: var(--px-4) solid var(--clr-primary-600);
+    font-size: var(--f-fs-16);
+    line-height: var(--f-lh-32);
+    letter-spacing: var(--f-ls-minus-0-16);
+    margin-bottom: var(--px-1);
 
     &:hover {
       color: var(--clr-primary-600);

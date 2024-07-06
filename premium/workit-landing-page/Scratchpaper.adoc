@@ -1,28 +1,11 @@
 = Scratchpaper
 
-.Configuration
-* [x] Structure
-* [x] typographie
-* [x] Colors
-* [x] Utility Klassen
-** [x] heading (s)
-** [x] Button ()
-
-.Mobile
+.Tablet
 * [x] Header
 ** [x] Navigation
 ** [x] Hero
-* [x] Main
-** [x] article description
-** [x] article apply
-* [x] Footer
-
-.Tablet
-* [ ] Header
-** [ ] Navigation
-** [ ] Hero
 * [ ] Main
-** [ ] article description
+** [x] article description
 ** [ ] article apply
 * [ ] Footer
 
@@ -36,6 +19,6 @@
 ** [ ] article apply
 * [ ] Footer
 
-
 .Finetuning
 * [ ] Background image light and dark setzen
+* [ ] Set Background patterns

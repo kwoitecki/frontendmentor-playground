@@ -1,9 +1,17 @@
+@use '../../utils/' as *;
+
 .card {
   display: grid;
   grid-template-columns: 1fr;
   text-align: center;
 
+  @include mq-min-width('md') {
+    grid-template-columns: auto 1fr;
+  }
+
   &__caption {
+    --card-caption-mr: 0;
+
     width: var(--px-48);
     height: var(--px-46);
     border: 1px solid var(--clr-primary-300);
@@ -11,17 +19,31 @@
     margin: 0 auto;
     display: inline-block;
     justify-content: center;
+    margin-right: var(--card-caption-mr);
+
+    @include mq-min-width('md') {
+      --card-caption-mr: var(--px-32);
+
+      grid-row: span 2;
+      align-self: center;
+    }
   }
 
   &__title {
     --card-title-mt: var(--px-24);
 
     margin-top: var(--card-title-mt);
+
+    @include mq-min-width('md') {
+      --card-title-mt: 0;
+      text-align: left;
+    }
   }
 
   &__content {
     --card-content-mt: var(--px-16);
 
     margin-top: var(--card-content-mt);
+    text-align: left;
   }
 }

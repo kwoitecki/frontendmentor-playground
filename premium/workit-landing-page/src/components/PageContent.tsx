@@ -11,7 +11,7 @@ const PageContent = () => {
       </article>
       <article className='apply'>
         <img
-          src='apply-image-mobile.png'
+          src='image-founder.webp'
           className='apply__image img-clear'
           alt='Apply for access'
         />

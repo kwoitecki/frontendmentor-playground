@@ -21,6 +21,11 @@
       --heading-f-size-large: var(--f-fs-50);
       --heading-f-lh-large: var(--f-lh-50);
     }
+
+    @include mq-max-width('lg') {
+      --heading-f-size-large: var(--f-fs-60);
+      --heading-f-lh-large: var(--f-lh-60);
+    }
   }
 
   &--medium {
@@ -37,7 +42,7 @@
     font-size: var(--heading-f-size-small);
     line-height: var(--heading-f-lh-small);
 
-    @include mq-max-width('md') {
+    @include mq-max-width('lg') {
       --heading-f-size-small: var(--f-fs-28);
       --heading-f-lh-small: var(--f-lh-36);
     }

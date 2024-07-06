@@ -13,7 +13,8 @@ const PageHeader = () => {
 
         <div className='header__hero'>
           <h1 className='heading heading--large u-fc-primary-1000'>
-            Data <span className='underline'>tailored</span> to your needs.
+            Data <span className='underline'>tailored</span> to
+            <br /> your needs.
           </h1>
 
           <div className='header__hero-actions'>
@@ -25,7 +26,7 @@ const PageHeader = () => {
       </div>
 
       <img
-        src='image-hero-mobile.png'
+        src='image-hero.webp'
         alt='Hero Image Cellphone'
         className='header__hero-img img-clear'
       />

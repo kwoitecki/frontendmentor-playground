@@ -1,10 +1,11 @@
+@use '../utils/' as *;
+
 .header {
   display: flex;
   flex-direction: column;
-  // align-items: center;
 
   &__navigation {
-    --navigation-pt: var(--px-37);
+    --navigation-pt: var(--px-32);
     --navigation-pl: var(--px-16);
     --navigation-pr: var(--px-16);
 
@@ -13,6 +14,11 @@
     justify-content: space-between;
     width: 100%;
     padding: var(--navigation-pt) var(--navigation-pl) var(--navigation-pr);
+
+    @include mq-min-width('md') {
+      --navigation-pl: var(--px-39);
+      --navigation-pr: var(--px-39);
+    }
   }
 
   &__hero {
@@ -23,12 +29,29 @@
     margin: var(--hero-mt) var(--hero-ml) var(--hero-mr);
     text-align: center;
 
+    @include mq-min-width('md') {
+      --hero-mt: var(--px-56);
+      --hero-ml: var(--px-97);
+      --hero-mr: var(--px-97);
+
+      // background-image: url('./assets/bg-pattern-1.svg'),
+      //   url('./assets/bg-pattern-2.svg');
+      // background-position: left -250px top -100px, right top;
+      // background-repeat: no-repeat, no-repeat;
+      // background-size: auto, auto;
+    }
+
     &-actions {
       --hero-actions-mt: var(--px-40);
       --hero-actions-mb: var(--px-157);
 
       margin-top: var(--hero-actions-mt);
       margin-bottom: var(--hero-actions-mb);
+
+      @include mq-min-width('md') {
+        --hero-actions-mt: var(--px-39);
+        --hero-actions-mb: var(--px-203);
+      }
 
       &-button {
         width: var(--px-133);
@@ -37,11 +60,22 @@
     }
 
     &-img {
+      --hero-image-mt: var(--px-m94);
+      --hero-image-width: var(--px-320);
+      --hero-image-height: var(--px-184);
+
       align-self: center;
       position: relative;
-      margin-top: -94px;
-      width: var(--px-320);
-      height: var(--px-184);
+      margin-top: var(--hero-image-mt);
+      width: var(--hero-image-width);
+      height: var(--hero-image-height);
+
+      @include mq-min-width('md') {
+        --hero-image-width: var(--px-514);
+        --hero-image-height: var(--px-296);
+
+        --hero-image-mt: var(--px-m143);
+      }
     }
   }
 }
