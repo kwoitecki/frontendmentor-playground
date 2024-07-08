@@ -13,4 +13,10 @@
     --cards-mlr: var(--px-97);
     --card-gap: var(--px-48);
   }
+
+  @include mq-min-width('lg') {
+    grid-template-columns: repeat(3, 1fr);
+    --cards-mlr: 0;
+    --card-gap: var(--px-26);
+  }
 }

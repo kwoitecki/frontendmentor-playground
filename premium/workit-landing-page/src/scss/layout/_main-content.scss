@@ -6,12 +6,16 @@
   --content-pr: var(--px-16);
 
   padding: var(--content-pt) var(--content-pr) 0 var(--content-pl);
-  // background-image: url(./assets/light-background.png);
-  // background-repeat: no-repeat;
 
   @include mq-min-width('md') {
     --content-pt: var(--px-56);
     --content-pl: 0;
     --content-pr: 0;
+  }
+
+  @include mq-min-width('lg') {
+    --content-pt: var(--px-90);
+    --content-pl: var(--px-165);
+    --content-pr: var(--px-161);
   }
 }

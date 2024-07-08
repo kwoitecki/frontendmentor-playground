@@ -9,6 +9,10 @@
     grid-template-columns: auto 1fr;
   }
 
+  @include mq-min-width('lg') {
+    grid-template-columns: 1fr;
+  }
+
   &__caption {
     --card-caption-mr: 0;
 
@@ -16,16 +20,21 @@
     height: var(--px-46);
     border: 1px solid var(--clr-primary-300);
     border-radius: var(--px-30_5);
-    margin: 0 auto;
     display: inline-block;
     justify-content: center;
     margin-right: var(--card-caption-mr);
+    grid-row: 1;
 
     @include mq-min-width('md') {
       --card-caption-mr: var(--px-32);
 
       grid-row: span 2;
       align-self: center;
+    }
+
+    @include mq-min-width('lg') {
+      grid-row: 1;
+      margin: 0 auto;
     }
   }
 
@@ -38,6 +47,11 @@
       --card-title-mt: 0;
       text-align: left;
     }
+
+    @include mq-min-width('lg') {
+      --card-title-mt: var(--px-56);
+      text-align: center;
+    }
   }
 
   &__content {
@@ -45,5 +59,10 @@
 
     margin-top: var(--card-content-mt);
     text-align: left;
+
+    @include mq-min-width('lg') {
+      --card-content-mt: var(--px-28);
+      text-align: center;
+    }
   }
 }

@@ -16,6 +16,11 @@
     --footer-mb: var(--px-122);
   }
 
+  @include mq-min-width('lg') {
+    --footer-mt: var(--px-122);
+    --footer-mb: var(--px-110);
+  }
+
   &__links {
     --footer-links-mt: var(--px-58);
     --footer-links-mb: var(--px-64);

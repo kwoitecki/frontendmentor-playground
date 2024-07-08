@@ -1,14 +1,16 @@
 = Scratchpaper
 
 .Desktop
-* [ ] Header
-** [ ] Navigation
-** [ ] Hero
+* [x] Header
+** [x] Navigation
+** [x] Hero
 * [ ] Main
-** [ ] article description
-** [ ] article apply
-* [ ] Footer
+** [x] article description
+** [x] article apply
+* [x] Footer
 
 .Finetuning
 * [ ] Set Background waves
 * [ ] Set Background squiggles
+
+* [ ] Tests on all resolutions
