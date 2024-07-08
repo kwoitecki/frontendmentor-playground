@@ -36,6 +36,11 @@
       --heading-f-size-medium: var(--f-fs-32);
       --heading-f-lh-medium: var(--f-lh-48);
     }
+
+    @include mq-max-width('lg') {
+      --heading-f-size-medium: var(--f-fs-48);
+      --heading-f-lh-medium: var(--f-lh-56);
+    }
   }
 
   &--small {

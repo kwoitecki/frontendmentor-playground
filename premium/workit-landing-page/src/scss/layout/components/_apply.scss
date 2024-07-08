@@ -30,8 +30,6 @@
 
   &__content {
     --apply-content-pt: var(--px-32);
-    --apply-content-pb: var(--px-32);
-    --apply-content-pl: var(--px-31);
     --apply-content-pr: var(--px-31);
 
     padding: var(--apply-content-pt) var(--apply-content-pr);
@@ -41,9 +39,11 @@
     z-index: 2;
 
     @include mq-min-width('md') {
-      margin-inline: var(--px-214) var(--px-40);
+      --apply-content-pt: var(--px-48);
+      --apply-content-pr: var(--px-56);
 
-      // Aktueller Stand (!!!)
+      margin-inline: var(--px-214) var(--px-40);
+      align-items: flex-start;
     }
 
     &-description {
@@ -51,6 +51,11 @@
 
       text-align: center;
       margin-top: var(--apply-description-mt);
+
+      @include mq-min-width('md') {
+        --apply-description-mt: var(--px-24);
+        text-align: left;
+      }
     }
 
     &-action {
@@ -61,6 +66,10 @@
       margin-top: var(--apply-action-mt);
       width: var(--apply-action-width);
       height: var(--apply-action-height);
+
+      @include mq-min-width('md') {
+        --apply-action-mt: var(--px-24);
+      }
     }
   }
 }

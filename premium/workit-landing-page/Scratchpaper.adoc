@@ -1,15 +1,5 @@
 = Scratchpaper
 
-.Tablet
-* [x] Header
-** [x] Navigation
-** [x] Hero
-* [ ] Main
-** [x] article description
-** [ ] article apply
-* [ ] Footer
-
-
 .Desktop
 * [ ] Header
 ** [ ] Navigation
@@ -20,5 +10,5 @@
 * [ ] Footer
 
 .Finetuning
-* [ ] Background image light and dark setzen
-* [ ] Set Background patterns
+* [ ] Set Background waves
+* [ ] Set Background squiggles
