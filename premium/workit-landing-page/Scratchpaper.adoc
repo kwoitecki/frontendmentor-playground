@@ -1,16 +1,22 @@
 = Scratchpaper
 
+== Header 
+.Mobile
+* [x] Navigation
+* [x] HeaderText
+* [x] Header Image
+
+.Tablet
+* [x] Navigation
+* [x] HeaderText
+* [x] Header Image
+* [x] squiggles
+* [x] Curvy Background
+
 .Desktop
-* [x] Header
-** [x] Navigation
-** [x] Hero
-* [ ] Main
-** [x] article description
-** [x] article apply
-* [x] Footer
-
-.Finetuning
-* [ ] Set Background waves
-* [ ] Set Background squiggles
-
-* [ ] Tests on all resolutions
+* [x] Navigation
+* [x] HeaderText
+* [x] Header Image
+* [x] squiggles
+* [x] Curvy Background
+** 1440, 768, 375

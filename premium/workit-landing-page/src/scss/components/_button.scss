@@ -1,0 +1,57 @@
+@use '../utils/' as *;
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+
+  &--primary {
+    --btn-primary-f-fs: var(--f-fs-16);
+    --btn-primary-f-ls: var(--f-ls-m0-16);
+
+    background-color: var(--clr-primary-600);
+    font-weight: var(--f-fw-semibold);
+    color: var(--clr-primary-100);
+
+    font-size: var(--btn-primary-f-fs);
+    line-height: var(--f-lh-32);
+    letter-spacing: var(--btn-primary-f-ls);
+    margin-bottom: var(--px-1);
+
+    @include mq-min-width('lg') {
+      --btn-primary-f-fs: var(--f-fs-18);
+      --btn-primary-f-ls: var(--f-ls-m0-18);
+    }
+
+    &:hover {
+      background-color: var(--clr-primary-100);
+      color: var(--clr-primary-600);
+      border: var(--px-4) solid var(--clr-primary-600);
+    }
+  }
+
+  &--secondary {
+    --btn-secondary-f-fs: var(--f-fs-16);
+    --btn-secondary-f-ls: var(--f-ls-m0-16);
+
+    background-color: var(--clr-primary-100);
+    font-weight: bold;
+    color: var(--clr-primary-1000);
+    border-bottom: var(--px-4) solid var(--clr-primary-600);
+    font-size: var(--btn-secondary-f-fs);
+    line-height: var(--f-lh-32);
+    letter-spacing: var(--btn-secondary-f-ls);
+    margin-bottom: var(--px-1);
+
+    @include mq-min-width('lg') {
+      --btn-secondary-f-fs: var(--f-fs-18);
+      --btn-secondary-f-ls: var(--f-ls-m0-18);
+    }
+
+    &:hover {
+      color: var(--clr-primary-600);
+    }
+  }
+}

@@ -1,14 +1,10 @@
 import './App.scss';
-import PageContent from './components/PageContent';
-import PageFooter from './components/PageFooter';
-import PageHeader from './components/PageHeader';
+import HeaderMain from './components/header/HeaderMain';
 
 function App() {
   return (
     <>
-      <PageHeader />
-      <PageContent />
-      <PageFooter />
+      <HeaderMain />
     </>
   );
 }

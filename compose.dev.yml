@@ -27,6 +27,7 @@ services:
       - fm-skilled-elearning-landing-page:/workspace/premium/skilled-elearning-landing-page/node_modules
       - fm-equalizer-landing-page:/workspace/premium/equalizer-landing-page/node_modules
       - fm-meet-landing-page:/workspace/premium/meet-landing-page/node_modules
+      - fm-workit-landing-page:/workspace/premium/workit-landing-page/node_modules
 
     ports:
       - 5555:5555
@@ -47,3 +48,4 @@ volumes:
   fm-skilled-elearning-landing-page:
   fm-equalizer-landing-page:
   fm-meet-landing-page:
+  fm-workit-landing-page:

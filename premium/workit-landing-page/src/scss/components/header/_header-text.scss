@@ -1,0 +1,51 @@
+@use '../../utils/' as *;
+
+.header-text {
+  --header-text-pt: var(--px-64);
+  --header-text-pr: var(--px-16-3);
+  --header-text-pb: var(--px-156-71);
+  --header-text-pl: var(--px-16);
+
+  padding: var(--header-text-pt) var(--header-text-pr) var(--header-text-pb)
+    var(--header-text-pl);
+  text-align: center;
+
+  @include mq-min-width('md') {
+    --header-text-pt: var(--px-56);
+    --header-text-pb: var(--px-203);
+
+    background-image: url('./assets/bg-pattern-1.svg'),
+      url('./assets/bg-pattern-2.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 15% left -52%, center right -17%;
+  }
+
+  @include mq-min-width('lg') {
+    --header-text-pt: var(--px-63-62);
+    --header-text-pb: var(--px-326);
+    background-position: top 17% left -15%, center right -5%;
+  }
+
+  &__actions {
+    --header-text-mt: var(--px-40);
+    --header-text-button-width: var(--px-133);
+    --header-text-button-height: var(--px-55);
+
+    margin-top: var(--header-text-mt);
+
+    @include mq-min-width('md') {
+      --header-text-mt: var(--px-39);
+    }
+
+    @include mq-min-width('lg') {
+      --header-text-mt: var(--px-37);
+      --header-text-button-width: var(--px-161);
+      --header-text-button-height: var(--px-61);
+    }
+
+    & button {
+      width: var(--header-text-button-width);
+      height: var(--header-text-button-height);
+    }
+  }
+}

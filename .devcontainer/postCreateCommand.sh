@@ -13,3 +13,4 @@ sudo chown node /workspace/challenges/newbie/order-summary-component/node_module
 sudo chown node /workspace/premium/skilled-elearning-landing-page/node_modules
 sudo chown node /workspace/premium/equalizer-landing-page/node_modules
 sudo chown node /workspace/premium/meet-landing-page/node_modules
+sudo chown node /workspace/premium/workit-landing-page/node_modules

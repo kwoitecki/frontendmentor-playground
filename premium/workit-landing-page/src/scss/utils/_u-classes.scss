@@ -1,0 +1,29 @@
+@use '../abstracts/' as *;
+@use 'mixins' as *;
+
+@include create-utility-classes('bg', 'background', $colors);
+@include create-utility-classes('fc', 'color', $colors);
+
+.u-img-clear {
+  max-width: 100%;
+  display: block;
+}
+
+.u-curve {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.u-curve--dark {
+  background-image: url('./assets/dark-curve-sm.png');
+  background-color: var(--clr-primary-950);
+
+  @include mq-min-width('md') {
+    background-image: url('./assets/dark-curve-md.png');
+  }
+
+  @include mq-min-width('md') {
+    background-image: url('./assets/dark-curve-lg.png');
+  }
+}

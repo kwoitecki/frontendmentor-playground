@@ -1,0 +1,29 @@
+@use '../../utils/' as *;
+
+.primary-navigation {
+  --primary-navigation-pt: var(--px-32);
+  --primary-navigation-pr: var(--px-16-3);
+  --primary-navigation-pl: var(--px-16);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--primary-navigation-pt) var(--primary-navigation-pr) 0
+    var(--primary-navigation-pl);
+
+  @include mq-min-width('md') {
+    --primary-navigation-pr: var(--px-40);
+    --primary-navigation-pl: var(--px-39);
+  }
+
+  @include mq-min-width('lg') {
+    --primary-navigation-pt: var(--px-57-78);
+    --primary-navigation-pr: var(--px-165);
+    --primary-navigation-pl: var(--px-165-35);
+  }
+
+  &__image {
+    width: var(--px-95-76);
+    height: var(--px-24-61);
+  }
+}

@@ -1,0 +1,22 @@
+@use '../../utils/' as *;
+
+.header-image {
+  --header-image-width: var(--px-320);
+  --header-image-height: var(--px-184);
+
+  width: var(--header-image-width);
+  height: var(--header-image-height);
+  position: absolute;
+  margin-top: calc(var(--header-image-height) / -2);
+  left: calc(50% - var(--header-image-width) / 2);
+
+  @include mq-min-width('md') {
+    --header-image-width: var(--px-514);
+    --header-image-height: var(--px-296);
+  }
+
+  @include mq-min-width('lg') {
+    --header-image-width: var(--px-767);
+    --header-image-height: var(--px-441);
+  }
+}
