@@ -1,22 +1,9 @@
 = Scratchpaper
+== Main
 
-== Header 
-.Mobile
-* [x] Navigation
-* [x] HeaderText
-* [x] Header Image
+=== Cards
+* [ ] Fehlerbehandlung
+* [ ] Refactor Header
 
-.Tablet
-* [x] Navigation
-* [x] HeaderText
-* [x] Header Image
-* [x] squiggles
-* [x] Curvy Background
-
-.Desktop
-* [x] Navigation
-* [x] HeaderText
-* [x] Header Image
-* [x] squiggles
-* [x] Curvy Background
-** 1440, 768, 375
+== Finetuning
+* [ ] refactor scss/layout/* to component.css

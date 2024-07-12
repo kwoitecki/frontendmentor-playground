@@ -27,3 +27,21 @@
     background-image: url('./assets/dark-curve-lg.png');
   }
 }
+
+.u-curve--light {
+  --curve-light-height: var(--px-1070-71);
+
+  background-image: url('./assets/light-curve-sm.png');
+  background-color: var(--clr-primary-1000);
+  height: var(--curve-light-height);
+
+  @include mq-min-width('md') {
+    background-image: url('./assets/light-curve-md.png');
+    --curve-light-height: var(--px-920-73);
+  }
+
+  @include mq-min-width('lg') {
+    background-image: url('./assets/light-curve-lg.png');
+    --curve-light-height: var(--px-960);
+  }
+}

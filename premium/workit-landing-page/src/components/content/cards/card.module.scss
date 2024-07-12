@@ -1,0 +1,80 @@
+@use '../../../scss/utils/' as *;
+
+.card {
+  --card-m-l: 0;
+  --card-m-r: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-inline: var(--card-m-l) var(--card-m-r);
+
+  @include mq-min-width('md') {
+    --card-m-l: var(--px-97);
+    --card-m-r: var(--px-98);
+
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    justify-items: baseline;
+  }
+
+  @include mq-min-width('lg') {
+    --card-m-l: 0;
+    --card-m-r: 0;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: var(--px-354);
+    grid-template-rows: repeat(3, auto);
+  }
+
+  span {
+    @include mq-min-width('md') {
+      grid-row: span 2;
+      align-self: center;
+      margin-right: var(--px-32);
+    }
+
+    @include mq-min-width('lg') {
+      grid-row: 1;
+      margin-right: 0;
+    }
+  }
+
+  h2 {
+    --card-title-mt: var(--px-24);
+    margin-top: var(--card-title-mt);
+
+    @include mq-min-width('md') {
+      --card-title-mt: 0;
+    }
+
+    @include mq-min-width('lg') {
+      --card-title-mt: var(--px-56);
+    }
+  }
+
+  p {
+    --card-content-mt: var(--px-16);
+    --card-content-ml: var(--px-16);
+    --card-content-mr: var(--px-16-3);
+    margin: var(--card-content-mt) var(--card-content-mr) var(--px-1)
+      var(--card-content-ml);
+    text-align: center;
+
+    @include mq-min-width('md') {
+      text-align: left;
+      --card-content-ml: 0;
+    }
+
+    @include mq-min-width('lg') {
+      --card-content-ml: 0;
+      --card-content-mr: 0;
+      --card-content-mt: var(--px-28);
+      // --card-content-mt: 0;
+      align-self: self-start;
+
+      text-align: center;
+    }
+  }
+}

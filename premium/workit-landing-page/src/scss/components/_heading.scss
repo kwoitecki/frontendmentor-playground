@@ -8,7 +8,7 @@
   --heading-f-lh-medium: var(--f-lh-48);
   --heading-f-size-small: var(--f-fs-28);
   --heading-f-lh-small: var(--f-lh-36);
-  
+
   font-family: $f-ff2-primary;
   font-weight: $f-fw-semibold;
   margin-bottom: var(--px-1);
@@ -54,7 +54,27 @@
   }
 
   &--x-small {
-    font-size: var(--f-fs-20);
-    line-height: var(--f-lh-36);
+    --heading-x-small-width: var(--px-48);
+    --heading-x-small-height: var(--px-46);
+    --heading-x-small-f-fs: var(--f-fs-20);
+    --heading-x-small-f-lh: var(--f-lh-36);
+
+    font-size: var(--heading-x-small-f-fs);
+    line-height: var(--heading-x-small-f-lh);
+    height: var(--heading-x-small-height);
+    width: var(--heading-x-small-width);
+    border: var(--px-1) solid var(--clr-primary-300);
+    border-radius: var(--px-30_5);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq-min-width('lg') {
+      --heading-x-small-width: var(--px-56);
+      --heading-x-small-height: var(--px-56);
+      --heading-x-small-f-fs: var(--f-fs-24);
+      --heading-x-small-f-lh: var(--f-lh-40);
+    }
   }
 }

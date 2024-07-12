@@ -1,0 +1,31 @@
+@use '../../../scss/utils/' as *;
+.cards {
+  --cards-pt: var(--px-155-29);
+  --cards-gap: var(--px-40);
+  --cards-pb: 0;
+  --cards-p-l: 0;
+  --cards-p-r: 0;
+
+  display: flex;
+  gap: var(--cards-gap);
+  flex-direction: column;
+  padding-top: var(--cards-pt);
+  padding-bottom: var(--cards-pb);
+  padding-inline: var(--cards-p-l) var(--cards-p-r);
+
+  @include mq-min-width('md') {
+    --cards-pt: var(--px-203-76);
+    --cards-gap: var(--px-48);
+    --cards-pb: var(--px-103-73);
+  }
+
+  @include mq-min-width('lg') {
+    --cards-pt: var(--px-255);
+    --cards-pb: var(--px-171);
+    --cards-gap: var(--px-26);
+    --cards-p-l: var(--px-165);
+    --cards-p-r: var(--px-161);
+
+    flex-direction: row;
+  }
+}

@@ -40,3 +40,4 @@ This is a solution to the link:https://www.frontendmentor.io/challenges/workit-l
 * link:https://dev.to/dostonnabotov/a-modern-sass-folder-structure-330f[Sass folder structure]
 * link:https://github.com/dostonnabotov/sass-template[Sass template]
 * link:https://www.youtube.com/watch?v=h3bTwCqX4ns&list=PL4-IK0AVhVjNDRHoXGort7sDWcna8cGPA[Build a responsive website with HTML & CSS]
+* link:https://www.youtube.com/watch?v=kFA-ZJ9KTqs[Setup React CSS Modules (with SASS, multiple classes and more)]
