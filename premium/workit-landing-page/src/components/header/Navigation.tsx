@@ -1,5 +1,7 @@
+import styles from './navigation.module.scss';
+
 const Navigation = () => (
-  <nav className='primary-navigation'>
+  <nav className={styles.primary_navigation}>
     <img
       src='logo-light.svg'
       alt='Welcome to the workit'

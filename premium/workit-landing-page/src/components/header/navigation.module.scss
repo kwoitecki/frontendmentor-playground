@@ -1,6 +1,6 @@
-@use '../../utils/' as *;
+@use '../../scss/utils/' as *;
 
-.primary-navigation {
+.primary_navigation {
   --primary-navigation-pt: var(--px-32);
   --primary-navigation-pr: var(--px-16-3);
   --primary-navigation-pl: var(--px-16);

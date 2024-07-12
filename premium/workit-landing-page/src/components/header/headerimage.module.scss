@@ -1,6 +1,6 @@
-@use '../../utils/' as *;
+@use '../../scss/utils/' as *;
 
-.header-image {
+.headerimage {
   --header-image-width: var(--px-320);
   --header-image-height: var(--px-184);
 

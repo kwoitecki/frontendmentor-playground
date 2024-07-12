@@ -1,9 +1,6 @@
 = Scratchpaper
 == Main
 
-=== Cards
-* [ ] Fehlerbehandlung
-* [ ] Refactor Header
-
+s
 == Finetuning
 * [ ] refactor scss/layout/* to component.css
