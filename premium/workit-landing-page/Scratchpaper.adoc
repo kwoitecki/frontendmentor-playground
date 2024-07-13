@@ -1,6 +1,9 @@
 = Scratchpaper
-== Main
+== Apply Part
 
-s
-== Finetuning
-* [ ] refactor scss/layout/* to component.css
+* [x] Mobile
+* [x] Tablett
+** [x] squiggles
+* [x] Desktop
+
+** 1440, 768, 375

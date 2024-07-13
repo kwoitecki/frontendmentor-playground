@@ -8,7 +8,7 @@
   line-height: var(--body-f-lh);
   margin-bottom: var(--px-1);
 
-  @include mq-max-width('lg') {
+  @include mq-min-width('lg') {
     --body-f-fs: var(--f-fs-18);
     --body-f-lh: var(--f-lh-32);
   }
