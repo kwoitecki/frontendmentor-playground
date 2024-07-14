@@ -2,5 +2,6 @@
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": true,
   "editor.formatOnSave": false,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "asciidoc.antora.enableAntoraSupport": false
 }

@@ -27,6 +27,9 @@ This is a playground for frontendmentor.io challenges.
 * link:./challenges/newbie/ping-coming-soon-page[Ping Coming Soon Page]
 * link:./challenges/newbie/order-summary-component[Order Summary Component]
 
+=== Junior
+* link:./challenges/junior/testimonials-grid-section-main[Testimonials Grid Section Main]
+
 === Premium
 
 ==== Newbie

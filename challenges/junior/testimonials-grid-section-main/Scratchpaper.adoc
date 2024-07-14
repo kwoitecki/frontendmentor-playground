@@ -1,0 +1,5 @@
+= Scratchpaper
+
+* [ ] Clean up Base React Project
+* [x] Add Css template
+* [ ] push initial setup 

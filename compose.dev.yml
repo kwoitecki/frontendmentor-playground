@@ -28,6 +28,7 @@ services:
       - fm-equalizer-landing-page:/workspace/premium/equalizer-landing-page/node_modules
       - fm-meet-landing-page:/workspace/premium/meet-landing-page/node_modules
       - fm-workit-landing-page:/workspace/premium/workit-landing-page/node_modules
+      - fm-testimonials-grid-section-main:/workspace/challenges/junior/testimonials-grid-section-main/node_modules
 
     ports:
       - 5555:5555
@@ -49,3 +50,4 @@ volumes:
   fm-equalizer-landing-page:
   fm-meet-landing-page:
   fm-workit-landing-page:
+  fm-testimonials-grid-section-main:
