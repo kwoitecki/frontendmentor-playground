@@ -1,9 +1,0 @@
-= Scratchpaper
-== Apply Part
-
-* [x] Mobile
-* [x] Tablett
-** [x] squiggles
-* [x] Desktop
-
-** 1440, 768, 375

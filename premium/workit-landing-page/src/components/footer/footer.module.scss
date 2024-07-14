@@ -1,0 +1,36 @@
+@use '../../scss/utils/' as *;
+
+.footer {
+  --footer-mb: var(--px-63-78);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--footer-mb);
+
+  @include mq-min-width('md') {
+    --footer-mb: var(--px-121-78);
+  }
+
+  @include mq-min-width('lg') {
+    --footer-mb: var(--px-110);
+  }
+
+  &__logo {
+    width: var(--px-95-76);
+    height: var(--px-24-61);
+  }
+
+  &__social {
+    margin-top: var(--px-57-62);
+    display: flex;
+    list-style: none;
+    gap: var(--px-28);
+  }
+
+  &__socialicon {
+    width: var(--px-20);
+    height: var(--px-20);
+  }
+}
