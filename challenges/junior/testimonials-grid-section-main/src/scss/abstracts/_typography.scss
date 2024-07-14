@@ -1,39 +1,20 @@
-/*
-Example:
+$f-ff: 'Barlow Semi Condensed';
+$f-regular-file: './assets/fonts/BarlowSemiCondensed-Regular.ttf';
+$f-bold-file: './assets/fonts/BarlowSemiCondensed-SemiBold.ttf';
+$f-ff-primary: $f-ff, sans-serif;
 
-$f-ff: 'IBM Plex Sans';
-$f-regular-file: './assets/fonts/IBMPlexSans-Regular.ttf';
-$f-bold-file: './assets/fonts/IBMPlexSans-Bold.ttf';
+$f-fs-base: 13px;
 
-$ff-primary: $font-family, sans-serif;
-*/
-
-$f-ff: '';
-$f-regular-file: '';
-$f-bold-file: '';
-$f-ff-primary: $f-ff;
-
-$f-fs-base: 16px;
-
-/*
-Example:
-$f-sizes: (
-  '16': 16px
+$f-fs: (
+  '13': $f-fs-base,
 );
-*/
-$f-fs: ();
 
-/*
-Example:
-$f-fw-regular: 400;
-$f-fw-bold: 700;
-
+$f-fw-regular: 500;
+$f-fw-bold: 600;
 $f-fw: (
   'regular': $f-fw-regular,
-  'bold': $f-fw-bold
+  'bold': $f-fw-bold,
 );
-*/
-$f-fw: ();
 
 /*
 Example: 

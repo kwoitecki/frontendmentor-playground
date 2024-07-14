@@ -1,7 +1,8 @@
 import { FC } from 'react';
+import styles from './card.module.scss';
 
 const Card: FC<TestimonialProps> = ({ name, role, image, title, content }) => (
-  <div>
+  <div className={styles.card}>
     <img src={image} alt={name} />
     <h2>{name}</h2>
     <h3>{role}</h3>

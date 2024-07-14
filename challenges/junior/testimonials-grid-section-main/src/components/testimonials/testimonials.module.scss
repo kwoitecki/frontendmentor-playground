@@ -1,0 +1,18 @@
+@use '../../scss/utils/' as *;
+
+.testimonials {
+  --testimonial-width: 87.2%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /*
+  lg: 1440 - (2* 165) = 1110 (77.1%)
+  sm: 375 - (2* 24) = 327 (87.2%)
+  */
+  width: var(--testimonial-width);
+
+  @include mq-min-width('lg') {
+    --testimonial-width: 77.1%;
+  }
+}

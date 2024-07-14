@@ -6,4 +6,13 @@
 
 * [x] create json file for content
 * [x] display content
-* [ ] create html structure
+* [x] create html structure
+
+.MISC
+* [x] center content
+* [x] typography
+* [x] colors
+
+.Mobile
+
+.Desktop
