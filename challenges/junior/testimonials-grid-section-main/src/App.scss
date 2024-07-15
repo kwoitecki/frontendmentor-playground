@@ -1,9 +1,19 @@
 @use 'scss/' as *;
+@use 'scss/utils/' as *;
 
 .content {
-  height: 100svh;
+  --content-mt: var(--px-71);
+  --content-mb: var(--px-71);
+
   width: 100svw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: var(--content-mt);
+  margin-bottom: var(--content-mb);
+
+  @include mq-min-width('lg') {
+    --content-mt: var(--px-164);
+    --content-mb: var(--px-164);
+  }
 }

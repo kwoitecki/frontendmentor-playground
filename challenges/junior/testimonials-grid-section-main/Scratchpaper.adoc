@@ -1,18 +1,3 @@
 = Scratchpaper
 
-* [x] Clean up Base React Project
-* [x] Add Css template
-* [x] push initial setup 
-
-* [x] create json file for content
-* [x] display content
-* [x] create html structure
-
-.MISC
-* [x] center content
-* [x] typography
-* [x] colors
-
-.Mobile
-
-.Desktop
+1440px, 768px, 375x1966

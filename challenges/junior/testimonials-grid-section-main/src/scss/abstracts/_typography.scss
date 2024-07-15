@@ -3,10 +3,13 @@ $f-regular-file: './assets/fonts/BarlowSemiCondensed-Regular.ttf';
 $f-bold-file: './assets/fonts/BarlowSemiCondensed-SemiBold.ttf';
 $f-ff-primary: $f-ff, sans-serif;
 
-$f-fs-base: 13px;
+$f-fs-base: 16px;
 
 $f-fs: (
-  '13': $f-fs-base,
+  '11': 11px,
+  '13': 13px,
+  '16': $f-fs-base,
+  '20': 20px,
 );
 
 $f-fw-regular: 500;
@@ -16,13 +19,11 @@ $f-fw: (
   'bold': $f-fw-bold,
 );
 
-/*
-Example: 
 $f-lh: (
-  '26': 26px
+  '11': 11px,
+  '13': 13px,
+  '18': 18px,
 );
-*/
-$f-lh: ();
 
 /*
 Example:

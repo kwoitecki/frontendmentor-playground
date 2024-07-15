@@ -1,4 +1,60 @@
+@use '../../scss/utils/' as *;
+
 .card {
-  // TODO: delete
-  border: 1px solid black;
+  padding: var(--px-24) var(--px-32) var(--px-32) var(--px-32);
+  border-radius: var(--px-8);
+  display: grid;
+
+  column-gap: var(--px-17);
+
+  grid-template-areas:
+    'image name .'
+    'image role .'
+    'title title title'
+    'content content content';
+
+  &__image {
+    grid-area: image;
+    width: var(--px-28);
+    height: var(--px-28);
+    border-radius: 50%;
+  }
+
+  &__name {
+    grid-area: name;
+    font-size: var(--f-fs-13);
+    line-height: var(--f-lh-13);
+    white-space: nowrap;
+  }
+
+  &__role {
+    grid-area: role;
+    font-size: var(--f-fs-11);
+    line-height: var(--f-lh-11);
+    opacity: 0.5;
+  }
+
+  &__title {
+    --card-title-mt: var(--px-18);
+
+    grid-area: title;
+    margin-top: var(--card-title-mt);
+
+    font-size: var(--f-fs-20);
+    line-height: auto;
+    font-weight: var(--f-fw-bold);
+  }
+
+  &__content {
+    --card-content-mt: var(--px-40);
+
+    grid-area: content;
+    margin-top: var(--card-content-mt);
+    font-size: var(--f-fs-13);
+    line-height: var(--f-lh-18);
+
+    @include mq-min-width('lg') {
+      --card-content-mt: var(--px-16);
+    }
+  }
 }
