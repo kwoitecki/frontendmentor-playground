@@ -1,0 +1,15 @@
+@use '../utils/' as h;
+@use '../abstracts/' as *;
+@use 'sass:math';
+
+:root {
+  @include var('f-ff-primary', $f-ff-primary);
+  @include h.calculate-vars('f-fs', $f-fs);
+  @include vars('f-fw', $f-fw);
+  @include h.calculate-vars('f-lh', $f-lh);
+  @include h.calculate-vars('f-ls', $f-ls);
+  @include vars('clr', $colors);
+  @include h.calculate-vars('breakpoint', $breakpoints);
+
+  @include h.calculate-vars('px', $px);
+}
