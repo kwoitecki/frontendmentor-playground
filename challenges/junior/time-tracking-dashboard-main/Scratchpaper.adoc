@@ -1,0 +1,12 @@
+= Scratchpaper
+
+.MISC
+* [ ] colors
+* [ ] breakpoints
+* [ ] typography
+* [ ] basic structure, see notion scratchpaper
+** [ ] build basic components
+
+.Mobile Design
+
+.Desktop Design
