@@ -1,9 +1,9 @@
 = Scratchpaper
 
 .MISC
-* [ ] colors
-* [ ] breakpoints
-* [ ] typography
+* [x] colors
+* [x] breakpoints
+* [x] typography
 * [ ] basic structure, see notion scratchpaper
 ** [ ] build basic components
 

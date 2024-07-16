@@ -1,39 +1,25 @@
-/*
-Example:
-
-$f-ff: 'IBM Plex Sans';
-$f-regular-file: './assets/fonts/IBMPlexSans-Regular.ttf';
-$f-bold-file: './assets/fonts/IBMPlexSans-Bold.ttf';
-
-$ff-primary: $font-family, sans-serif;
-*/
-
-$f-ff: '';
-$f-regular-file: '';
-$f-bold-file: '';
-$f-ff-primary: $f-ff;
+$f-ff: 'Rubik';
+$f-light-file: './assets/fonts/Rubik-Light.ttf';
+$f-regular-file: './assets/fonts/Rubik-Regular.ttf';
+$f-medium-file: './assets/fonts/Rubik-Medium.ttf';
+$f-ff-primary: $f-ff, sans-serif;
 
 $f-fs-base: 16px;
 
-/*
-Example:
-$f-sizes: (
-  '16': 16px
+$f-fs: (
+  '16': $f-fs-base,
+  '18': 18px,
 );
-*/
-$f-fs: ();
 
-/*
-Example:
+$f-fw-light: 300;
 $f-fw-regular: 400;
-$f-fw-bold: 700;
+$f-fw-medium: 500;
 
 $f-fw: (
+  'light': $f-fw-light,
   'regular': $f-fw-regular,
-  'bold': $f-fw-bold
+  'medium': $f-fw-medium,
 );
-*/
-$f-fw: ();
 
 /*
 Example: 
