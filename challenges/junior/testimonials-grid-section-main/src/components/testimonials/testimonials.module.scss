@@ -26,10 +26,17 @@
   }
 
   & div:nth-child(1) {
+    --first-card-bg-p-r: var(--px-24);
+
     background-color: var(--clr-primary-500);
+    background-image: url('../../assets/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-size: var(--px-104) var(--px-102);
+    background-position: top right var(--first-card-bg-p-r);
     color: var(--clr-primary-1000);
 
     @include mq-min-width('lg') {
+      --first-card-bg-p-r: var(--px-80);
       grid-column: span 2;
     }
 
