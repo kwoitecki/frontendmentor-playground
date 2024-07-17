@@ -1,0 +1,10 @@
+.dashboard {
+  --dashboard-row-gap: var(--px-24);
+  --dashboard-column-gap: 0;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  row-gap: var(--dashboard-row-gap);
+  column-gap: var(--dashboard-column-gap);
+}

@@ -1,0 +1,17 @@
+@use '../helper/' as *;
+
+.content {
+  --content-mtb: var(--px-81);
+
+  width: 100svw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: var(--content-mtb);
+  margin-bottom: var(--content-mtb);
+
+  @include mq-min-width('lg') {
+    --content-mtb: var(--px-253);
+  }
+}

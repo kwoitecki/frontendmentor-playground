@@ -14,6 +14,10 @@
 1440x1024
 
 .Mobile Design
-* [ ] Mobile design
+* [ ] User Info
+* [ ] Activities
 
 .Desktop Design
+
+.MISC 
+* [ ] dark background upper border radius fill

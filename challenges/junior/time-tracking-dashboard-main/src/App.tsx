@@ -3,7 +3,7 @@ import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
   return (
-    <main>
+    <main className='content'>
       <h1 className='visually-hidden'>
         Frontend Mentor | Time tracking dashboard
       </h1>

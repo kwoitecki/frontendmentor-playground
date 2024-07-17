@@ -1,0 +1,80 @@
+@use '../../scss/helper/' as *;
+
+.userinfo {
+  &__header {
+    --header-pt: var(--px-35);
+    --header-pr: var(--px-39);
+    --header-pb: var(--px-34);
+    --header-pl: var(--px-32);
+
+    --header-column-gap: var(--px-20);
+    --header-row-gap: var(--px-4);
+
+    --userinfo-header-border-radius: var(--px-15);
+
+    background-color: var(--clr-primary-600);
+    border-radius: var(--userinfo-header-border-radius);
+    padding: var(--header-pt) var(--header-pr) var(--header-pb) var(--header-pl);
+
+    display: grid;
+    grid-template-areas:
+      'image caption'
+      'image name';
+    align-items: center;
+    column-gap: var(--header-column-gap);
+    row-gap: var(--header-row-gap);
+  }
+
+  &__image {
+    --user-image-size: var(--px-64);
+
+    width: var(--user-image-size);
+    height: var(--user-image-size);
+    grid-area: image;
+
+    @include mq-min-width('lg') {
+      --user-image-size: var(--px-78);
+    }
+  }
+
+  &__caption {
+    --user-caption-fs: var(--f-fs-15);
+
+    grid-area: caption;
+    font-size: var(--user-caption-fs);
+    color: var(--clr-primary-700);
+    align-self: end;
+  }
+
+  &__name {
+    --user-name-fs: var(--f-fs-24);
+
+    grid-area: name;
+    font-size: var(--user-name-fs);
+    color: var(--clr-primary-1000);
+    margin-bottom: var(--px-1);
+    font-weight: var(--f-fw-light);
+    align-self: start;
+
+    @include mq-min-width('lg') {
+      --user-caption-fs: var(--f-fs-40);
+    }
+  }
+
+  &__navigation {
+    --navigation-pt: var(--px-25);
+    --navigation-pb: var(--px-25);
+
+    position: relative;
+    border-bottom-left-radius: var(--px-15);
+    border-bottom-right-radius: var(--px-15);
+    background-color: var(--clr-primary-200);
+    margin-top: calc(var(--px-15) * -1);
+    padding-top: calc(var(--navigation-pt) + var(--px-15));
+    padding-bottom: var(--navigation-pb);
+    z-index: -1;
+  }
+
+  // &__navitem {
+  // }
+}

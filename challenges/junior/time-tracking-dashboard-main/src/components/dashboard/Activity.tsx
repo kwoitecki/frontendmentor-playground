@@ -34,7 +34,7 @@ const Activity: FC<ActivityCardProps> = ({
   }
 
   return (
-    <div>
+    <div className={`u_card`}>
       <h3>{title}</h3>
       <p>{value.current}</p>
       <p>{value.previous}</p>

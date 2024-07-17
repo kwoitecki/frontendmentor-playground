@@ -3,6 +3,8 @@ import Activities from './Activities';
 import UserInfo from './UserInfo';
 import userdata from './db/user.json';
 import { Timeframe, UserProps } from './dashboard.d';
+import styles from './dashboard.module.scss';
+import Activity from './Activity';
 
 const Dashboard = () => {
   const [user, setUser] = useState<UserProps>();
@@ -21,9 +23,16 @@ const Dashboard = () => {
   };
 
   return (
-    <article>
+    <article className={styles.dashboard}>
       <UserInfo {...user} changeTimeframe={timeframeChanged} />
-      <Activities {...user} currentTimeframe={currentTimeframe} />
+
+      {user?.activities?.map((activity) => (
+        <Activity
+          key={activity.title}
+          {...activity}
+          currentTimeframe={currentTimeframe}
+        />
+      ))}
     </article>
   );
 };

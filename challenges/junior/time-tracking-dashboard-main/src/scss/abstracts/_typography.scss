@@ -7,8 +7,11 @@ $f-ff-primary: $f-ff, sans-serif;
 $f-fs-base: 16px;
 
 $f-fs: (
+  '15': 15px,
   '16': $f-fs-base,
   '18': 18px,
+  '24': 24px,
+  '40': 40px,
 );
 
 $f-fw-light: 300;
