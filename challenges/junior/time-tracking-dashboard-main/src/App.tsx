@@ -1,10 +1,14 @@
 import './App.scss';
+import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
   return (
-    <>
-      <h1>Frontend Mentor | Time tracking dashboard</h1>
-    </>
+    <main>
+      <h1 className='visually-hidden'>
+        Frontend Mentor | Time tracking dashboard
+      </h1>
+      <Dashboard />
+    </main>
   );
 }
 

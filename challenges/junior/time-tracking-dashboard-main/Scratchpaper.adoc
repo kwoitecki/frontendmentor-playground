@@ -4,6 +4,7 @@
 * [x] colors
 * [x] breakpoints
 * [x] typography
+* [ ] add visually-hidden to h1
 * [ ] basic structure, see notion scratchpaper
 ** [ ] build basic components
 
