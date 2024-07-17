@@ -4,10 +4,16 @@
 * [x] colors
 * [x] breakpoints
 * [x] typography
-* [ ] add visually-hidden to h1
-* [ ] basic structure, see notion scratchpaper
-** [ ] build basic components
+* [x] add visually-hidden to h1
+* [x] basic structure, see notion scratchpaper
+** [x] build basic components
+*** [x] basic functionality
+
+.Resolutions
+375x1469
+1440x1024
 
 .Mobile Design
+* [ ] Mobile design
 
 .Desktop Design
