@@ -1,23 +1,16 @@
 = Scratchpaper
 
-.MISC
-* [x] colors
-* [x] breakpoints
-* [x] typography
-* [x] add visually-hidden to h1
-* [x] basic structure, see notion scratchpaper
-** [x] build basic components
-*** [x] basic functionality
-
 .Resolutions
 375x1469
 1440x1024
 
 .Mobile Design
 * [ ] User Info
+** [x] why can't i click buttons?
+*** because of z-index: -1
+** [ ] layout div
 * [ ] Activities
 
 .Desktop Design
 
 .MISC 
-* [ ] dark background upper border radius fill

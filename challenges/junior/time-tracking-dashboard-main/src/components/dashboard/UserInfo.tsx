@@ -24,7 +24,7 @@ const UserInfo: FC<UserInfoProps> = ({ name, image, changeTimeframe }) => {
         <p className={styles.userinfo__caption}>Report for</p>
         <h2 className={styles.userinfo__name}>{name}</h2>
       </div>
-      <nav>
+      <nav className={styles.userinfo__primary_navigation}>
         <ul className={styles.userinfo__navigation} role='list'>
           {Object.values(Timeframe).map((timeframe) => (
             <li key={timeframe}>
