@@ -20,7 +20,7 @@ const UserInfo: FC<UserInfoProps> = ({
   };
 
   return (
-    <div className={`u_card ${styles.userinfo}`}>
+    <div className={styles.userinfo}>
       <div className={styles.userinfo__header}>
         <img
           src={image}

@@ -1,8 +1,56 @@
 @use '../../scss/helper/' as *;
 
 .activity {
-  background-color: var(--clr-primary-200);
-  border-radius: var(--px-15);
+  &[data-type]::before {
+    --activity-header-visible-height: var(--px-38);
+
+    content: '';
+    display: block;
+    border-radius: var(--px-15) var(--px-15) 0 0;
+    height: calc(var(--activity-header-visible-height) + var(--px-15));
+    margin-bottom: calc(var(--px-15) * -1);
+    background-repeat: no-repeat;
+
+    @include mq-min-width('lg') {
+      --activity-header-visible-height: var(--px-45);
+    }
+  }
+
+  &[data-type='work']::before {
+    background-color: var(--clr-work);
+    background-image: url('../../assets/icon-work.svg');
+    background-position: top -12px right 17.42px;
+  }
+
+  &[data-type='play']::before {
+    background-color: var(--clr-play);
+    background-image: url('../../assets/icon-play.svg');
+    background-position: top -12px right 11px;
+  }
+
+  &[data-type='study']::before {
+    background-color: var(--clr-study);
+    background-image: url('../../assets/icon-study.svg');
+    background-position: top -12px right 17.07px;
+  }
+
+  &[data-type='exercise']::before {
+    background-color: var(--clr-exercise);
+    background-image: url('../../assets/icon-exercise.svg');
+    background-position: top -12px right 17.62px;
+  }
+
+  &[data-type='social']::before {
+    background-color: var(--clr-social);
+    background-image: url('../../assets/icon-social.svg');
+    background-position: top -12px right 13.48px;
+  }
+
+  &[data-type='self care']::before {
+    background-color: var(--clr-self_care);
+    background-image: url('../../assets/icon-self-care.svg');
+    background-position: top -12px right 7.21px;
+  }
 
   &__content {
     --activity-p-t: var(--px-28);
@@ -12,6 +60,8 @@
     --activity-row-gap: var(--px-6);
     --activity-column-gap: 0;
 
+    background-color: var(--clr-primary-200);
+    border-radius: var(--px-15);
     padding: var(--activity-p-t) var(--activity-p-r) var(--activity-p-b)
       var(--activity-p-l);
 

@@ -35,7 +35,7 @@ const Activity: FC<ActivityCardProps> = ({
   }
 
   return (
-    <div data-type={title} className={styles.activity}>
+    <div data-type={title?.toLowerCase()} className={styles.activity}>
       <div className={styles.activity__content}>
         <h3 className={styles.activity__title}>{title}</h3>
         <img

@@ -9,9 +9,11 @@
 ** [x] why can't i click buttons?
 *** because of z-index: -1
 ** [x] layout div
-* [ ] Activities
+* [x] Activities
 
 .Desktop Design
+* [ ] User info
+* [ ] Activities
 
 .MISC 
 * [ ] why doesn't the hover effect work for daily weekly and monthly?
