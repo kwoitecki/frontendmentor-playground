@@ -4,9 +4,15 @@ import styles from './userInfo.module.scss';
 
 type UserInfoProps = UserProps & {
   changeTimeframe: (timeframe: Timeframe) => void;
+  currentTimeframe: Timeframe;
 };
 
-const UserInfo: FC<UserInfoProps> = ({ name, image, changeTimeframe }) => {
+const UserInfo: FC<UserInfoProps> = ({
+  name,
+  image,
+  changeTimeframe,
+  currentTimeframe,
+}) => {
   const handleOnClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     const value = e.currentTarget.value as Timeframe;
@@ -31,7 +37,11 @@ const UserInfo: FC<UserInfoProps> = ({ name, image, changeTimeframe }) => {
               <button
                 value={timeframe}
                 onClick={handleOnClick}
-                className={styles.userinfo__navitem}
+                className={
+                  currentTimeframe === timeframe
+                    ? styles.userinfo__navitem_active
+                    : styles.userinfo__navitem
+                }
               >
                 {timeframe}
               </button>

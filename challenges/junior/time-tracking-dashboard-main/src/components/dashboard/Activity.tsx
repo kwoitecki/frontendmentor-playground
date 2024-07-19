@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { ActivityProps, Timeframe } from './dashboard.d';
+import styles from './activity.module.scss';
 
 type ActivityCardProps = ActivityProps & {
   currentTimeframe: Timeframe;
@@ -34,10 +35,19 @@ const Activity: FC<ActivityCardProps> = ({
   }
 
   return (
-    <div className={`u_card`}>
-      <h3>{title}</h3>
-      <p>{value.current}</p>
-      <p>{value.previous}</p>
+    <div data-type={title} className={styles.activity}>
+      <div className={styles.activity__content}>
+        <h3 className={styles.activity__title}>{title}</h3>
+        <img
+          className={`img_reset ${styles.activity__image}`}
+          src='icon-ellipsis.svg'
+          alt=''
+        />
+        <p className={styles.activity__current}>{value.current}hrs</p>
+        <p className={styles.activity__previous}>
+          Last Week - {value.previous}hrs
+        </p>
+      </div>
     </div>
   );
 };

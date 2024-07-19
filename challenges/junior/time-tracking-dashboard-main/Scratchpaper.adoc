@@ -5,12 +5,13 @@
 1440x1024
 
 .Mobile Design
-* [ ] User Info
+* [x] User Info
 ** [x] why can't i click buttons?
 *** because of z-index: -1
-** [ ] layout div
+** [x] layout div
 * [ ] Activities
 
 .Desktop Design
 
 .MISC 
+* [ ] why doesn't the hover effect work for daily weekly and monthly?

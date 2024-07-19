@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import Activities from './Activities';
 import UserInfo from './UserInfo';
 import userdata from './db/user.json';
 import { Timeframe, UserProps } from './dashboard.d';
@@ -24,7 +23,11 @@ const Dashboard = () => {
 
   return (
     <article className={styles.dashboard}>
-      <UserInfo {...user} changeTimeframe={timeframeChanged} />
+      <UserInfo
+        {...user}
+        changeTimeframe={timeframeChanged}
+        currentTimeframe={currentTimeframe}
+      />
 
       {user?.activities?.map((activity) => (
         <Activity

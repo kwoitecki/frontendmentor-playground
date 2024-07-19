@@ -90,5 +90,17 @@
     border: 0;
     background: transparent;
     cursor: pointer;
+
+    font-size: var(--f-fs-18);
+    color: var(--clr-primary-700);
+    margin-bottom: var(--px-1);
+
+    &_active {
+      border: 0;
+      background: transparent;
+      font-size: var(--f-fs-18);
+      color: var(--clr-primary-1000);
+      margin-bottom: var(--px-1);
+    }
   }
 }
