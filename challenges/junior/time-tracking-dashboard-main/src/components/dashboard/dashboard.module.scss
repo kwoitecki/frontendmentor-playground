@@ -10,10 +10,14 @@
   row-gap: var(--dashboard-row-gap);
   column-gap: var(--dashboard-column-gap);
 
-  @include mq-min-width('lg') {
+  @include mq-min-width('md') {
     --dashboard-row-gap: var(--px-30);
     --dashboard-column-gap: var(--px-30);
 
+    grid-template-columns: repeat(3, var(--px-255));
+  }
+
+  @include mq-min-width('lg') {
     grid-template-columns: repeat(4, var(--px-255));
     grid-row: repeat(2, 1fr);
   }
