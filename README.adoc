@@ -29,6 +29,7 @@ This is a playground for frontendmentor.io challenges.
 
 === Junior
 * link:./challenges/junior/testimonials-grid-section-main[Testimonials Grid Section Main]
+* link:./challenges/junior/time-tracking-dashboard-main[Time Tracking Dashboard Main]
 
 === Premium
 
