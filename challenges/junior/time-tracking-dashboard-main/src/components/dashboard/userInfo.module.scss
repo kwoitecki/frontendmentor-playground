@@ -136,5 +136,17 @@
       color: var(--clr-primary-1000);
       margin-bottom: var(--px-1);
     }
+
+    &:hover {
+      color: var(--clr-primary-1000);
+    }
   }
+}
+
+.btn {
+  font-size: 5rem;
+}
+
+.btn:hover {
+  background-color: yellow;
 }
