@@ -1,3 +1,5 @@
+@use '../../scss/helper/' as *;
+
 .dashboard {
   --dashboard-row-gap: var(--px-24);
   --dashboard-column-gap: 0;
@@ -7,4 +9,12 @@
   grid-template-rows: repeat(7, auto);
   row-gap: var(--dashboard-row-gap);
   column-gap: var(--dashboard-column-gap);
+
+  @include mq-min-width('lg') {
+    --dashboard-row-gap: var(--px-30);
+    --dashboard-column-gap: var(--px-30);
+
+    grid-template-columns: repeat(4, var(--px-255));
+    grid-row: repeat(2, 1fr);
+  }
 }

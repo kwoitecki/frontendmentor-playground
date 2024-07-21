@@ -1,6 +1,10 @@
 @use '../../scss/helper/' as *;
 
 .userinfo {
+  @include mq-min-width('lg') {
+    grid-row: span 2;
+  }
+
   &__header {
     --header-pt: var(--px-35);
     --header-pr: var(--px-39);
@@ -23,6 +27,18 @@
     align-items: center;
     column-gap: var(--header-column-gap);
     row-gap: var(--header-row-gap);
+
+    @include mq-min-width('lg') {
+      --header-pt: var(--px-37);
+      --header-pr: var(--px-84);
+      --header-pb: var(--px-80);
+      --header-pl: var(--px-32);
+
+      grid-template-areas:
+        'image'
+        'caption'
+        'name';
+    }
   }
 
   &__image {
@@ -44,6 +60,11 @@
     font-size: var(--user-caption-fs);
     color: var(--clr-primary-700);
     align-self: end;
+    margin-bottom: var(--px-1);
+
+    @include mq-min-width('lg') {
+      margin-top: var(--px-43);
+    }
   }
 
   &__name {
@@ -57,7 +78,7 @@
     align-self: start;
 
     @include mq-min-width('lg') {
-      --user-caption-fs: var(--f-fs-40);
+      --user-name-fs: var(--f-fs-40);
     }
   }
 
@@ -84,6 +105,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+
+    @include mq-min-width('lg') {
+      --navigation-pt: var(--px-26);
+      --navigation-pb: var(--px-33);
+
+      grid-template-columns: 1fr;
+      justify-items: start;
+
+      padding-left: var(--px-32);
+      gap: var(--px-21);
+    }
   }
 
   &__navitem {

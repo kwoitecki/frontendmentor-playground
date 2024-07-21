@@ -12,8 +12,9 @@
 * [x] Activities
 
 .Desktop Design
-* [ ] User info
-* [ ] Activities
+* [x] User info
+* [x] Activities
 
 .MISC 
 * [ ] why doesn't the hover effect work for daily weekly and monthly?
+* [ ] border around image
