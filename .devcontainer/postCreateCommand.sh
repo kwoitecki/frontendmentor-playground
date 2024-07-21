@@ -16,3 +16,4 @@ sudo chown node /workspace/premium/meet-landing-page/node_modules
 sudo chown node /workspace/premium/workit-landing-page/node_modules
 sudo chown node /workspace/challenges/junior/testimonials-grid-section-main/node_modules
 sudo chown node /workspace/challenges/junior/time-tracking-dashboard-main/node_modules
+sudo chown node /workspace/challenges/junior/news-homepage-main/node_modules

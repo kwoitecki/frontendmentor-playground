@@ -30,6 +30,7 @@ services:
       - fm-workit-landing-page:/workspace/premium/workit-landing-page/node_modules
       - fm-testimonials-grid-section-main:/workspace/challenges/junior/testimonials-grid-section-main/node_modules
       - fm-time-time-tracking-dashboard-main:/workspace/challenges/junior/time-tracking-dashboard-main/node_modules
+      - fm-news-homepage-main:/workspace/challenges/junior/news-homepage-main/node_modules
 
     ports:
       - 5555:5555
@@ -53,3 +54,4 @@ volumes:
   fm-workit-landing-page:
   fm-testimonials-grid-section-main:
   fm-time-time-tracking-dashboard-main:
+  fm-news-homepage-main:
