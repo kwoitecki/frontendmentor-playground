@@ -16,5 +16,5 @@
 * [x] Activities
 
 .MISC 
+* [x] border around image
 * [ ] why doesn't the hover effect work for daily weekly and monthly?
-* [ ] border around image

@@ -47,6 +47,8 @@
     width: var(--user-image-size);
     height: var(--user-image-size);
     grid-area: image;
+    border: 3px solid white;
+    border-radius: 50%;
 
     @include mq-min-width('lg') {
       --user-image-size: var(--px-78);
