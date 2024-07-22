@@ -3,7 +3,7 @@ import './App.scss';
 function App() {
   return (
     <>
-      <h1>Frontend Mentor | News homepage</h1>
+      <h1 className='visually-hidden'>Frontend Mentor | News homepage</h1>
     </>
   );
 }

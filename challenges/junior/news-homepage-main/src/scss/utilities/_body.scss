@@ -1,0 +1,9 @@
+.body {
+  --body-f-fs: var(--f-fs-15);
+  --body-f-lh: var(--f-lh-26);
+  --body-f-fw: var(--f-fw-regular);
+
+  font-size: var(--body-f-fs);
+  line-height: var(--body-f-lh);
+  font-weight: var(--body-f-fw);
+}

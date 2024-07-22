@@ -1,10 +1,19 @@
 = Scratchpaper
 
 == Groundwork
-* [ ] colors
-* [ ] typography
-* [ ] how does the hamburger menu work?
+* [x] colors
+* [x] typography
+* [x] heading
+* [x] body
 
-== Mobile 
 
-== Desktop
+== Navigation 
+
+=== Mobile 
+=== Desktop
+
+== Hero
+
+== New 
+
+== Articles

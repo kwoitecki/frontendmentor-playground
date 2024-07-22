@@ -1,1 +1,13 @@
 @use 'scss/' as *;
+
+.regular {
+  font-weight: var(--f-fw-regular);
+}
+
+.bold {
+  font-weight: var(--f-fw-bold);
+}
+
+.extrabold {
+  font-weight: var(--f-fw-x-bold);
+}

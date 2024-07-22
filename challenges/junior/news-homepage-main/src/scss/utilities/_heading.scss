@@ -1,0 +1,37 @@
+.heading {
+  --heading-f-fs: var(--f-fs-16);
+  --heading-f-lh: 0;
+  --heading-f-fw: var(--f-fw-bold);
+
+  font-size: var(--heading-f-fs);
+  line-height: var(--heading-f-lh);
+  font-weight: var(--heading-f-fw);
+
+  &-XL {
+    --heading-f-fs: var(--f-fs-56);
+    --heading-f-lh: var(--f-lh-56);
+    --heading-f-fw: var(--f-fw-x-bold);
+  }
+
+  &-L {
+    --heading-f-fs: var(--f-fs-40);
+    --heading-f-lh: var(--f-lh-40);
+  }
+
+  &-M {
+    --heading-f-fs: var(--f-fs-32);
+    --heading-f-lh: var(--f-lh-32);
+  }
+
+  &-S {
+    --heading-f-fs: var(--f-fs-20);
+    --heading-f-lh: var(--f-lh-24);
+    --heading-f-fw: var(--f-fw-x-bold);
+  }
+
+  &-XS {
+    --heading-f-fs: var(--f-fs-18);
+    --heading-f-lh: var(--f-lh-24);
+    --heading-f-fw: var(--f-fw-x-bold);
+  }
+}

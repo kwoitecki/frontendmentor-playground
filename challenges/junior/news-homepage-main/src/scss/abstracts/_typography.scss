@@ -1,47 +1,38 @@
-/*
-Example:
-
-$f-ff: 'IBM Plex Sans';
-$f-regular-file: './assets/fonts/IBMPlexSans-Regular.ttf';
-$f-bold-file: './assets/fonts/IBMPlexSans-Bold.ttf';
-
-$ff-primary: $font-family, sans-serif;
-*/
-
-$f-ff: '';
-$f-regular-file: '';
-$f-bold-file: '';
-$f-ff-primary: $f-ff;
+$f-ff: 'Inter';
+$f-regular-file: './assets/fonts/Inter-Regular.ttf';
+$f-bold-file: './assets/fonts/Inter-Bold.ttf';
+$f-x-bold-file: './assets/fonts/Inter-ExtraBold.ttf';
+$f-ff-primary: $f-ff, sans-serif;
 
 $f-fs-base: 16px;
 
-/*
-Example:
-$f-sizes: (
-  '16': 16px
+$f-fs: (
+  '15': 15px,
+  '16': $f-fs-base,
+  '18': 18px,
+  '20': 20px,
+  '32': 32px,
+  '40': 40px,
+  '56': 56px,
 );
-*/
-$f-fs: ();
 
-/*
-Example:
 $f-fw-regular: 400;
 $f-fw-bold: 700;
+$f-fw-x-bold: 800;
 
 $f-fw: (
   'regular': $f-fw-regular,
-  'bold': $f-fw-bold
+  'bold': $f-fw-bold,
+  'x-bold': $f-fw-x-bold,
 );
-*/
-$f-fw: ();
 
-/*
-Example: 
 $f-lh: (
-  '26': 26px
+  '24': 24px,
+  '26': 26px,
+  '32': 32px,
+  '40': 40px,
+  '56': 56px,
 );
-*/
-$f-lh: ();
 
 /*
 Example:
